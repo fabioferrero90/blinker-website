@@ -359,7 +359,6 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
     }
 
     .mockup-image {
@@ -1380,10 +1379,14 @@
 
     .phone-mockup {
         height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .mockup-image{
-        transform: translateY(10vh) translateX(-8vw);
+        transform: translateX(-8vw) translateY(-30vh);
     }
 
     .features-grid {
@@ -1532,7 +1535,7 @@
 @media (max-width: 480px){
 
     .mockup-image {
-        transform: translateX(-2vh) translateY(-15vh);
+        transform: translateX(-2vh) translateY(-30vh);
     }
 
     .hero-buttons {
