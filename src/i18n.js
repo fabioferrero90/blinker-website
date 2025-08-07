@@ -38,13 +38,16 @@ i18n
         fallbackLng: 'it', // Lingua di fallback
         debug: false, // Abilita debug in development
 
+        // Callback quando la lingua viene rilevata
+        initImmediate: false,
+
         interpolation: {
             escapeValue: false, // React già fa l'escape
         },
 
         detection: {
-            // Ordine di rilevamento della lingua
-            order: ['localStorage', 'navigator', 'htmlTag'],
+            // Ordine di rilevamento della lingua - prima localStorage, poi browser
+            order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
 
             // Chiave per localStorage
             lookupLocalStorage: 'blinker-language',
@@ -54,6 +57,19 @@ i18n
 
             // Lingue supportate
             supportedLngs: ['it', 'en', 'es', 'fr', 'de'],
+
+            // Converti codici lingua del browser (es: en-US -> en)
+            convertDetectedLanguage: (lng) => {
+                // Estrae solo i primi 2 caratteri del codice lingua
+                const detectedLng = lng.split('-')[0].toLowerCase();
+                // Verifica se la lingua è supportata, altrimenti fallback
+                const finalLng = ['it', 'en', 'es', 'fr', 'de'].includes(detectedLng) ? detectedLng : 'it';
+                console.log(`🌍 Lingua rilevata dal browser: ${lng} → ${finalLng}`);
+                return finalLng;
+            },
+
+            // Non controllare se una lingua è nella whitelist (ora gestito da convertDetectedLanguage)
+            checkWhitelist: false,
         },
 
         // Opzioni aggiuntive
