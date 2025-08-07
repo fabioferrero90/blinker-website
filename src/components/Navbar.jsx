@@ -36,7 +36,7 @@ function Navbar() {
                         <a onClick={() => handleNavClick('home')}>Home</a>
                         <a onClick={() => handleNavClick('features')}>Funzionalità</a>
                         <a onClick={() => handleNavClick('organizers')}>Organizzatori</a>
-                        <a onClick={() => handleNavClick('about')}>Perchè Blinker?</a>
+                        <a onClick={() => handleNavClick('why')}>Perchè Blinker?</a>
                         <a onClick={() => handleNavClick('download')}>Scarica</a>
                     </div>
 
