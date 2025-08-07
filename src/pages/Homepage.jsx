@@ -11,8 +11,8 @@ function Homepage() {
         <div className="app">
             <HeroSection />
             <FeaturesSection />
-            <OrganizersSection />
             <WhyBlinkerSection />
+            <OrganizersSection />
             <DownloadSection />
             <NewsletterSignup />
             <Footer />

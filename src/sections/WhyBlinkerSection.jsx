@@ -1,39 +1,40 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faMobile, faStar } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 function WhyBlinkerSection() {
+    const { t } = useTranslation();
     return (
-        <section id="why" className="section why pt-40 pb-40">
+        <section id="why" className="section why pt-20 pb-20">
             <div className="container">
                 <div className="why-content">
                     <div className="why-text animate-fade-in-left">
-                        <h2 className="section-title text-white">Perchè Blinker? 🤔</h2>
+                        <h2 className="section-title text-white">{t('whyBlinker.title')}</h2>
                         <div className="why-description text-white ps-3">
-                            <p>Blinker nasce dalla frustrazione di perdere sempre i car meet migliori! 😅</p>
-                            <p className="pt-3">Siamo un team di appassionati che ha detto "basta così" e ha creato l'app che tutti stavamo aspettando.
-                                Perché siamo stanchi di sentire <span className='font-semibold'>"ah ma c'era un evento ieri?"</span></p>
+                            <p>{t('whyBlinker.subtitle')}</p>
+                            <p className="pt-3">{t('whyBlinker.description')}</p>
                         </div>
 
                         <div className="why-features">
                             <div className="why-feature">
                                 <FontAwesomeIcon icon={faHeart} className="why-feature-icon" />
                                 <div>
-                                    <h4>Filtra gli eventi dalla mappa</h4>
-                                    <p>Cerca solo il tipo di evento che ti interessa, e non perderti niente! 🎯</p>
+                                    <h4>{t('whyBlinker.mapFilter.title')}</h4>
+                                    <p>{t('whyBlinker.mapFilter.description')}</p>
                                 </div>
                             </div>
                             <div className="why-feature">
                                 <FontAwesomeIcon icon={faMobile} className="why-feature-icon" />
                                 <div>
-                                    <h4>App Moderna e Semplice</h4>
-                                    <p>Interfaccia così intuitiva che anche tua nonna riuscirebbe a usarla!</p>
+                                    <h4>{t('whyBlinker.modernApp.title')}</h4>
+                                    <p>{t('whyBlinker.modernApp.description')}</p>
                                 </div>
                             </div>
                             <div className="why-feature">
                                 <FontAwesomeIcon icon={faStar} className="why-feature-icon" />
                                 <div>
-                                    <h4>Segui gli eventi che ti interessano</h4>
-                                    <p>Riceverai tutti gli aggiornamenti dagli organizzatori in tempo reale 📱</p>
+                                    <h4>{t('whyBlinker.followEvents.title')}</h4>
+                                    <p>{t('whyBlinker.followEvents.description')}</p>
                                 </div>
                             </div>
                         </div>

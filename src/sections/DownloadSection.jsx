@@ -1,36 +1,53 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShield, faBolt, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 function DownloadSection() {
+    const { t, i18n } = useTranslation();
+
+    // Mappatura delle lingue ai codici dei badge
+    const getLanguageCode = () => {
+        const languageMap = {
+            'it': 'IT',
+            'en': 'EN',
+            'es': 'ES',
+            'fr': 'FR',
+            'de': 'DE'
+        };
+        return languageMap[i18n.language] || 'IT';
+    };
+
+    const langCode = getLanguageCode();
+
     return (
         <section id="download" className="section download">
             <div className="container">
-                <h2 className="section-title">Scarica Blinker</h2>
+                <h2 className="section-title">{t('download.title')}</h2>
                 <p className="section-subtitle">
-                    Unisciti alla community dei car lovers e non perderti più nessun evento
+                    {t('download.subtitle')}
                 </p>
 
                 <div className="download-buttons">
                     <a href="https://apps.apple.com/it/app/blinker-app/id6746400000" className="download-btn">
-                        <img src="/DownloadBadges/AppStore-IT.svg" alt="Scarica su App Store" />
+                        <img src={`/DownloadBadges/AppStore-${langCode}.svg`} alt={t('download.appStore')} />
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.blinker.app" className="download-btn">
-                        <img src="/DownloadBadges/GooglePlay-IT.png" alt="Scarica su Google Play" />
+                        <img src={`/DownloadBadges/GooglePlay-${langCode}.png`} alt={t('download.googlePlay')} />
                     </a>
                 </div>
 
                 <div className="download-features">
                     <div className="download-feature">
                         <FontAwesomeIcon icon={faShield} className="text-green-400" />
-                        <span className="text-black">100% Sicuro (promesso! ✌🏻)</span>
+                        <span className="text-black">{t('download.secure')}</span>
                     </div>
                     <div className="download-feature">
                         <FontAwesomeIcon icon={faBolt} className="text-orange-300" />
-                        <span className="text-black">Aggiornamenti gratuiti (per sempre)</span>
+                        <span className="text-black">{t('download.updates')}</span>
                     </div>
                     <div className="download-feature">
                         <FontAwesomeIcon icon={faHeart} className="text-red-400" />
-                        <span className="text-black">Supporto 24/7 (quando non dormiamo)</span>
+                        <span className="text-black">{t('download.support')}</span>
                     </div>
                 </div>
             </div>

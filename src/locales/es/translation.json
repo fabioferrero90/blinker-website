@@ -1,0 +1,161 @@
+{
+    "navbar": {
+        "logo": "Blinker",
+        "features": "Características",
+        "organizers": "Organizadores",
+        "why": "¿Por qué Blinker?",
+        "download": "Descargar"
+    },
+    "hero": {
+        "title": "No te pierdas ningún Car Meet",
+        "subtitle": "Descubre eventos, organiza nuevos, únete o gestiona tu crew y muestra al mundo tu colección de autos, porque la vida es muy corta para no saber dónde están los mejores eventos automotrices...",
+        "downloadButton": "Descargar la App",
+        "scrollIndicator": "Descubre Más"
+    },
+    "features": {
+        "title": "Funcionalidades Principales",
+        "subtitle": "Todas las funcionalidades que te harán decir \"¿dónde has estado toda mi vida?\" 🤯",
+        "discover": {
+            "title": "Eventos de Autos",
+            "description": "¡Desde el meetup del viernes hasta el próximo Tokyo Auto Salon, no te perderás nada más! Descubre eventos en tu zona y participa sin tener que acechar grupos de Facebook que nunca se actualizan."
+        },
+        "notifications": {
+            "title": "Notificaciones Instantáneas",
+            "description": "¡Recibe notificaciones sobre nuevos eventos antes que tus amigos! No más 'ah pero había un evento ayer?' - ¡siempre serás el primero en saber todo!"
+        },
+        "social": {
+            "title": "Crew & Comunidad",
+            "description": "¡Únete a crews existentes o crea el tuyo! Perfecto para quienes quieren hacer amigos con otros entusiastas (y tal vez encontrar a alguien que te preste su GT-R para el fin de semana - soñar no cuesta nada 😅)."
+        },
+        "organize": {
+            "title": "Garaje Personal",
+            "description": "¡Muestra al mundo tu colección! Gestiona tus autos, añade fotos, especificaciones y personalizaciones. ¿Y la mejor parte? ¡Postúlate a eventos con solo unos toques! (Perfecto para presumir) 💪"
+        },
+        "maps": {
+            "title": "Mapa de Eventos",
+            "description": "¡El mapa que te salva de conducir por la ciudad al azar! Encuentra eventos cercanos, descubre nuevos lugares, y nunca más te pierdas un car meet porque 'no sabías dónde era'"
+        },
+        "calendar": {
+            "title": "Descubre la Comunidad",
+            "description": "¡Explora autos increíbles y estilos de personalización que te harán decir 'wow'! Perfecto para obtener inspiración (y para hacer un poco de envidia sana - es normal, todos lo hacemos) 👀"
+        }
+    },
+    "organizers": {
+        "title": "Para Organizadores 🎯",
+        "subtitle": "¿Eres un organizador de eventos? ¡Entonces esta sección está hecha especialmente para ti! Blinker no es solo para participantes, sino también para quienes crean la magia de los eventos! ✨",
+        "management": {
+            "title": "Mayor Visibilidad",
+            "description": "¡Tus eventos llegarán a miles de entusiastas! No más publicaciones en redes sociales que se pierden en el feed, aquí todos verán tu evento y finalmente dejarán de decir 'no sabía que estaba pasando' 📈"
+        },
+        "analytics": {
+            "title": "Analíticas Avanzadas",
+            "description": "¡Descubre cuántas personas vieron tu evento, quién se interesó y quién realmente participó! Datos que te ayudarán a mejorar cada vez más y presumir con números! 📊"
+        },
+        "communication": {
+            "title": "Comunicación Efectiva",
+            "description": "¡Publica noticias, actualizaciones y cambios en tiempo real! Todos los participantes recibirán notificaciones instantáneas, no más grupos de WhatsApp explotando con 500 mensajes 📢"
+        },
+        "ticketing": {
+            "title": "Gestión de Selecciones",
+            "description": "¿Eventos de capacidad limitada? ¡Gestiona las solicitudes de participación directamente desde la app! Aprueba, rechaza o mantén en lista de espera con unos toques y finalmente podrás decir 'no' sin sentirte culpable ✅"
+        },
+        "cta": {
+            "title": "¿Listo para revolucionar tus eventos? 🚀",
+            "description": "¡Únete a los organizadores que ya han elegido Blinker para sus eventos!, ¿no querrás quedarte fuera, verdad?",
+            "button": "Descargar la App"
+        }
+    },
+    "whyBlinker": {
+        "title": "¿Por qué elegir Blinker?",
+        "subtitle": "No somos solo otra app de eventos. Somos la comunidad automotriz que estabas esperando.",
+        "community": {
+            "title": "Comunidad Real",
+            "description": "No solo eventos, sino una verdadera comunidad de entusiastas que comparten tu pasión."
+        },
+        "quality": {
+            "title": "Calidad Garantizada",
+            "description": "Eventos curados y verificados. Solo los mejores meetups y rallies automotrices."
+        },
+        "innovation": {
+            "title": "Innovación Continua",
+            "description": "Desarrollamos constantemente nuevas funcionalidades basadas en el feedback de la comunidad."
+        },
+        "support": {
+            "title": "Soporte Dedicado",
+            "description": "Nuestro equipo está siempre disponible para ayudarte a organizar eventos perfectos."
+        }
+    },
+    "download": {
+        "title": "Comienza tu aventura automotriz",
+        "subtitle": "Descarga Blinker y únete a la comunidad de amantes de los autos más activa de Italia.",
+        "appStore": "Descargar en App Store",
+        "googlePlay": "Descargar en Google Play",
+        "availableSoon": "Próximamente disponible",
+        "features": {
+            "free": "Completamente gratuito",
+            "noAds": "Sin publicidad",
+            "privacy": "Privacidad garantizada",
+            "updates": "Actualizaciones constantes"
+        }
+    },
+    "newsletter": {
+        "title": "Mantente Actualizado sobre las novedades",
+        "subtitle": "Recibe las últimas novedades sobre actualizaciones de la app y nuevos eventos automotrices",
+        "placeholder": "Tu email",
+        "button": "Suscribirse",
+        "loading": "Suscribiendo...",
+        "success": "¡Suscripción completada con éxito!",
+        "error": "Error durante la suscripción. Inténtalo de nuevo.",
+        "emailRequired": "Ingresa una dirección de email",
+        "emailInvalid": "Ingresa una dirección de email válida",
+        "consentRequired": "Debes aceptar la política de privacidad",
+        "consentText": "Acepto recibir comunicaciones promocionales. Puedo revocar el consentimiento en cualquier momento. Para más información consulta la",
+        "privacyPolicy": "Política de Privacidad"
+    },
+    "footer": {
+        "description": "La única app que te salva del FOMO automotriz",
+        "product": "Producto",
+        "support": "Soporte",
+        "legal": "Legal",
+        "features": "Características",
+        "download": "Descargar",
+        "about": "Acerca de",
+        "helpCenter": "Centro de Ayuda",
+        "contact": "Contáctanos",
+        "privacyPolicy": "Política de Privacidad",
+        "cookiePolicy": "Política de Cookies",
+        "termsOfService": "Términos de Servicio",
+        "copyright": "© 2025 Blinker App - Hecho para los amantes de los autos, por gente que no puede permitirse un GT-R (aún)."
+    },
+    "cookieConsent": {
+        "title": "Configuración de Cookies",
+        "description": "Utilizamos cookies para mejorar tu experiencia. Puedes personalizar tus preferencias o aceptar todas las cookies.",
+        "acceptAll": "Aceptar Todas",
+        "customize": "Personalizar",
+        "reject": "Rechazar",
+        "close": "Cerrar",
+        "savePreferences": "Guardar Preferencias",
+        "cancel": "Cancelar",
+        "essential": {
+            "title": "Cookies Esenciales",
+            "description": "Necesarias para el funcionamiento del sitio"
+        },
+        "analytics": {
+            "title": "Cookies de Analytics",
+            "description": "Para analizar el uso del sitio"
+        },
+        "marketing": {
+            "title": "Cookies de Marketing",
+            "description": "Para publicidad personalizada"
+        },
+        "reopenLabel": "Reabrir configuración de cookies"
+    },
+    "languageSelector": {
+        "title": "Idioma",
+        "italian": "Italiano",
+        "english": "English",
+        "spanish": "Español",
+        "french": "Français",
+        "german": "Deutsch"
+    }
+}

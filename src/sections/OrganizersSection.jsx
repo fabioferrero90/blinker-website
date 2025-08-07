@@ -1,45 +1,46 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faBullhorn, faCheckCircle, faBullseye, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import { useAppContext } from '../contexts/AppContext';
 
 function OrganizersSection() {
     const { scrollToSection } = useAppContext();
+    const { t } = useTranslation();
 
     const organizerFeatures = [
         {
             icon: <FontAwesomeIcon icon={faChartLine} className="organizer-icon" />,
-            title: "Maggiore Visibilità",
-            description: "I tuoi eventi raggiungeranno migliaia di appassionati! Niente più post sui social che si perdono nel feed, qui tutti vedranno il tuo evento e finalmente smetteranno di dire 'non sapevo che ci fosse' 📈",
+            title: t('organizers.management.title'),
+            description: t('organizers.management.description'),
             color: "var(--primary)"
         },
         {
             icon: <FontAwesomeIcon icon={faBullhorn} className="organizer-icon" />,
-            title: "Comunicazione Efficace",
-            description: "Pubblica news, aggiornamenti e modifiche in tempo reale! Tutti i partecipanti riceveranno notifiche istantanee, niente più gruppi WhatsApp che esplodono con 500 messaggi 📢",
+            title: t('organizers.communication.title'),
+            description: t('organizers.communication.description'),
             color: "var(--secondary)"
         },
         {
             icon: <FontAwesomeIcon icon={faCheckCircle} className="organizer-icon" />,
-            title: "Gestione Selezioni",
-            description: "Eventi a numero chiuso? Gestisci le richieste di partecipazione direttamente dall'app! Approva, rifiuta o tieni in lista d'attesa con pochi tap e finalmente potrai dire 'no' senza sentirti in colpa ✅",
+            title: t('organizers.ticketing.title'),
+            description: t('organizers.ticketing.description'),
             color: "var(--primary)"
         },
         {
             icon: <FontAwesomeIcon icon={faBullseye} className="organizer-icon" />,
-            title: "Analytics Avanzati",
-            description: "Scopri quanti hanno visto il tuo evento, chi si è interessato e chi ha effettivamente partecipato! Dati che ti aiuteranno a migliorare sempre di più e a vantarti con i numeri! 📊",
+            title: t('organizers.analytics.title'),
+            description: t('organizers.analytics.description'),
             color: "var(--secondary)"
         }
     ];
 
     return (
-        <section id="organizers" className="section organizers pt-40 pb-40">
+        <section id="organizers" className="section organizers pt-20 pb-20">
             <div className="container">
                 <div className="animate-fade-in-up">
-                    <h2 className="section-title">Per gli Organizzatori 🎯</h2>
+                    <h2 className="section-title">{t('organizers.title')}</h2>
                     <p className="section-subtitle text-black">
-                        Sei un organizzatore di eventi? Allora questa sezione è fatta apposta per te!{' '}
-                        <span className='font-semibold'>Blinker non è solo per i partecipanti</span>, ma anche per chi crea la magia degli eventi! ✨
+                        {t('organizers.subtitle')}
                     </p>
                 </div>
 
@@ -62,9 +63,9 @@ function OrganizersSection() {
                 </div>
 
                 <div className="organizers-cta animate-fade-in-up">
-                    <h3 className="text-2xl font-bold mb-4 text-center">Pronto a rivoluzionare i tuoi eventi? 🚀</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-center">{t('organizers.cta.title')}</h3>
                     <p className="text-center mb-6 text-gray-600">
-                        Unisciti agli organizzatori che hanno già scelto Blinker per i loro eventi!, non vorrai mica restarne fuori?
+                        {t('organizers.cta.description')}
                     </p>
                     <div className="flex justify-center">
                         <button
@@ -72,7 +73,7 @@ function OrganizersSection() {
                             className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                         >
                             <FontAwesomeIcon icon={faDownload} size="lg" />
-                            Scarica l'App
+                            {t('organizers.cta.button')}
                         </button>
                     </div>
                 </div>

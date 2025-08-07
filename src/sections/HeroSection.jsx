@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import { useAppContext } from '../contexts/AppContext';
 
 function HeroSection() {
     const { scrollToSection } = useAppContext();
+    const { t } = useTranslation();
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
@@ -71,14 +73,10 @@ function HeroSection() {
                 <div className="hero-content">
                     <div className="hero-text animate-fade-in-up">
                         <h1 className="font-bold text-4xl lg:w-[80%] lg:text-6xl mb-4 text-white">
-                            Non perderti nessun{' '}
-                            <p className="gradient-text typewriter-text">
-                                {displayText}
-                                <span className="cursor">|</span>
-                            </p>
+                            {t('hero.title')}
                         </h1>
                         <div className="hero-subtitle text-base lg:text-xl text-white">
-                            <p>Scopri eventi, organizzane di nuovi, unisciti o gestisci la tua crew e mostra al mondo la tua collezione di auto, perché la vita è troppo corta per non sapere dove sono gli eventi automotive migliori...</p>
+                            <p>{t('hero.subtitle')}</p>
                         </div>
 
                         <div className="hero-buttons">
@@ -87,13 +85,13 @@ function HeroSection() {
                                 className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faDownload} />
-                                Scarica l'App
+                                {t('hero.downloadButton')}
                             </button>
                             <button
                                 onClick={() => scrollToSection('features')}
                                 className="btn btn-outline hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
-                                Scopri di Più
+                                {t('hero.scrollIndicator')}
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </button>
                         </div>

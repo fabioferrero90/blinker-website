@@ -2,6 +2,7 @@ import { AppProvider } from './contexts/AppContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import CookieConsent from './components/CookieConsent';
+import LanguageSelector from './components/LanguageSelector';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Homepage />
         <CookieConsent />
+        <LanguageSelector />
       </div>
     </AppProvider>
   );

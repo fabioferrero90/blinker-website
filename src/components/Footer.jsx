@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram as faInstagramIcon, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import PolicyModal from './PolicyModal';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
     const [modalType, setModalType] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { t } = useTranslation();
 
     const openModal = (type) => {
         setModalType(type);
@@ -40,35 +42,35 @@ function Footer() {
                                 <img src="extended-light.png" alt="Blinker Logo" width={150} />
                             </div>
                             <p className="footer-description text-center">
-                                L'unica app che ti salva dalla FOMO automotive
+                                {t('footer.description')}
                             </p>
                         </div>
                         <div className="footer-section">
-                            <h4>Link utili</h4>
+                            <h4>{t('footer.product')}</h4>
                             <a href="https://dashboard.blinker-app.com">Dashboard</a>
                         </div>
 
                         <div className="footer-section">
-                            <h4>Supporto</h4>
-                            <a href="https://help.blinker-app.com">Centro Aiuto</a>
-                            <a href="mailto:support@blinker-app.com">Contattaci</a>
+                            <h4>{t('footer.support')}</h4>
+                            <a href="https://help.blinker-app.com">{t('footer.helpCenter')}</a>
+                            <a href="mailto:support@blinker-app.com">{t('footer.contact')}</a>
                         </div>
                         <div className="footer-section">
-                            <h4>Legal</h4>
+                            <h4>{t('footer.legal')}</h4>
                             <button onClick={() => openModal('privacy')} className="footer-link">
-                                Privacy Policy
+                                {t('footer.privacyPolicy')}
                             </button>
                             <button onClick={() => openModal('cookie')} className="footer-link">
-                                Cookie Policy
+                                {t('footer.cookiePolicy')}
                             </button>
                             <button onClick={() => openModal('terms')} className="footer-link">
-                                Termini di Servizio
+                                {t('footer.termsOfService')}
                             </button>
                         </div>
                     </div>
 
                     <div className="footer-bottom text-sm">
-                        <p><span className='text-white font-semibold text-sm'>&copy; 2025 Blinker App </span>- Fatto per i car lovers, da gente che non può permettersi una GT-R (ancora).</p>
+                        <p><span className='text-white font-semibold text-sm'>&copy; 2025 Blinker App </span>- {t('footer.copyright')}</p>
                         <div className="footer-social">
                             <a href="https://www.instagram.com/blinker.social/" aria-label="Instagram">
                                 <FontAwesomeIcon icon={faInstagramIcon} size="sm" />

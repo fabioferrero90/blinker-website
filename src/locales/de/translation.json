@@ -1,0 +1,161 @@
+{
+    "navbar": {
+        "logo": "Blinker",
+        "features": "Funktionen",
+        "organizers": "Organisatoren",
+        "why": "Warum Blinker?",
+        "download": "Herunterladen"
+    },
+    "hero": {
+        "title": "Verpasse keinen Car Meet",
+        "subtitle": "Entdecke Events, organisiere neue, tritt bei oder verwalte deine Crew und zeige der Welt deine Autosammlung, weil das Leben zu kurz ist, um nicht zu wissen, wo die besten Automotive-Events sind...",
+        "downloadButton": "App Herunterladen",
+        "scrollIndicator": "Mehr Entdecken"
+    },
+    "features": {
+        "title": "Alles, was du für deine Automotive-Leidenschaft brauchst",
+        "subtitle": "Blinker ist die ultimative App für Autoliebhaber. Entdecke Events, verbinde dich mit anderen Enthusiasten und verpasse nie wieder ein Meetup.",
+        "discover": {
+            "title": "Events Entdecken",
+            "description": "Finde Automotive-Events in deiner Nähe. Filtere nach Autotyp, Datum und Entfernung."
+        },
+        "notifications": {
+            "title": "Intelligente Benachrichtigungen",
+            "description": "Erhalte personalisierte Benachrichtigungen für Events, die dich interessieren. Kein FOMO mehr."
+        },
+        "social": {
+            "title": "Automotive Social",
+            "description": "Verbinde dich mit anderen Autoliebhabern. Teile Fotos, kommentiere und baue deine Community auf."
+        },
+        "organize": {
+            "title": "Events Organisieren",
+            "description": "Erstelle und verwalte deine Automotive-Events. Lade Teilnehmer ein und verwalte Anmeldungen."
+        },
+        "maps": {
+            "title": "Interaktive Karten",
+            "description": "Betrachte Events auf interaktiven Karten. Finde die beste Route zu Meetups."
+        },
+        "calendar": {
+            "title": "Persönlicher Kalender",
+            "description": "Synchronisiere deine Events mit deinem Kalender. Plane deine Automotive-Saison."
+        }
+    },
+    "organizers": {
+        "title": "Für Organisatoren 🎯",
+        "subtitle": "Bist du ein Event-Organisator? Dann ist dieser Abschnitt speziell für dich gemacht! Blinker ist nicht nur für Teilnehmer, sondern auch für diejenigen, die die Magie der Events erschaffen! ✨",
+        "management": {
+            "title": "Größere Sichtbarkeit",
+            "description": "Deine Events werden Tausende von Enthusiasten erreichen! Keine Social-Media-Posts mehr, die im Feed verloren gehen, hier wird jeder dein Event sehen und endlich aufhören zu sagen 'ich wusste nicht, dass es stattfindet' 📈"
+        },
+        "analytics": {
+            "title": "Erweiterte Analysen",
+            "description": "Finde heraus, wie viele Leute dein Event gesehen haben, wer sich interessiert hat und wer tatsächlich teilgenommen hat! Daten, die dir helfen werden, dich immer weiter zu verbessern und mit Zahlen zu prahlen! 📊"
+        },
+        "communication": {
+            "title": "Effektive Kommunikation",
+            "description": "Veröffentliche Neuigkeiten, Updates und Änderungen in Echtzeit! Alle Teilnehmer erhalten sofortige Benachrichtigungen, keine WhatsApp-Gruppen mehr, die mit 500 Nachrichten explodieren 📢"
+        },
+        "ticketing": {
+            "title": "Auswahlverwaltung",
+            "description": "Events mit begrenzter Kapazität? Verwalte Teilnahmeanfragen direkt aus der App! Genehmige, lehne ab oder behalte auf der Warteliste mit wenigen Taps und endlich kannst du 'nein' sagen, ohne dich schuldig zu fühlen ✅"
+        },
+        "cta": {
+            "title": "Bereit, deine Events zu revolutionieren? 🚀",
+            "description": "Schließe dich den Organisatoren an, die bereits Blinker für ihre Events gewählt haben!, du willst doch nicht außen vor bleiben, oder?",
+            "button": "App Herunterladen"
+        }
+    },
+    "whyBlinker": {
+        "title": "Warum Blinker wählen?",
+        "subtitle": "Wir sind nicht nur eine weitere Event-App. Wir sind die Automotive-Community, auf die du gewartet hast.",
+        "community": {
+            "title": "Echte Community",
+            "description": "Nicht nur Events, sondern eine echte Community von Enthusiasten, die deine Leidenschaft teilen."
+        },
+        "quality": {
+            "title": "Garantierte Qualität",
+            "description": "Kuratierte und verifizierte Events. Nur die besten Automotive-Meetups und Treffen."
+        },
+        "innovation": {
+            "title": "Kontinuierliche Innovation",
+            "description": "Wir entwickeln ständig neue Funktionen basierend auf Community-Feedback."
+        },
+        "support": {
+            "title": "Dedizierter Support",
+            "description": "Unser Team ist immer verfügbar, um dir bei der Organisation perfekter Events zu helfen."
+        }
+    },
+    "download": {
+        "title": "Starte dein Automotive-Abenteuer",
+        "subtitle": "Lade Blinker herunter und werde Teil der aktivsten Autoliebhaber-Community Italiens.",
+        "appStore": "Im App Store herunterladen",
+        "googlePlay": "Bei Google Play herunterladen",
+        "availableSoon": "Demnächst verfügbar",
+        "features": {
+            "free": "Völlig kostenlos",
+            "noAds": "Keine Werbung",
+            "privacy": "Datenschutz garantiert",
+            "updates": "Konstante Updates"
+        }
+    },
+    "newsletter": {
+        "title": "Bleibe über Neuigkeiten informiert",
+        "subtitle": "Erhalte die neuesten Nachrichten über App-Updates und neue Automotive-Events",
+        "placeholder": "Deine E-Mail",
+        "button": "Abonnieren",
+        "loading": "Abonniere...",
+        "success": "Abonnement erfolgreich abgeschlossen!",
+        "error": "Fehler beim Abonnieren. Versuche es erneut.",
+        "emailRequired": "Gib eine E-Mail-Adresse ein",
+        "emailInvalid": "Gib eine gültige E-Mail-Adresse ein",
+        "consentRequired": "Du musst der Datenschutzerklärung zustimmen",
+        "consentText": "Ich akzeptiere, Werbekommunikation zu erhalten. Ich kann die Zustimmung jederzeit widerrufen. Für weitere Informationen siehe die",
+        "privacyPolicy": "Datenschutzerklärung"
+    },
+    "footer": {
+        "description": "Die einzige App, die dich vor Automotive FOMO rettet",
+        "product": "Produkt",
+        "support": "Support",
+        "legal": "Rechtliches",
+        "features": "Funktionen",
+        "download": "Herunterladen",
+        "about": "Über uns",
+        "helpCenter": "Hilfecenter",
+        "contact": "Kontaktiere uns",
+        "privacyPolicy": "Datenschutzerklärung",
+        "cookiePolicy": "Cookie-Richtlinie",
+        "termsOfService": "Nutzungsbedingungen",
+        "copyright": "© 2025 Blinker App - Gemacht für Autoliebhaber, von Leuten, die sich noch keinen GT-R leisten können."
+    },
+    "cookieConsent": {
+        "title": "Cookie-Einstellungen",
+        "description": "Wir verwenden Cookies, um deine Erfahrung zu verbessern. Du kannst deine Präferenzen anpassen oder alle Cookies akzeptieren.",
+        "acceptAll": "Alle Akzeptieren",
+        "customize": "Anpassen",
+        "reject": "Ablehnen",
+        "close": "Schließen",
+        "savePreferences": "Einstellungen Speichern",
+        "cancel": "Abbrechen",
+        "essential": {
+            "title": "Essentielle Cookies",
+            "description": "Notwendig für die Funktionalität der Website"
+        },
+        "analytics": {
+            "title": "Analytics-Cookies",
+            "description": "Zur Analyse der Website-Nutzung"
+        },
+        "marketing": {
+            "title": "Marketing-Cookies",
+            "description": "Für personalisierte Werbung"
+        },
+        "reopenLabel": "Cookie-Einstellungen wieder öffnen"
+    },
+    "languageSelector": {
+        "title": "Sprache",
+        "italian": "Italiano",
+        "english": "English",
+        "spanish": "Español",
+        "french": "Français",
+        "german": "Deutsch"
+    }
+}

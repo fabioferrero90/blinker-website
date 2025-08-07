@@ -1,0 +1,154 @@
+{
+    "navbar": {
+        "logo": "Blinker",
+        "features": "Features",
+        "organizers": "Organizers",
+        "why": "Why Blinker?",
+        "download": "Download"
+    },
+    "hero": {
+        "title": "Don't miss any Car Meet",
+        "subtitle": "Discover events, organize new ones, join or manage your crew and show the world your car collection, because life is too short not to know where the best automotive events are...",
+        "downloadButton": "Download the App",
+        "scrollIndicator": "Discover More"
+    },
+    "features": {
+        "title": "Main Features",
+        "subtitle": "All the features that will make you say \"where have you been all my life?\" 🤯",
+        "discover": {
+            "title": "Car Events",
+            "description": "From Friday's meetup to the next Tokyo Auto Salon, you won't miss anything anymore! Discover events in your area and participate without having to stalk Facebook groups that never get updated."
+        },
+        "notifications": {
+            "title": "Instant Notifications",
+            "description": "Get notifications about new events before your friends! No more 'oh but there was an event yesterday?' - you'll always be the first to know everything!"
+        },
+        "social": {
+            "title": "Crew & Community",
+            "description": "Join existing crews or create your own! Perfect for those who want to make friends with other enthusiasts (and maybe find someone who lends you their GT-R for the weekend - dreaming doesn't cost anything 😅)."
+        },
+        "organize": {
+            "title": "Personal Garage",
+            "description": "Show the world your collection! Manage your cars, add photos, specs and customizations. And the best part? Apply to events in just a few taps! (Perfect for flexing) 💪"
+        },
+        "maps": {
+            "title": "Event Map",
+            "description": "The map that saves you from driving around the city randomly! Find nearby events, discover new places, and never miss a car meet again because 'you didn't know where it was'"
+        },
+        "calendar": {
+            "title": "Discover the Community",
+            "description": "Explore incredible cars and customization styles that will make you say 'wow'! Perfect for getting inspiration (and for doing some healthy envy - it's normal, we all do it) 👀"
+        }
+    },
+    "organizers": {
+        "title": "For Organizers 🎯",
+        "subtitle": "Are you an event organizer? Then this section is made just for you! Blinker is not just for participants, but also for those who create the magic of events! ✨",
+        "management": {
+            "title": "Greater Visibility",
+            "description": "Your events will reach thousands of enthusiasts! No more social media posts that get lost in the feed, here everyone will see your event and finally stop saying 'I didn't know it was happening' 📈"
+        },
+        "analytics": {
+            "title": "Advanced Analytics",
+            "description": "Find out how many people saw your event, who was interested and who actually participated! Data that will help you improve more and more and brag with numbers! 📊"
+        },
+        "communication": {
+            "title": "Effective Communication",
+            "description": "Publish news, updates and changes in real time! All participants will receive instant notifications, no more WhatsApp groups exploding with 500 messages 📢"
+        },
+        "ticketing": {
+            "title": "Selection Management",
+            "description": "Limited capacity events? Manage participation requests directly from the app! Approve, reject or keep on waiting list with a few taps and finally you can say 'no' without feeling guilty ✅"
+        },
+        "cta": {
+            "title": "Ready to revolutionize your events? 🚀",
+            "description": "Join the organizers who have already chosen Blinker for their events!, you don't want to be left out, do you?",
+            "button": "Download the App"
+        }
+    },
+    "whyBlinker": {
+        "title": "Why Blinker? 🤔",
+        "subtitle": "Blinker was born from the frustration of always missing the best car meets! 😅",
+        "description": "We are a team of enthusiasts who said \"enough is enough\" and created the app we were all waiting for. Because we're tired of hearing \"oh but there was an event yesterday?\"",
+        "mapFilter": {
+            "title": "Filter events from the map",
+            "description": "Search only for the type of event that interests you, and don't miss anything! 🎯"
+        },
+        "modernApp": {
+            "title": "Modern and Simple App",
+            "description": "Interface so intuitive that even your grandmother could use it!"
+        },
+        "followEvents": {
+            "title": "Follow the events that interest you",
+            "description": "You'll receive all updates from organizers in real time 📱"
+        }
+    },
+    "download": {
+        "title": "Download Blinker",
+        "subtitle": "Join the car lovers community and never miss an event again",
+        "appStore": "Download on App Store",
+        "googlePlay": "Download on Google Play",
+        "secure": "100% Secure (promise! ✌🏻)",
+        "updates": "Free updates (forever)",
+        "support": "24/7 Support (when we're not sleeping)"
+    },
+    "newsletter": {
+        "title": "Subscribe and Stay updated on news (it's Free!)",
+        "subtitle": "Enter your email to subscribe to the newsletter to receive the latest news about app updates and new automotive events, we promise you'll never receive spam from us!",
+        "placeholder": "Enter your email",
+        "button": "Subscribe",
+        "loading": "Subscribing...",
+        "success": "Subscription completed successfully!",
+        "error": "Error during subscription. Try again.",
+        "emailRequired": "Enter an email address",
+        "emailInvalid": "Enter a valid email address",
+        "consentRequired": "You must accept the privacy policy",
+        "consentText": "I accept to receive promotional communications. I can revoke consent at any time. For more information consult the",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "footer": {
+        "description": "The only app that saves you from automotive FOMO",
+        "product": "Useful Links",
+        "support": "Support",
+        "legal": "Legal",
+        "features": "Features",
+        "download": "Download",
+        "about": "About",
+        "helpCenter": "Help Center",
+        "contact": "Contact Us",
+        "privacyPolicy": "Privacy Policy",
+        "cookiePolicy": "Cookie Policy",
+        "termsOfService": "Terms of Service",
+        "copyright": "Made for car lovers, by people who can't afford a GT-R (yet)."
+    },
+    "cookieConsent": {
+        "title": "Cookie Settings",
+        "description": "We use cookies to improve your experience. You can customize your preferences or accept all cookies.",
+        "acceptAll": "Accept All",
+        "customize": "Customize",
+        "reject": "Reject",
+        "close": "Close",
+        "savePreferences": "Save Preferences",
+        "cancel": "Cancel",
+        "essential": {
+            "title": "Essential Cookies",
+            "description": "Necessary for the website to function"
+        },
+        "analytics": {
+            "title": "Analytics Cookies",
+            "description": "To analyze website usage"
+        },
+        "marketing": {
+            "title": "Marketing Cookies",
+            "description": "For personalized advertising"
+        },
+        "reopenLabel": "Reopen cookie settings"
+    },
+    "languageSelector": {
+        "title": "Language",
+        "italian": "Italiano",
+        "english": "English",
+        "spanish": "Español",
+        "french": "Français",
+        "german": "Deutsch"
+    }
+}

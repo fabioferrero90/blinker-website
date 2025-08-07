@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import { useAppContext } from '../contexts/AppContext';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { scrollToSection } = useAppContext();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,10 +38,10 @@ function Navbar() {
 
                     <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                         <a onClick={() => handleNavClick('home')}>Home</a>
-                        <a onClick={() => handleNavClick('features')}>Funzionalità</a>
-                        <a onClick={() => handleNavClick('organizers')}>Organizzatori</a>
-                        <a onClick={() => handleNavClick('why')}>Perchè Blinker?</a>
-                        <a onClick={() => handleNavClick('download')}>Scarica</a>
+                        <a onClick={() => handleNavClick('features')}>{t('navbar.features')}</a>
+                        <a onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</a>
+                        <a onClick={() => handleNavClick('why')}>{t('navbar.why')}</a>
+                        <a onClick={() => handleNavClick('download')}>{t('navbar.download')}</a>
                     </div>
 
                     <button
