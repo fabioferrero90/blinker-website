@@ -601,7 +601,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(10px);
@@ -916,6 +916,40 @@
     .organizer-card:nth-child(2) { animation-delay: 0.2s; }
     .organizer-card:nth-child(3) { animation-delay: 0.3s; }
     .organizer-card:nth-child(4) { animation-delay: 0.4s; }
+
+    /* Differenze di colorazione per le feature cards */
+    .feature-card:nth-child(1) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(255, 74, 28, 0.1) 0%, rgba(255, 0, 103, 0.1) 100%);
+    }
+    .feature-card:nth-child(2) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(52, 44, 153, 0.1) 0%, rgba(83, 2, 150, 0.1) 100%);
+    }
+    .feature-card:nth-child(3) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+    }
+    .feature-card:nth-child(4) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+    }
+    .feature-card:nth-child(5) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+    }
+    .feature-card:nth-child(6) .feature-icon-wrapper {
+        background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(219, 39, 119, 0.1) 100%);
+    }
+
+    /* Differenze di colorazione per le organizer cards */
+    .organizer-card:nth-child(1) .organizer-icon-wrapper {
+        background: linear-gradient(135deg, rgba(255, 74, 28, 0.1) 0%, rgba(255, 0, 103, 0.1) 100%);
+    }
+    .organizer-card:nth-child(2) .organizer-icon-wrapper {
+        background: linear-gradient(135deg, rgba(52, 44, 153, 0.1) 0%, rgba(83, 2, 150, 0.1) 100%);
+    }
+    .organizer-card:nth-child(3) .organizer-icon-wrapper {
+        background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+    }
+    .organizer-card:nth-child(4) .organizer-icon-wrapper {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+    }
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -1054,7 +1088,7 @@
     }
 
     .why-feature {
-        padding: 0.75rem;
+        padding: 0.75rem 1.75rem;
     }
 
     .why-feature:hover {

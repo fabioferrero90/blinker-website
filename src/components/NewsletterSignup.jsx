@@ -71,13 +71,13 @@ function NewsletterSignup() {
     };
 
     return (
-        <div className="bg-gradient-to-r from-[#ff4011] to-[#ff0067] text-white py-6">
+        <div className="bg-gradient-to-r from-[#ff4011] to-[#ff0067] text-white py-8">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="flex flex-col md:flex-row items-start justify-between gap-50">
                     {/* Testo */}
                     <div className="text-center md:text-left">
-                        <h3 className="text-lg font-semibold mb-1">Resta Aggiornato sulle novità</h3>
-                        <p className="text-sm opacity-90">Ricevi le ultime novità sugli aggiornamenti dell'app e su nuovi eventi automotive</p>
+                        <h3 className="text-2xl font-semibold mb-1">Iscriviti e Resta aggiornato sulle novità (è Gratis!)</h3>
+                        <p className="text-sm opacity-90">Inserisci la tua email per iscriverti alla newsletter per ricevere le ultime novità sugli aggiornamenti dell'app e su nuovi eventi automotive, ti promettiamo che non riceverai mai spam da parte nostra!</p>
                     </div>
 
                     {/* Form */}
@@ -93,7 +93,7 @@ function NewsletterSignup() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder="Inserisci la tua email"
-                                    className="w-full sm:w-150 pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 text-center"
+                                    className="w-full sm:w-100 pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 text-center"
                                     disabled={status === 'loading'}
                                 />
                             </div>
@@ -108,7 +108,7 @@ function NewsletterSignup() {
                         </form>
 
                         {/* Checkbox Privacy - ora sotto al form */}
-                        <div className="mt-3 flex items-start gap-2 justify-center md:justify-start">
+                        <div className="mt-3 flex items-start gap-2 justify-center md:justify-start max-w-140">
                             <input
                                 type="checkbox"
                                 id="newsletter-consent"
