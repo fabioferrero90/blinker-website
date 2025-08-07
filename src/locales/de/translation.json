@@ -22,31 +22,31 @@
         "scrollIndicator": "Mehr Entdecken"
     },
     "features": {
-        "title": "Alles, was du für deine Automotive-Leidenschaft brauchst",
-        "subtitle": "Blinker ist die ultimative App für Autoliebhaber. Entdecke Events, verbinde dich mit anderen Enthusiasten und verpasse nie wieder ein Meetup.",
+        "title": "Hauptfunktionen",
+        "subtitle": "Alle Funktionen, die dich sagen lassen werden \"wo warst du mein ganzes Leben?\" 🤯",
         "discover": {
-            "title": "Events Entdecken",
-            "description": "Finde Automotive-Events in deiner Nähe. Filtere nach Autotyp, Datum und Entfernung."
+            "title": "Auto Events",
+            "description": "Vom Freitags-Meetup bis zum nächsten Tokyo Auto Salon, du wirst nichts mehr verpassen! Entdecke Events in deiner Nähe und nimm teil, ohne Facebook-Gruppen stalken zu müssen, die nie aktualisiert werden."
         },
         "notifications": {
-            "title": "Intelligente Benachrichtigungen",
-            "description": "Erhalte personalisierte Benachrichtigungen für Events, die dich interessieren. Kein FOMO mehr."
+            "title": "Sofort-Benachrichtigungen",
+            "description": "Erhalte Benachrichtigungen über neue Events vor deinen Freunden! Kein 'ach aber gestern war ein Event?' mehr - du wirst immer der Erste sein, der alles weiß!"
         },
         "social": {
-            "title": "Automotive Social",
-            "description": "Verbinde dich mit anderen Autoliebhabern. Teile Fotos, kommentiere und baue deine Community auf."
+            "title": "Crew & Community",
+            "description": "Tritt bestehenden Crews bei oder erstelle deine eigene! Perfekt für alle, die sich mit anderen Enthusiasten anfreunden wollen (und vielleicht jemanden finden, der dir seine GT-R fürs Wochenende leiht - träumen kostet nichts 😅)."
         },
         "organize": {
-            "title": "Events Organisieren",
-            "description": "Erstelle und verwalte deine Automotive-Events. Lade Teilnehmer ein und verwalte Anmeldungen."
+            "title": "Persönliche Garage",
+            "description": "Zeige der Welt deine Sammlung! Verwalte deine Autos, füge Fotos, Spezifikationen und Anpassungen hinzu. Und das Beste? Bewirb dich bei Events mit nur wenigen Taps! (Perfekt zum Angeben) 💪"
         },
         "maps": {
-            "title": "Interaktive Karten",
-            "description": "Betrachte Events auf interaktiven Karten. Finde die beste Route zu Meetups."
+            "title": "Event-Karte",
+            "description": "Die Karte, die dich davor bewahrt, ziellos durch die Stadt zu fahren! Finde Events in der Nähe, entdecke neue Orte und verpasse nie wieder ein Car Meet, weil 'du nicht wusstest, wo es war'"
         },
         "calendar": {
-            "title": "Persönlicher Kalender",
-            "description": "Synchronisiere deine Events mit deinem Kalender. Plane deine Automotive-Saison."
+            "title": "Community Entdecken",
+            "description": "Erkunde unglaubliche Autos und Tuning-Stile, die dich 'wow' sagen lassen! Perfekt um sich inspirieren zu lassen (und um ein bisschen gesunden Neid zu entwickeln - ist normal, machen wir alle) 👀"
         }
     },
     "organizers": {
@@ -75,41 +75,34 @@
         }
     },
     "whyBlinker": {
-        "title": "Warum Blinker wählen?",
-        "subtitle": "Wir sind nicht nur eine weitere Event-App. Wir sind die Automotive-Community, auf die du gewartet hast.",
-        "community": {
-            "title": "Echte Community",
-            "description": "Nicht nur Events, sondern eine echte Community von Enthusiasten, die deine Leidenschaft teilen."
+        "title": "Warum Blinker? 🤔",
+        "subtitle": "Blinker entstand aus der Frustration, immer die besten Car Meets zu verpassen! 😅",
+        "description": "Wir sind ein Team von Enthusiasten, das 'genug ist genug' gesagt und die App entwickelt hat, auf die wir alle gewartet haben. Weil wir es satt haben zu hören 'ach aber gestern war ein Event?'",
+        "mapFilter": {
+            "title": "Events von der Karte filtern",
+            "description": "Suche nur nach der Art von Event, die dich interessiert, und verpasse nichts! 🎯"
         },
-        "quality": {
-            "title": "Garantierte Qualität",
-            "description": "Kuratierte und verifizierte Events. Nur die besten Automotive-Meetups und Treffen."
+        "modernApp": {
+            "title": "Moderne und Einfache App",
+            "description": "Interface so intuitiv, dass sogar deine Oma sie benutzen könnte!"
         },
-        "innovation": {
-            "title": "Kontinuierliche Innovation",
-            "description": "Wir entwickeln ständig neue Funktionen basierend auf Community-Feedback."
-        },
-        "support": {
-            "title": "Dedizierter Support",
-            "description": "Unser Team ist immer verfügbar, um dir bei der Organisation perfekter Events zu helfen."
+        "followEvents": {
+            "title": "Folge den Events, die dich interessieren",
+            "description": "Du erhältst alle Updates von Organisatoren in Echtzeit 📱"
         }
     },
     "download": {
-        "title": "Starte dein Automotive-Abenteuer",
-        "subtitle": "Lade Blinker herunter und werde Teil der aktivsten Autoliebhaber-Community Italiens.",
+        "title": "Blinker Herunterladen",
+        "subtitle": "Werde Teil der Autoliebhaber-Community und verpasse nie wieder ein Event",
         "appStore": "Im App Store herunterladen",
         "googlePlay": "Bei Google Play herunterladen",
-        "availableSoon": "Demnächst verfügbar",
-        "features": {
-            "free": "Völlig kostenlos",
-            "noAds": "Keine Werbung",
-            "privacy": "Datenschutz garantiert",
-            "updates": "Konstante Updates"
-        }
+        "secure": "100% Sicher (versprochen! ✌🏻)",
+        "updates": "Kostenlose Updates (für immer)",
+        "support": "24/7 Support (wenn wir nicht schlafen)"
     },
     "newsletter": {
-        "title": "Bleibe über Neuigkeiten informiert",
-        "subtitle": "Erhalte die neuesten Nachrichten über App-Updates und neue Automotive-Events",
+        "title": "Abonniere und bleibe über Neuigkeiten informiert (es ist Kostenlos!)",
+        "subtitle": "Gib deine E-Mail ein, um den Newsletter zu abonnieren und die neuesten Nachrichten über App-Updates und neue Automotive-Events zu erhalten, wir versprechen dir, dass du niemals Spam von uns erhalten wirst!",
         "placeholder": "Deine E-Mail",
         "button": "Abonnieren",
         "loading": "Abonniere...",

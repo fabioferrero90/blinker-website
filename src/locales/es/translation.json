@@ -75,41 +75,34 @@
         }
     },
     "whyBlinker": {
-        "title": "¿Por qué elegir Blinker?",
-        "subtitle": "No somos solo otra app de eventos. Somos la comunidad automotriz que estabas esperando.",
-        "community": {
-            "title": "Comunidad Real",
-            "description": "No solo eventos, sino una verdadera comunidad de entusiastas que comparten tu pasión."
+        "title": "¿Por qué Blinker? 🤔",
+        "subtitle": "¡Blinker nació de la frustración de siempre perderse los mejores car meets! 😅",
+        "description": "Somos un equipo de entusiastas que dijo \"basta ya\" y creó la app que todos estábamos esperando. Porque estamos cansados de escuchar \"¿ah pero había un evento ayer?\"",
+        "mapFilter": {
+            "title": "Filtrar eventos desde el mapa",
+            "description": "¡Busca solo el tipo de evento que te interesa, y no te pierdas nada! 🎯"
         },
-        "quality": {
-            "title": "Calidad Garantizada",
-            "description": "Eventos curados y verificados. Solo los mejores meetups y rallies automotrices."
+        "modernApp": {
+            "title": "App Moderna y Simple",
+            "description": "¡Interfaz tan intuitiva que hasta tu abuela podría usarla!"
         },
-        "innovation": {
-            "title": "Innovación Continua",
-            "description": "Desarrollamos constantemente nuevas funcionalidades basadas en el feedback de la comunidad."
-        },
-        "support": {
-            "title": "Soporte Dedicado",
-            "description": "Nuestro equipo está siempre disponible para ayudarte a organizar eventos perfectos."
+        "followEvents": {
+            "title": "Sigue los eventos que te interesan",
+            "description": "¡Recibirás todas las actualizaciones de los organizadores en tiempo real! 📱"
         }
     },
     "download": {
-        "title": "Comienza tu aventura automotriz",
-        "subtitle": "Descarga Blinker y únete a la comunidad de amantes de los autos más activa de Italia.",
+        "title": "Descargar Blinker",
+        "subtitle": "Únete a la comunidad de amantes de los autos y nunca más te pierdas un evento",
         "appStore": "Descargar en App Store",
         "googlePlay": "Descargar en Google Play",
-        "availableSoon": "Próximamente disponible",
-        "features": {
-            "free": "Completamente gratuito",
-            "noAds": "Sin publicidad",
-            "privacy": "Privacidad garantizada",
-            "updates": "Actualizaciones constantes"
-        }
+        "secure": "100% Seguro (¡prometido! ✌🏻)",
+        "updates": "Actualizaciones gratuitas (para siempre)",
+        "support": "Soporte 24/7 (cuando no estamos durmiendo)"
     },
     "newsletter": {
-        "title": "Mantente Actualizado sobre las novedades",
-        "subtitle": "Recibe las últimas novedades sobre actualizaciones de la app y nuevos eventos automotrices",
+        "title": "Suscríbete y Mantente actualizado sobre las novedades (¡es Gratis!)",
+        "subtitle": "Ingresa tu email para suscribirte al newsletter para recibir las últimas novedades sobre actualizaciones de la app y nuevos eventos automotrices, ¡te prometemos que nunca recibirás spam de nuestra parte!",
         "placeholder": "Tu email",
         "button": "Suscribirse",
         "loading": "Suscribiendo...",

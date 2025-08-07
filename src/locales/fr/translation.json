@@ -22,31 +22,31 @@
         "scrollIndicator": "Découvrir Plus"
     },
     "features": {
-        "title": "Tout ce dont vous avez besoin pour votre passion automobile",
-        "subtitle": "Blinker est l'app ultime pour les passionnés de voitures. Découvrez des événements, connectez-vous avec d'autres passionnés et ne manquez plus jamais un meetup.",
+        "title": "Fonctionnalités Principales",
+        "subtitle": "Toutes les fonctionnalités qui vous feront dire \"où étiez-vous toute ma vie ?\" 🤯",
         "discover": {
-            "title": "Découvrir des Événements",
-            "description": "Trouvez des événements automobiles dans votre région. Filtrez par type de voiture, date et distance."
+            "title": "Événements Auto",
+            "description": "Du meetup du vendredi au prochain Tokyo Auto Salon, vous ne manquerez plus rien ! Découvrez des événements dans votre région et participez sans avoir à harceler les groupes Facebook qui ne sont jamais mis à jour."
         },
         "notifications": {
-            "title": "Notifications Intelligentes",
-            "description": "Recevez des notifications personnalisées pour les événements qui vous intéressent. Plus de FOMO."
+            "title": "Notifications Instantanées",
+            "description": "Recevez des notifications sur de nouveaux événements avant vos amis ! Plus de 'ah mais il y avait un événement hier ?' - vous serez toujours le premier à tout savoir !"
         },
         "social": {
-            "title": "Social Automobile",
-            "description": "Connectez-vous avec d'autres passionnés de voitures. Partagez des photos, commentez et construisez votre communauté."
+            "title": "Crew & Communauté",
+            "description": "Rejoignez des crews existantes ou créez la vôtre ! Parfait pour ceux qui veulent se faire des amis avec d'autres passionnés (et peut-être trouver quelqu'un qui vous prête sa GT-R pour le week-end - rêver ne coûte rien 😅)."
         },
         "organize": {
-            "title": "Organiser des Événements",
-            "description": "Créez et gérez vos événements automobiles. Invitez des participants et gérez les inscriptions."
+            "title": "Garage Personnel",
+            "description": "Montrez au monde votre collection ! Gérez vos voitures, ajoutez des photos, des spécifications et des personnalisations. Et le meilleur ? Postulez aux événements en quelques taps ! (Parfait pour frimer) 💪"
         },
         "maps": {
-            "title": "Cartes Interactives",
-            "description": "Visualisez les événements sur des cartes interactives. Trouvez le meilleur itinéraire pour atteindre les meetups."
+            "title": "Carte des Événements",
+            "description": "La carte qui vous évite de conduire au hasard dans la ville ! Trouvez des événements à proximité, découvrez de nouveaux endroits, et ne manquez plus jamais un car meet parce que 'vous ne saviez pas où c'était'"
         },
         "calendar": {
-            "title": "Calendrier Personnel",
-            "description": "Synchronisez vos événements avec votre calendrier. Planifiez votre saison automobile."
+            "title": "Découvrir la Communauté",
+            "description": "Explorez des voitures incroyables et des styles de personnalisation qui vous feront dire 'wow' ! Parfait pour s'inspirer (et pour faire un peu d'envie saine - c'est normal, nous le faisons tous) 👀"
         }
     },
     "organizers": {
@@ -75,41 +75,34 @@
         }
     },
     "whyBlinker": {
-        "title": "Pourquoi choisir Blinker ?",
-        "subtitle": "Nous ne sommes pas seulement une autre app d'événements. Nous sommes la communauté automobile que vous attendiez.",
-        "community": {
-            "title": "Vraie Communauté",
-            "description": "Pas seulement des événements, mais une vraie communauté de passionnés qui partagent votre passion."
+        "title": "Pourquoi Blinker ? 🤔",
+        "subtitle": "Blinker est né de la frustration de toujours manquer les meilleurs car meets ! 😅",
+        "description": "Nous sommes une équipe de passionnés qui a dit \"ça suffit\" et a créé l'app que nous attendions tous. Parce que nous en avons marre d'entendre \"oh mais il y avait un événement hier ?\"",
+        "mapFilter": {
+            "title": "Filtrer les événements depuis la carte",
+            "description": "Cherchez seulement le type d'événement qui vous intéresse, et ne manquez rien ! 🎯"
         },
-        "quality": {
-            "title": "Qualité Garantie",
-            "description": "Événements curés et vérifiés. Seulement les meilleurs meetups et rassemblements automobiles."
+        "modernApp": {
+            "title": "App Moderne et Simple",
+            "description": "Interface si intuitive que même votre grand-mère pourrait l'utiliser !"
         },
-        "innovation": {
-            "title": "Innovation Continue",
-            "description": "Nous développons constamment de nouvelles fonctionnalités basées sur les retours de la communauté."
-        },
-        "support": {
-            "title": "Support Dédié",
-            "description": "Notre équipe est toujours disponible pour vous aider à organiser des événements parfaits."
+        "followEvents": {
+            "title": "Suivez les événements qui vous intéressent",
+            "description": "Vous recevrez toutes les mises à jour des organisateurs en temps réel 📱"
         }
     },
     "download": {
-        "title": "Commencez votre aventure automobile",
-        "subtitle": "Téléchargez Blinker et rejoignez la communauté de passionnés de voitures la plus active d'Italie.",
+        "title": "Télécharger Blinker",
+        "subtitle": "Rejoignez la communauté des passionnés de voitures et ne manquez plus jamais un événement",
         "appStore": "Télécharger sur App Store",
         "googlePlay": "Télécharger sur Google Play",
-        "availableSoon": "Bientôt disponible",
-        "features": {
-            "free": "Complètement gratuit",
-            "noAds": "Sans publicité",
-            "privacy": "Confidentialité garantie",
-            "updates": "Mises à jour constantes"
-        }
+        "secure": "100% Sécurisé (promis ! ✌🏻)",
+        "updates": "Mises à jour gratuites (pour toujours)",
+        "support": "Support 24/7 (quand on ne dort pas)"
     },
     "newsletter": {
-        "title": "Restez Informé des nouveautés",
-        "subtitle": "Recevez les dernières nouvelles sur les mises à jour de l'app et les nouveaux événements automobiles",
+        "title": "Abonnez-vous et Restez informé des nouveautés (c'est Gratuit !)",
+        "subtitle": "Entrez votre email pour vous abonner à la newsletter pour recevoir les dernières nouvelles sur les mises à jour de l'app et les nouveaux événements automobiles, nous vous promettons que vous ne recevrez jamais de spam de notre part !",
         "placeholder": "Votre email",
         "button": "S'abonner",
         "loading": "Inscription en cours...",
