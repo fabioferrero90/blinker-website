@@ -1,4 +1,5 @@
-import { Download, ArrowDown, ChevronDown } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 import { useAppContext } from '../contexts/AppContext';
 
@@ -77,7 +78,7 @@ function HeroSection() {
                             </p>
                         </h1>
                         <div className="hero-subtitle text-base lg:text-xl text-white">
-                            <p>Scopri eventi, organizzane di nuovi, unisciti o gestisci la tua crew e mostra al mondo la tua collezione di auto, perché la vita è troppo corta per non sapere dove sono i car meet...</p>
+                            <p>Scopri eventi, organizzane di nuovi, unisciti o gestisci la tua crew e mostra al mondo la tua collezione di auto, perché la vita è troppo corta per non sapere dove sono gli eventi automotive migliori...</p>
                         </div>
 
                         <div className="hero-buttons">
@@ -85,7 +86,7 @@ function HeroSection() {
                                 onClick={() => scrollToSection('download')}
                                 className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
-                                <Download size={20} />
+                                <FontAwesomeIcon icon={faDownload} />
                                 Scarica l'App
                             </button>
                             <button
@@ -93,19 +94,17 @@ function HeroSection() {
                                 className="btn btn-outline hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
                                 Scopri di Più
-                                <ArrowDown size={20} />
+                                <FontAwesomeIcon icon={faChevronDown} />
                             </button>
                         </div>
                     </div>
 
-                    <div className="hero-image animate-fade-in-right">
-                        <div className="phone-mockup">
-                            <img
-                                src="/home-mockup.png"
-                                alt="Blinker App Mockup"
-                                className="mockup-image"
-                            />
-                        </div>
+                    <div className="phone-mockup animate-fade-in-right">
+                        <img
+                            src="/home-mockup.png"
+                            alt="Blinker App Mockup"
+                            className="mockup-image"
+                        />
                     </div>
                 </div>
             </div>
@@ -115,7 +114,7 @@ function HeroSection() {
                 onClick={() => scrollToSection('features')}
                 aria-label="Scorri alla sezione successiva"
             >
-                <ChevronDown size={24} />
+                <FontAwesomeIcon icon={faChevronDown} />
             </button>
         </section>
     );

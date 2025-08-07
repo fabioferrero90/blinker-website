@@ -1,6 +1,7 @@
 import { AppProvider } from './contexts/AppContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="app-wrapper">
         <Navbar />
         <Homepage />
+        <CookieConsent />
       </div>
     </AppProvider>
   );

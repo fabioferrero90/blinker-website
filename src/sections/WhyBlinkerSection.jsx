@@ -1,4 +1,5 @@
-import { Heart, Smartphone, Star } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faMobile, faStar } from '@fortawesome/free-solid-svg-icons';
 
 function WhyBlinkerSection() {
     return (
@@ -7,45 +8,40 @@ function WhyBlinkerSection() {
                 <div className="why-content">
                     <div className="why-text animate-fade-in-left">
                         <h2 className="section-title text-white">Perchè Blinker? 🤔</h2>
-                        <p className="why-description text-white ps-3">
-                            Blinker nasce dalla frustrazione di perdere sempre i car meet migliori! 😅
+                        <div className="why-description text-white ps-3">
+                            <p>Blinker nasce dalla frustrazione di perdere sempre i car meet migliori! 😅</p>
                             <p className="pt-3">Siamo un team di appassionati che ha detto "basta così" e ha creato l'app che tutti stavamo aspettando.
                                 Perché siamo stanchi di sentire <span className='font-semibold'>"ah ma c'era un evento ieri?"</span></p>
-                        </p>
+                        </div>
 
                         <div className="why-features">
                             <div className="why-feature">
-                                <Heart className="why-feature-icon" />
+                                <FontAwesomeIcon icon={faHeart} className="why-feature-icon" />
                                 <div>
                                     <h4>Filtra gli eventi dalla mappa</h4>
-                                    <p>Cerca solo il tipo di evento che ti interessa, e non perderti niente! (Niente più eventi di auto che non ti piacciono) 🎯</p>
+                                    <p>Cerca solo il tipo di evento che ti interessa, e non perderti niente! 🎯</p>
                                 </div>
                             </div>
                             <div className="why-feature">
-                                <Smartphone className="why-feature-icon" />
+                                <FontAwesomeIcon icon={faMobile} className="why-feature-icon" />
                                 <div>
-                                    <h4>Design Moderno e Semplice</h4>
-                                    <p>Interfaccia così intuitiva che anche tua nonna riuscirebbe a usarla (e se non ci riesce, il problema è suo) 😄</p>
+                                    <h4>App Moderna e Semplice</h4>
+                                    <p>Interfaccia così intuitiva che anche tua nonna riuscirebbe a usarla!</p>
                                 </div>
                             </div>
                             <div className="why-feature">
-                                <Star className="why-feature-icon" />
+                                <FontAwesomeIcon icon={faStar} className="why-feature-icon" />
                                 <div>
                                     <h4>Segui gli eventi che ti interessano</h4>
-                                    <p>Riceverai tutti gli aggiornamenti in tempo reale (niente più scuse per non essere informato) 📱</p>
+                                    <p>Riceverai tutti gli aggiornamenti dagli organizzatori in tempo reale 📱</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="why-image animate-fade-in-right">
-                        <div className="why-mockup">
-                            <div className="app-screenshot">
-                                <img
-                                    src="/map-screen.png"
-                                    alt="Blinker App Screenshot"
-                                />
-                            </div>
+                    <div className="why-mockup animate-fade-in-right">
+                        <div className="app-screenshot">
+                            <img src="/map-screen.png" alt="Blinker App Screenshot" />
                         </div>
                     </div>
                 </div>
