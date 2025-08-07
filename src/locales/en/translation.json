@@ -7,7 +7,16 @@
         "download": "Download"
     },
     "hero": {
-        "title": "Don't miss any Car Meet",
+        "title": "Don't miss any",
+        "typingTexts": [
+            "Car Meet",
+            "Car Show",
+            "Track Day",
+            "Cars & Coffee",
+            "Driving Tour",
+            "Drift Event",
+            "Auto Expo"
+        ],
         "subtitle": "Discover events, organize new ones, join or manage your crew and show the world your car collection, because life is too short not to know where the best automotive events are...",
         "downloadButton": "Download the App",
         "scrollIndicator": "Discover More"

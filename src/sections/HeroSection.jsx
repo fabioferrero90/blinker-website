@@ -10,17 +10,14 @@ function HeroSection() {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
-    const textArray = [
-        'Car Meet',
-        'Raduno Monomarca',
-        'Ritrovo Serale',
-        'Track Day',
-        'Driving Tour',
-        'Midnight Touge',
-        'Car Show'
-    ];
+
+    // Get typing texts from translations
+    const textArray = t('hero.typingTexts', { returnObjects: true });
 
     useEffect(() => {
+        // Safety check to ensure textArray is loaded
+        if (!textArray || !Array.isArray(textArray) || textArray.length === 0) return;
+
         const currentText = textArray[currentTextIndex];
 
         if (!isDeleting) {
@@ -74,6 +71,9 @@ function HeroSection() {
                     <div className="hero-text animate-fade-in-up">
                         <h1 className="font-bold text-4xl lg:w-[80%] lg:text-6xl mb-4 text-white">
                             {t('hero.title')}
+                            <br />
+                            <span className="gradient-text">{displayText}</span>
+                            <span className="typing-cursor-visible">|</span>
                         </h1>
                         <div className="hero-subtitle text-base lg:text-xl text-white">
                             <p>{t('hero.subtitle')}</p>

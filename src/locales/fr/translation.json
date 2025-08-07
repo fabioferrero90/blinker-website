@@ -7,7 +7,16 @@
         "download": "Télécharger"
     },
     "hero": {
-        "title": "Ne manquez aucun Car Meet",
+        "title": "Ne manquez aucun",
+        "typingTexts": [
+            "Car Meet",
+            "Rassemblement Auto",
+            "Track Day",
+            "Exposition Auto",
+            "Tour de Conduite",
+            "Événement Drift",
+            "Salon Auto"
+        ],
         "subtitle": "Découvrez des événements, organisez-en de nouveaux, rejoignez ou gérez votre crew et montrez au monde votre collection de voitures, parce que la vie est trop courte pour ne pas savoir où sont les meilleurs événements automobiles...",
         "downloadButton": "Télécharger l'App",
         "scrollIndicator": "Découvrir Plus"

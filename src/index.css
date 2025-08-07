@@ -403,6 +403,36 @@
     background-clip: text;
 }
 
+/* Typing cursor animation */
+.typing-cursor {
+    min-height: 1em;
+    display: inline-block;
+    position: relative;
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: 'rgba(255,225,225, 1)';
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Visible typing cursor */
+.typing-cursor-visible {
+    animation: blink 1s infinite;
+    color: 'rgba(255,225,225, 1)';
+    font-weight: bold;
+    margin-left: 4px;
+}
+
 .little-text {
     font-size: 1.5rem;
     font-weight: 400;
@@ -906,7 +936,7 @@
 
     .cursor {
         animation: blink 1s infinite;
-        color: var(--primary);
+        color: 'rgba(255,225,225, 1)';
         font-weight: bold;
     }
 

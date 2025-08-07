@@ -75,7 +75,7 @@ function NewsletterSignup() {
     return (
         <div className="bg-gradient-to-r from-[#ff4011] to-[#ff0067] text-white py-8">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row items-start justify-between gap-50">
+                <div className="flex flex-col md:flex-row items-start justify-between gap-6 lg:gap-50">
                     {/* Testo */}
                     <div className="text-center md:text-left">
                         <h3 className="text-2xl font-semibold mb-1">{t('newsletter.title')}</h3>
