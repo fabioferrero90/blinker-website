@@ -39,8 +39,8 @@ function Navbar() {
                     <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                         <a onClick={() => handleNavClick('home')}>Home</a>
                         <a onClick={() => handleNavClick('features')}>{t('navbar.features')}</a>
-                        <a onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</a>
                         <a onClick={() => handleNavClick('why')}>{t('navbar.why')}</a>
+                        <a onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</a>
                         <a onClick={() => handleNavClick('download')}>{t('navbar.download')}</a>
                     </div>
 

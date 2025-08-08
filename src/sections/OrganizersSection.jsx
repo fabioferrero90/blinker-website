@@ -38,7 +38,7 @@ function OrganizersSection() {
         <section id="organizers" className="section organizers pt-20 pb-20">
             <div className="container">
                 <div className="animate-fade-in-up">
-                    <h2 className="section-title">{t('organizers.title')}</h2>
+                    <h2 className='text-center'><span className='section-title'>{t('organizers.title')}</span><span className="text-primary text-4xl">🎯</span></h2>
                     <p className="section-subtitle text-black">
                         {t('organizers.subtitle')}
                     </p>

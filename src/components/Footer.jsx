@@ -75,7 +75,7 @@ function Footer() {
                             <a href="https://www.instagram.com/blinker.social/" aria-label="Instagram">
                                 <FontAwesomeIcon icon={faInstagramIcon} size="sm" />
                             </a>
-                            <a href="https://x.com/blinker.social" aria-label="X">
+                            <a href="https://x.com/blinker_social" aria-label="X">
                                 <FontAwesomeIcon icon={faXTwitter} size="sm" />
                             </a>
                         </div>

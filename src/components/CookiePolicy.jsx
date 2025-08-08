@@ -8,7 +8,7 @@ function CookiePolicy({ isOpen, onClose }) {
             <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden relative">
                 {/* Pulsante di chiusura sticky */}
                 <button
-                    onClick={handleClose}
+                    onClick={onClose}
                     className="w-10 h-10 absolute top-4 right-4 z-10 text-white p-2 hover:bg-gray-800 rounded-full transition-colors bg-black shadow-lg cursor-pointer"
                     aria-label="Chiudi modal"
                 >

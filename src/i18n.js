@@ -64,7 +64,6 @@ i18n
                 const detectedLng = lng.split('-')[0].toLowerCase();
                 // Verifica se la lingua è supportata, altrimenti fallback
                 const finalLng = ['it', 'en', 'es', 'fr', 'de'].includes(detectedLng) ? detectedLng : 'it';
-                console.log(`🌍 Lingua rilevata dal browser: ${lng} → ${finalLng}`);
                 return finalLng;
             },
 
