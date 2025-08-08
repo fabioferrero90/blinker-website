@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faCheck, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { subscribeToNewsletter } from '../services/senderService';
 
 function NewsletterSignup() {
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [consent, setConsent] = useState(false);
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
     const [errorMessage, setErrorMessage] = useState('');
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -17,6 +20,18 @@ function NewsletterSignup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!firstName.trim()) {
+            setErrorMessage(t('newsletter.firstNameRequired'));
+            setStatus('error');
+            return;
+        }
+
+        if (!lastName.trim()) {
+            setErrorMessage(t('newsletter.lastNameRequired'));
+            setStatus('error');
+            return;
+        }
 
         if (!email.trim()) {
             setErrorMessage(t('newsletter.emailRequired'));
@@ -40,18 +55,23 @@ function NewsletterSignup() {
         setErrorMessage('');
 
         try {
-            // Simula una chiamata API
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // Chiamata API a Sender.net
+            await subscribeToNewsletter(firstName, lastName, email, i18n.language);
 
             // Log per GDPR compliance
             console.log('Newsletter signup:', {
+                firstName,
+                lastName,
                 email,
+                language: i18n.language,
                 consent: true,
                 timestamp: new Date().toISOString(),
                 source: 'footer-newsletter'
             });
 
             setStatus('success');
+            setFirstName('');
+            setLastName('');
             setEmail('');
             setConsent(false);
 
@@ -61,8 +81,9 @@ function NewsletterSignup() {
             }, 3000);
 
         } catch (error) {
+            console.error('Newsletter signup error:', error);
             setStatus('error');
-            setErrorMessage(t('newsletter.error'));
+            setErrorMessage(error.message || t('newsletter.error'));
         }
     };
 
@@ -84,8 +105,41 @@ function NewsletterSignup() {
 
                     {/* Form */}
                     <div className="w-full md:w-auto">
-                        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-                            <div className="relative flex-1  sm:flex-initial bg-white rounded-lg">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                            {/* Nome e Cognome */}
+                            <div className="flex flex-col sm:flex-row gap-3">
+                                <div className="relative flex-1 bg-white rounded-lg">
+                                    <FontAwesomeIcon
+                                        icon={faUser}
+                                        className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
+                                    />
+                                    <input
+                                        type="text"
+                                        value={firstName}
+                                        onChange={(e) => setFirstName(e.target.value)}
+                                        placeholder={t('newsletter.firstNamePlaceholder')}
+                                        className="w-full pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50"
+                                        disabled={status === 'loading'}
+                                    />
+                                </div>
+                                <div className="relative flex-1 bg-white rounded-lg">
+                                    <FontAwesomeIcon
+                                        icon={faUser}
+                                        className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
+                                    />
+                                    <input
+                                        type="text"
+                                        value={lastName}
+                                        onChange={(e) => setLastName(e.target.value)}
+                                        placeholder={t('newsletter.lastNamePlaceholder')}
+                                        className="w-full pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50"
+                                        disabled={status === 'loading'}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Email */}
+                            <div className="relative bg-white rounded-lg">
                                 <FontAwesomeIcon
                                     icon={faEnvelope}
                                     className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
@@ -95,11 +149,12 @@ function NewsletterSignup() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder={t('newsletter.placeholder')}
-                                    className="w-full sm:w-100 pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50 text-center"
+                                    className="w-full pl-10 pr-4 py-2 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50"
                                     disabled={status === 'loading'}
                                 />
                             </div>
 
+                            {/* Pulsante Submit */}
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}
@@ -110,7 +165,7 @@ function NewsletterSignup() {
                         </form>
 
                         {/* Checkbox Privacy - ora sotto al form */}
-                        <div className="mt-3 flex items-start gap-2 justify-center md:justify-start max-w-140">
+                        <div className="mt-3 flex items-start gap-2 justify-center md:justify-start w-140">
                             <input
                                 type="checkbox"
                                 id="newsletter-consent"

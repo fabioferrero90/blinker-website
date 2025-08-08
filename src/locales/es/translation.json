@@ -102,12 +102,16 @@
     },
     "newsletter": {
         "title": "Suscríbete y Mantente actualizado sobre las novedades (¡es Gratis!)",
-        "subtitle": "Ingresa tu email para suscribirte al newsletter para recibir las últimas novedades sobre actualizaciones de la app y nuevos eventos automotrices, ¡te prometemos que nunca recibirás spam de nuestra parte!",
+        "subtitle": "Ingresa tus datos para suscribirte al newsletter para recibir las últimas novedades sobre actualizaciones de la app y nuevos eventos automotrices, ¡te prometemos que nunca recibirás spam de nuestra parte!",
+        "firstNamePlaceholder": "Nombre",
+        "lastNamePlaceholder": "Apellido",
         "placeholder": "Tu email",
         "button": "Suscribirse",
         "loading": "Suscribiendo...",
         "success": "¡Suscripción completada con éxito!",
         "error": "Error durante la suscripción. Inténtalo de nuevo.",
+        "firstNameRequired": "Ingresa tu nombre",
+        "lastNameRequired": "Ingresa tu apellido",
         "emailRequired": "Ingresa una dirección de email",
         "emailInvalid": "Ingresa una dirección de email válida",
         "consentRequired": "Debes aceptar la política de privacidad",
@@ -159,6 +163,47 @@
         "spanish": "Español",
         "french": "Français",
         "german": "Deutsch"
+    },
+    "beta": {
+        "title": "Únete a la Beta de Blinker",
+        "subtitle": "¡Sé de los primeros en probar la app que revolucionará el mundo de los car meets! 🏎️",
+        "firstNamePlaceholder": "Nombre",
+        "lastNamePlaceholder": "Apellido",
+        "emailPlaceholder": "Tu email",
+        "button": "Unirse a la Beta",
+        "loading": "Inscribiéndote...",
+        "success": {
+            "title": "🎉 ¡Estás dentro!",
+            "description": "¡Te hemos añadido a la lista beta. Te contactaremos pronto con las instrucciones de descarga!"
+        },
+        "error": "Error durante la inscripción. Inténtalo de nuevo.",
+        "firstNameRequired": "Ingresa tu nombre",
+        "lastNameRequired": "Ingresa tu apellido",
+        "emailRequired": "Ingresa una dirección de email",
+        "emailInvalid": "Ingresa una dirección de email válida",
+        "consentRequired": "Debes aceptar la política de privacidad",
+        "consentText": "Acepto recibir comunicaciones promocionales. Puedo revocar el consentimiento en cualquier momento. Para más información consulta la",
+        "privacyPolicy": "Política de Privacidad",
+        "disclaimer": "⚠️ Advertencia: Esta es una versión beta. Puede haber bugs, crashes y momentos de '¿por qué no funciona esto?' 😅",
+        "benefits": {
+            "title": "¿Por qué unirse a la Beta?",
+            "first": {
+                "title": "Acceso Anticipado",
+                "description": "¡Serás de los primeros en probar nuevas funciones antes de que lleguen a todos los demás!"
+            },
+            "second": {
+                "title": "Influencia el Desarrollo",
+                "description": "¡Tus opiniones y feedback ayudarán a moldear la app perfecta para los car lovers!"
+            },
+            "third": {
+                "title": "Estado Exclusivo",
+                "description": "¡Obtendrás un estado especial de 'Beta Tester' y podrás presumir con tus amigos! 😎"
+            },
+            "fourth": {
+                "title": "Cazador de Bugs",
+                "description": "Encuentra bugs y recibe reconocimiento especial. ¡Conviértete en una leyenda de la comunidad!"
+            }
+        }
     },
     "privacyPolicy": {
         "title": "Política de Privacidad",

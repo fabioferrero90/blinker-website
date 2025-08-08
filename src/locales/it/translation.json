@@ -102,12 +102,16 @@
     },
     "newsletter": {
         "title": "Iscriviti e Resta aggiornato sulle novità (è Gratis!)",
-        "subtitle": "Inserisci la tua email per iscriverti alla newsletter per ricevere le ultime novità sugli aggiornamenti dell'app e su nuovi eventi automotive, ti promettiamo che non riceverai mai spam da parte nostra!",
+        "subtitle": "Inserisci i tuoi dati per iscriverti alla newsletter per ricevere le ultime novità sugli aggiornamenti dell'app e su nuovi eventi automotive, ti promettiamo che non riceverai mai spam da parte nostra!",
+        "firstNamePlaceholder": "Nome",
+        "lastNamePlaceholder": "Cognome",
         "placeholder": "Inserisci la tua email",
         "button": "Iscriviti",
         "loading": "Iscrivendo...",
         "success": "Iscrizione completata con successo!",
         "error": "Errore durante l'iscrizione. Riprova.",
+        "firstNameRequired": "Inserisci il tuo nome",
+        "lastNameRequired": "Inserisci il tuo cognome",
         "emailRequired": "Inserisci un indirizzo email",
         "emailInvalid": "Inserisci un indirizzo email valido",
         "consentRequired": "Devi accettare la privacy policy",
@@ -159,6 +163,46 @@
         "spanish": "Español",
         "french": "Français",
         "german": "Deutsch"
+    },
+    "beta": {
+        "title": "Preregistrati alla Beta di Blinker!",
+        "subtitle": "Sii tra i primi a testare l'app che rivoluzionerà il mondo dei car meet!",
+        "firstNamePlaceholder": "Nome",
+        "lastNamePlaceholder": "Cognome",
+        "emailPlaceholder": "La tua email",
+        "button": "Iscriviti alla Beta",
+        "loading": "Ti stiamo registrando...",
+        "success": {
+            "title": "🎉 Sei dentro!",
+            "description": "Ti abbiamo aggiunto alla lista beta. Verrai aggiornato sulle novità dell'app!"
+        },
+        "error": "Errore durante l'iscrizione. Riprova.",
+        "firstNameRequired": "Inserisci il tuo nome",
+        "lastNameRequired": "Inserisci il tuo cognome",
+        "emailRequired": "Inserisci un indirizzo email",
+        "emailInvalid": "Inserisci un indirizzo email valido",
+        "consentRequired": "Devi accettare la privacy policy",
+        "consentText": "Accetto di ricevere comunicazioni promozionali. Posso revocare il consenso in qualsiasi momento. Per maggiori informazioni consulta la",
+        "privacyPolicy": "Privacy Policy",
+        "benefits": {
+            "title": "Perché registrarsi?",
+            "first": {
+                "title": "Prima di Tutti",
+                "description": "Sarai tra i primi a testare l'app e le sue funzionalità! Inoltre verrai informato prima degli altri sul rilascio ufficiale"
+            },
+            "second": {
+                "title": "Influenza lo Sviluppo",
+                "description": "Accedi al gruppo e scambia le tue opinioni e feedback con gli altri beta tester, aiuterete a plasmare l'app perfetta per i car lovers!"
+            },
+            "third": {
+                "title": "Status Esclusivo",
+                "description": "Ottenrai uno status speciale di 'Beta Tester' e potrai vantarti con i tuoi amici! 😎"
+            },
+            "fourth": {
+                "title": "Bug Hunter",
+                "description": "Trova bug e ricevi riconoscimenti speciali. Diventa una leggenda della community!"
+            }
+        }
     },
     "privacyPolicy": {
         "title": "Privacy Policy",

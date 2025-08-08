@@ -47,12 +47,12 @@ function Footer() {
                         </div>
                         <div className="footer-section">
                             <h4>{t('footer.product')}</h4>
-                            <a href="https://dashboard.blinker-app.com">Dashboard</a>
+                            <a href="https://dashboard.blinker-app.com" target="_blank" rel="noopener noreferrer">Dashboard</a>
                         </div>
 
                         <div className="footer-section">
                             <h4>{t('footer.support')}</h4>
-                            <a href="https://help.blinker-app.com">{t('footer.helpCenter')}</a>
+                            <a href="https://help.blinker-app.com" target="_blank" rel="noopener noreferrer">{t('footer.helpCenter')}</a>
                             <a href="mailto:support@blinker-app.com">{t('footer.contact')}</a>
                         </div>
                         <div className="footer-section">
