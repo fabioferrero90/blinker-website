@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
 function PrivacyPolicy() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    // Debug logging
+    console.log('PrivacyPolicy - Current language:', i18n.language);
+    console.log('PrivacyPolicy - Available languages:', i18n.languages);
+    console.log('PrivacyPolicy - GDPR compliance translation:', t('privacyPolicy.footer.gdprCompliance'));
 
     return (
         <div className="space-y-6 text-gray-700">

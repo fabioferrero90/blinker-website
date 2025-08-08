@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
 function TermsOfService() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    // Debug logging
+    console.log('TermsOfService - Current language:', i18n.language);
+    console.log('TermsOfService - Available languages:', i18n.languages);
+    console.log('TermsOfService - Legal compliance translation:', t('termsOfService.footer.legalCompliance'));
 
     return (
         <div className="space-y-6 text-gray-700">

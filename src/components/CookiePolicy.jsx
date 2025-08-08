@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
 function CookiePolicy() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    // Debug logging
+    console.log('CookiePolicy - Current language:', i18n.language);
+    console.log('CookiePolicy - Available languages:', i18n.languages);
+    console.log('CookiePolicy - ePrivacy compliance translation:', t('cookiePolicy.footer.ePrivacyCompliance'));
 
     return (
         <div className="space-y-6 text-gray-700">
