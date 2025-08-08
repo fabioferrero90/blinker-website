@@ -1,12 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 function TermsOfService() {
-    const { t, i18n } = useTranslation();
-
-    // Debug logging
-    console.log('TermsOfService - Current language:', i18n.language);
-    console.log('TermsOfService - Available languages:', i18n.languages);
-    console.log('TermsOfService - Legal compliance translation:', t('termsOfService.footer.legalCompliance'));
+    const { t } = useTranslation();
 
     return (
         <div className="space-y-6 text-gray-700">
@@ -239,7 +234,7 @@ function TermsOfService() {
                     {t('termsOfService.sections.general.provisions', { returnObjects: true }).map((provision, index) => {
                         const [title, description] = provision.split(': ');
                         return (
-                            <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                            <div key={"provision-" + index} className="bg-gray-50 p-4 rounded-lg">
                                 <h4 className="font-semibold text-gray-900 mb-1">{title}</h4>
                                 <p className="text-sm text-gray-700">{description}</p>
                             </div>
@@ -258,7 +253,7 @@ function TermsOfService() {
                     {t('termsOfService.sections.contact.info', { returnObjects: true }).map((info, index) => {
                         const [title, value] = info.split(': ');
                         return (
-                            <p key={index}><strong>{title}:</strong> {value}</p>
+                            <p key={"info-" + index}><strong>{title}:</strong> {value}</p>
                         );
                     })}
                 </div>
@@ -266,7 +261,7 @@ function TermsOfService() {
 
             {/* Footer */}
             <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
-                <p>{t('termsOfService.footer.legalCompliance')}</p>
+                <p>{t('termsOfService.sections.footer.legalCompliance')}</p>
             </div>
         </div>
     );

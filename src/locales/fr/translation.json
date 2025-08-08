@@ -172,9 +172,7 @@
                 "title": "2. Responsable du Traitement",
                 "content": "Le responsable du traitement de vos données personnelles est :",
                 "company": "Blinker App",
-                "address": "Via Roma 123, 00100 Roma, Italia",
-                "email": "Email: privacy@blinker-app.com",
-                "vat": "TVA: 12345678901"
+                "email": "Email: privacy@blinker-app.com"
             },
             "dataCollected": {
                 "title": "3. Données Personnelles Collectées",
@@ -324,9 +322,7 @@
                 "title": "14. Contact",
                 "content": "Pour toute question sur cette Politique de Confidentialité ou le traitement de vos données personnelles, contactez-nous :",
                 "info": [
-                    "Email : privacy@blinker-app.com",
-                    "Adresse : Via Roma 123, 00100 Roma, Italia",
-                    "Téléphone : +39 06 12345678"
+                    "Email : privacy@blinker-app.com"
                 ],
                 "complaint": "Vous avez également le droit de déposer une plainte auprès de l'Autorité de Protection des Données."
             },
@@ -447,8 +443,7 @@
                 "title": "Contact",
                 "content": "Pour des questions sur cette Politique des Cookies, contactez-nous :",
                 "info": [
-                    "Email : privacy@blinker-app.com",
-                    "Adresse : Via Roma 123, 00100 Roma, Italia"
+                    "Email : privacy@blinker-app.com"
                 ]
             },
             "footer": {
@@ -586,9 +581,7 @@
                 "title": "14. Contact",
                 "content": "Pour des questions sur ces Conditions de Service, contactez-nous :",
                 "info": [
-                    "Email : legal@blinker-app.com",
-                    "Adresse : Via Roma 123, 00100 Roma, Italia",
-                    "Téléphone : +39 06 12345678"
+                    "Email : legal@blinker-app.com"
                 ]
             },
             "footer": {

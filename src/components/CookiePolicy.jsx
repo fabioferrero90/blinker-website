@@ -1,12 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 function CookiePolicy() {
-    const { t, i18n } = useTranslation();
-
-    // Debug logging
-    console.log('CookiePolicy - Current language:', i18n.language);
-    console.log('CookiePolicy - Available languages:', i18n.languages);
-    console.log('CookiePolicy - ePrivacy compliance translation:', t('cookiePolicy.footer.ePrivacyCompliance'));
+    const { t } = useTranslation();
 
     return (
         <div className="space-y-6 text-gray-700">
@@ -184,7 +179,7 @@ function CookiePolicy() {
 
             {/* Footer */}
             <div className="mt-8 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
-                <p>{t('cookiePolicy.footer.ePrivacyCompliance')}</p>
+                <p>{t('cookiePolicy.sections.footer.ePrivacyCompliance')}</p>
             </div>
         </div>
     );

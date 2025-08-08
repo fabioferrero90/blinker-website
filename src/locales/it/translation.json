@@ -172,9 +172,7 @@
                 "title": "2. Titolare del Trattamento",
                 "content": "Il titolare del trattamento dei tuoi dati personali è:",
                 "company": "Blinker App",
-                "address": "Via Roma 123, 00100 Roma, Italia",
-                "email": "Email: privacy@blinker-app.com",
-                "vat": "P.IVA: 12345678901"
+                "email": "Email: privacy@blinker-app.com"
             },
             "dataCollected": {
                 "title": "3. Dati Personali Raccolti",
@@ -324,9 +322,7 @@
                 "title": "14. Contatti",
                 "content": "Per qualsiasi domanda su questa Privacy Policy o sul trattamento dei tuoi dati personali, contattaci:",
                 "info": [
-                    "Email: privacy@blinker-app.com",
-                    "Indirizzo: Via Roma 123, 00100 Roma, Italia",
-                    "Telefono: +39 06 12345678"
+                    "Email: privacy@blinker-app.com"
                 ],
                 "complaint": "Hai anche il diritto di presentare un reclamo all'Autorità Garante per la Protezione dei Dati Personali."
             },
@@ -447,8 +443,7 @@
                 "title": "Contatti",
                 "content": "Per domande su questa Cookie Policy, contattaci:",
                 "info": [
-                    "Email: privacy@blinker-app.com",
-                    "Indirizzo: Via Roma 123, 00100 Roma, Italia"
+                    "Email: privacy@blinker-app.com"
                 ]
             },
             "footer": {
@@ -586,9 +581,7 @@
                 "title": "14. Contatti",
                 "content": "Per domande su questi Termini di Servizio, contattaci:",
                 "info": [
-                    "Email: legal@blinker-app.com",
-                    "Indirizzo: Via Roma 123, 00100 Roma, Italia",
-                    "Telefono: +39 06 12345678"
+                    "Email: legal@blinker-app.com"
                 ]
             },
             "footer": {

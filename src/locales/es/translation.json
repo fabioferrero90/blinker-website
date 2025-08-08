@@ -172,9 +172,7 @@
                 "title": "2. Responsable del Tratamiento",
                 "content": "El responsable del tratamiento de tus datos personales es:",
                 "company": "Blinker App",
-                "address": "Via Roma 123, 00100 Roma, Italia",
-                "email": "Email: privacy@blinker-app.com",
-                "vat": "IVA: 12345678901"
+                "email": "Email: privacy@blinker-app.com"
             },
             "dataCollected": {
                 "title": "3. Datos Personales Recopilados",
@@ -324,9 +322,7 @@
                 "title": "14. Contacto",
                 "content": "Para cualquier pregunta sobre esta Política de Privacidad o el tratamiento de tus datos personales, contáctanos:",
                 "info": [
-                    "Email: privacy@blinker-app.com",
-                    "Dirección: Via Roma 123, 00100 Roma, Italia",
-                    "Teléfono: +39 06 12345678"
+                    "Email: privacy@blinker-app.com"
                 ],
                 "complaint": "También tienes derecho a presentar una queja ante la Autoridad de Protección de Datos."
             },
@@ -447,8 +443,7 @@
                 "title": "Contacto",
                 "content": "Para preguntas sobre esta Política de Cookies, contáctanos:",
                 "info": [
-                    "Email: privacy@blinker-app.com",
-                    "Dirección: Via Roma 123, 00100 Roma, Italia"
+                    "Email: privacy@blinker-app.com"
                 ]
             },
             "footer": {
@@ -586,9 +581,7 @@
                 "title": "14. Contacto",
                 "content": "Para preguntas sobre estos Términos de Servicio, contáctanos:",
                 "info": [
-                    "Email: legal@blinker-app.com",
-                    "Dirección: Via Roma 123, 00100 Roma, Italia",
-                    "Teléfono: +39 06 12345678"
+                    "Email: legal@blinker-app.com"
                 ]
             },
             "footer": {
