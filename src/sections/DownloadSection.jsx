@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShield, faBolt, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 function DownloadSection() {
     const { t, i18n } = useTranslation();
+    const { trackEvent } = useGoogleAnalytics();
 
     // Mappatura delle lingue ai codici dei badge
     const getLanguageCode = () => {
@@ -19,6 +21,10 @@ function DownloadSection() {
 
     const langCode = getLanguageCode();
 
+    const handleDownloadClick = (store) => {
+        trackEvent('download_click', 'engagement', store, 1);
+    };
+
     return (
         <section id="download" className="section download">
             <div className="container">
@@ -28,10 +34,18 @@ function DownloadSection() {
                 </p>
 
                 <div className="download-buttons">
-                    <a href="https://apps.apple.com/it/app/blinker-app/id6746400000" className="download-btn">
+                    <a
+                        href="https://apps.apple.com/it/app/blinker-app/id6746400000"
+                        className="download-btn"
+                        onClick={() => handleDownloadClick('app_store')}
+                    >
                         <img src={`/DownloadBadges/AppStore-${langCode}.svg`} alt={t('download.appStore')} />
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.blinker.app" className="download-btn">
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.blinker.app"
+                        className="download-btn"
+                        onClick={() => handleDownloadClick('google_play')}
+                    >
                         <img src={`/DownloadBadges/GooglePlay-${langCode}.png`} alt={t('download.googlePlay')} />
                     </a>
                 </div>

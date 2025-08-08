@@ -24,7 +24,7 @@ function LanguageSelector() {
 
     const languages = [
         { code: 'it', name: t('languageSelector.italian'), flagCode: 'it' },
-        { code: 'en', name: t('languageSelector.english'), flagCode: 'us' },
+        { code: 'en', name: t('languageSelector.english'), flagCode: 'gb' },
         { code: 'es', name: t('languageSelector.spanish'), flagCode: 'es' },
         { code: 'fr', name: t('languageSelector.french'), flagCode: 'fr' },
         { code: 'de', name: t('languageSelector.german'), flagCode: 'de' }

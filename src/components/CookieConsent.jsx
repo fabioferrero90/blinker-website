@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCookieBite, faTimes, faCog, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { useGoogleAnalytics } from '../hooks/useGoogleAnalytics';
 
 function CookieConsent() {
     const [showBanner, setShowBanner] = useState(false);
@@ -13,6 +14,7 @@ function CookieConsent() {
         marketing: false
     });
     const { t } = useTranslation();
+    const { trackEvent } = useGoogleAnalytics();
 
     useEffect(() => {
         const consent = localStorage.getItem('cookieConsent');
@@ -31,6 +33,10 @@ function CookieConsent() {
         };
         localStorage.setItem('cookieConsent', JSON.stringify(consent));
         setShowBanner(false);
+
+        // Traccia evento analytics
+        trackEvent('cookie_consent', 'preferences', 'accept_all');
+
         console.log('Cookie consent - Accept all:', consent);
     };
 
@@ -43,6 +49,11 @@ function CookieConsent() {
         localStorage.setItem('cookieConsent', JSON.stringify(consent));
         setShowBanner(false);
         setShowSettings(false);
+
+        // Traccia evento analytics
+        const preferences = Object.keys(cookiePreferences).filter(key => cookiePreferences[key]).join(',');
+        trackEvent('cookie_consent', 'preferences', `accept_selected:${preferences}`);
+
         console.log('Cookie consent - Accept selected:', consent);
     };
 
@@ -56,6 +67,10 @@ function CookieConsent() {
         };
         localStorage.setItem('cookieConsent', JSON.stringify(consent));
         setShowBanner(false);
+
+        // Traccia evento analytics
+        trackEvent('cookie_consent', 'preferences', 'reject_all');
+
         console.log('Cookie consent - Reject all:', consent);
     };
 

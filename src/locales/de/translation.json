@@ -159,5 +159,441 @@
         "spanish": "Español",
         "french": "Français",
         "german": "Deutsch"
+    },
+    "privacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "lastUpdate": "Zuletzt aktualisiert",
+        "sections": {
+            "introduction": {
+                "title": "1. Einführung",
+                "content": "Blinker (\"wir\", \"unser\", \"uns\") ist verpflichtet, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unsere mobile App und zugehörige Dienste nutzen."
+            },
+            "dataController": {
+                "title": "2. Verantwortlicher für die Datenverarbeitung",
+                "content": "Der Verantwortliche für die Verarbeitung Ihrer personenbezogenen Daten ist:",
+                "company": "Blinker App",
+                "address": "Via Roma 123, 00100 Roma, Italia",
+                "email": "Email: privacy@blinker-app.com",
+                "vat": "USt-IdNr: 12345678901"
+            },
+            "dataCollected": {
+                "title": "3. Gesammelte personenbezogene Daten",
+                "content": "Wir sammeln verschiedene Arten von persönlichen Informationen:",
+                "categories": {
+                    "identification": {
+                        "title": "Identifikationsdaten",
+                        "items": [
+                            "Vor- und Nachname",
+                            "E-Mail-Adresse",
+                            "Telefonnummer",
+                            "Benutzername und Passwort"
+                        ]
+                    },
+                    "usage": {
+                        "title": "Nutzungsdaten",
+                        "items": [
+                            "Event-Präferenzen",
+                            "Teilnahmehistorie",
+                            "App-Interaktionen",
+                            "Geolokationsdaten"
+                        ]
+                    },
+                    "technical": {
+                        "title": "Technische Daten",
+                        "items": [
+                            "IP-Adresse",
+                            "Gerätetyp",
+                            "Betriebssystem",
+                            "Cookies und ähnliche Technologien"
+                        ]
+                    },
+                    "content": {
+                        "title": "Benutzerinhalt",
+                        "items": [
+                            "Hochgeladene Fotos",
+                            "Kommentare und Bewertungen",
+                            "Erstellte Events",
+                            "Gesendete Nachrichten"
+                        ]
+                    }
+                }
+            },
+            "purposes": {
+                "title": "4. Verarbeitungszwecke",
+                "content": "Wir verwenden Ihre personenbezogenen Daten für folgende Zwecke:",
+                "purposes": [
+                    "Dienstleistungserbringung: Zur Bereitstellung und Wartung unserer Dienstleistungen, einschließlich der Verwaltung von Automobilveranstaltungen",
+                    "Kommunikation: Zur Kommunikation mit Ihnen bezüglich Veranstaltungen, Updates und Support",
+                    "Verbesserung: Zur Analyse der Nutzung und Verbesserung unserer Dienstleistungen",
+                    "Marketing: Zum Versenden von Werbekommunikation (nur mit Ihrer Zustimmung)",
+                    "Rechtliche Compliance: Zur Einhaltung rechtlicher und regulatorischer Verpflichtungen"
+                ]
+            },
+            "legalBasis": {
+                "title": "5. Rechtsgrundlage der Verarbeitung",
+                "content": "Wir verarbeiten Ihre personenbezogenen Daten auf der Grundlage von:",
+                "bases": [
+                    "Zustimmung: Für Marketing und nicht-essentielle Cookies",
+                    "Vertragserfüllung: Zur Bereitstellung unserer Dienstleistungen",
+                    "Berechtigtes Interesse: Zur Verbesserung von Dienstleistungen und Sicherheit",
+                    "Rechtliche Verpflichtung: Zur Einhaltung anwendbarer Vorschriften"
+                ]
+            },
+            "dataSharing": {
+                "title": "6. Datenweitergabe",
+                "content": "Wir verkaufen Ihre personenbezogenen Daten nicht. Wir könnten Ihre Daten teilen mit:",
+                "parties": [
+                    "Dienstleister: Die uns bei der Bereitstellung unserer Dienstleistungen helfen",
+                    "Event-Partner: Für spezifische Veranstaltungen (nur mit Ihrer Zustimmung)",
+                    "Behörden: Wenn gesetzlich erforderlich",
+                    "Unternehmensübertragungen: Im Falle einer Fusion oder Übernahme"
+                ]
+            },
+            "retention": {
+                "title": "7. Datenaufbewahrung",
+                "content": "Wir speichern Ihre personenbezogenen Daten nur für die Zeit, die notwendig ist, um:",
+                "purposes": [
+                    "Unsere Dienstleistungen bereitzustellen",
+                    "Rechtliche Verpflichtungen einzuhalten",
+                    "Streitigkeiten zu lösen",
+                    "Unsere Vereinbarungen durchzusetzen"
+                ],
+                "deletion": "Daten werden gelöscht oder anonymisiert, wenn sie nicht mehr erforderlich sind."
+            },
+            "rights": {
+                "title": "8. Ihre Rechte",
+                "content": "Sie haben das Recht zu:",
+                "userRights": [
+                    "Zugang: Eine Kopie Ihrer personenbezogenen Daten zu erhalten",
+                    "Berichtigung: Unrichtige oder unvollständige Daten zu korrigieren",
+                    "Löschung: Die Löschung Ihrer Daten zu beantragen",
+                    "Einschränkung: Die Verarbeitung in bestimmten Umständen zu beschränken",
+                    "Datenübertragbarkeit: Ihre Daten in strukturiertem Format zu erhalten",
+                    "Widerspruch: Der Verarbeitung für Marketing zu widersprechen",
+                    "Zustimmungsentzug: Die Zustimmung jederzeit zu widerrufen"
+                ]
+            },
+            "security": {
+                "title": "9. Datensicherheit",
+                "content": "Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer personenbezogenen Daten, einschließlich:",
+                "technicalMeasures": "Technische Maßnahmen",
+                "measures": [
+                    "Verschlüsselung von Daten bei Übertragung und Speicherung",
+                    "Strenge Zugangskontrollen",
+                    "Kontinuierliche Sicherheitsüberwachung",
+                    "Schulung des Personals im Datenschutz"
+                ]
+            },
+            "cookies": {
+                "title": "10. Cookies und ähnliche Technologien",
+                "content": "Wir verwenden Cookies und ähnliche Technologien für:",
+                "purposes": [
+                    "Verbesserung der Benutzererfahrung",
+                    "Analyse der Website-Nutzung",
+                    "Bereitstellung personalisierter Inhalte",
+                    "Sicherstellung der Sicherheit"
+                ],
+                "management": "Sie können Ihre Cookie-Einstellungen über die Einstellungen Ihres Browsers oder unser Zustimmungsbanner verwalten.",
+                "managementTitle": "Cookie-Verwaltung"
+            },
+            "internationalTransfers": {
+                "title": "11. Internationale Übertragungen",
+                "content": "Ihre Daten könnten in Länder außerhalb der EU/EWR übertragen und verarbeitet werden. In diesen Fällen stellen wir sicher, dass:",
+                "guarantees": [
+                    "Das Zielland ein angemessenes Schutzniveau bietet",
+                    "Angemessene vertragliche Garantien bestehen",
+                    "Die Übertragung von den zuständigen Behörden genehmigt ist"
+                ]
+            },
+            "minors": {
+                "title": "12. Minderjährige",
+                "content": "Unsere Dienstleistungen sind nicht für Minderjährige unter 16 Jahren bestimmt. Wir sammeln wissentlich keine personenbezogenen Daten von Minderjährigen unter 16 Jahren. Wenn wir feststellen, dass wir Daten von einem Minderjährigen gesammelt haben, werden wir diese sofort löschen."
+            },
+            "changes": {
+                "title": "13. Änderungen der Datenschutzrichtlinie",
+                "content": "Wir könnten diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über wichtige Änderungen informieren über:",
+                "notifications": [
+                    "Benachrichtigung in der App",
+                    "E-Mail",
+                    "Hinweis auf unserer Website"
+                ],
+                "review": "Wir ermutigen Sie, diese Richtlinie regelmäßig zu überprüfen.",
+                "notificationTitle": "Änderungsbenachrichtigung"
+            },
+            "contact": {
+                "title": "14. Kontakt",
+                "content": "Bei Fragen zu dieser Datenschutzrichtlinie oder der Verarbeitung Ihrer personenbezogenen Daten kontaktieren Sie uns:",
+                "info": [
+                    "E-Mail: privacy@blinker-app.com",
+                    "Adresse: Via Roma 123, 00100 Roma, Italia",
+                    "Telefon: +39 06 12345678"
+                ],
+                "complaint": "Sie haben auch das Recht, eine Beschwerde bei der Datenschutzbehörde einzureichen."
+            },
+            "footer": {
+                "gdprCompliance": "Diese Datenschutzrichtlinie entspricht der DSGVO und den europäischen Datenschutzvorschriften."
+            }
+        }
+    },
+    "cookiePolicy": {
+        "title": "Cookie-Richtlinie",
+        "close": "Modal schließen",
+        "sections": {
+            "whatAreCookies": {
+                "title": "Was sind Cookies?",
+                "content": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Diese Dateien enthalten Informationen, die der Website helfen, Ihre Präferenzen zu merken und Ihr Browsing-Erlebnis zu verbessern."
+            },
+            "types": {
+                "title": "Arten von Cookies, die wir verwenden",
+                "essential": {
+                    "title": "Wesentliche Cookies",
+                    "description": "Diese Cookies sind für die Funktionalität der Website erforderlich. Sie umfassen Cookies für:",
+                    "items": [
+                        "Benutzersitzungsverwaltung",
+                        "Spracheinstellungen",
+                        "Sicherheit und Authentifizierung",
+                        "Warenkorb (falls zutreffend)"
+                    ]
+                },
+                "analytics": {
+                    "title": "Analytics-Cookies",
+                    "description": "Wir verwenden Google Analytics, um Informationen darüber zu sammeln, wie Besucher unsere Website nutzen:",
+                    "items": [
+                        "Am häufigsten besuchte Seiten",
+                        "Verweildauer",
+                        "Traffic-Quellen",
+                        "Benutzerverhalten"
+                    ]
+                },
+                "marketing": {
+                    "title": "Marketing-Cookies",
+                    "description": "Diese Cookies werden verwendet für:",
+                    "items": [
+                        "Newsletter und Werbekommunikation",
+                        "Personalisierte Werbung",
+                        "Marketing-Kampagnenanalyse",
+                        "Werbung-Retargeting"
+                    ]
+                }
+            },
+            "management": {
+                "title": "Wie man Cookies verwaltet",
+                "content": "Sie können Cookies über die Einstellungen Ihres Browsers kontrollieren und verwalten. So geht's:",
+                "browsers": {
+                    "chrome": {
+                        "title": "Chrome",
+                        "steps": [
+                            "Öffnen Sie Chrome und gehen Sie zu Einstellungen",
+                            "Scrollen Sie nach unten und klicken Sie auf \"Erweitert\"",
+                            "Unter \"Datenschutz und Sicherheit\" klicken Sie auf \"Inhaltseinstellungen\"",
+                            "Klicken Sie auf \"Cookies\"",
+                            "Verwalten Sie Ihre Cookie-Einstellungen"
+                        ]
+                    },
+                    "firefox": {
+                        "title": "Firefox",
+                        "steps": [
+                            "Öffnen Sie Firefox und gehen Sie zu Optionen",
+                            "Klicken Sie auf \"Datenschutz & Sicherheit\"",
+                            "Im Abschnitt \"Cookies und Website-Daten\" verwalten Sie die Einstellungen",
+                            "Sie können alle Cookies oder nur Drittanbieter-Cookies blockieren"
+                        ]
+                    },
+                    "safari": {
+                        "title": "Safari",
+                        "steps": [
+                            "Öffnen Sie Safari und gehen Sie zu Einstellungen",
+                            "Klicken Sie auf \"Datenschutz\"",
+                            "Verwalten Sie die Cookie-Einstellungen",
+                            "Sie können alle Cookies oder nur Drittanbieter-Cookies blockieren"
+                        ]
+                    },
+                    "edge": {
+                        "title": "Edge",
+                        "steps": [
+                            "Öffnen Sie Edge und gehen Sie zu Einstellungen",
+                            "Klicken Sie auf \"Cookies und Website-Berechtigungen\"",
+                            "Verwalten Sie Ihre Cookie-Einstellungen",
+                            "Sie können alle Cookies oder nur Drittanbieter-Cookies blockieren"
+                        ]
+                    }
+                }
+            },
+            "duration": {
+                "title": "Cookie-Dauer",
+                "content": "Cookies haben unterschiedliche Dauern:",
+                "types": [
+                    "Session-Cookies: Werden gelöscht, wenn Sie den Browser schließen",
+                    "Persistente Cookies: Bleiben auf Ihrem Gerät für einen bestimmten Zeitraum",
+                    "Analytics-Cookies: Dauern normalerweise 2 Jahre (Google Analytics)",
+                    "Marketing-Cookies: Können bis zu 2 Jahre dauern"
+                ]
+            },
+            "thirdParty": {
+                "title": "Drittanbieter-Cookies",
+                "content": "Wir verwenden Drittanbieter-Dienste, die Cookies setzen könnten:",
+                "services": [
+                    "Google Analytics: Zur Analyse der Website-Nutzung",
+                    "Google Fonts: Zum Laden der Website-Schriften",
+                    "Soziale Medien: Für Teilen-Buttons"
+                ],
+                "note": "Diese Dienste haben ihre eigenen Cookie-Richtlinien, die wir Sie ermutigen zu überprüfen."
+            },
+            "updates": {
+                "title": "Cookie-Richtlinie-Updates",
+                "content": "Wir könnten diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem neuen Aktualisierungsdatum veröffentlicht."
+            },
+            "contact": {
+                "title": "Kontakt",
+                "content": "Bei Fragen zu dieser Cookie-Richtlinie kontaktieren Sie uns:",
+                "info": [
+                    "E-Mail: privacy@blinker-app.com",
+                    "Adresse: Via Roma 123, 00100 Roma, Italia"
+                ]
+            },
+            "footer": {
+                "ePrivacyCompliance": "Diese Cookie-Richtlinie entspricht den europäischen Cookie-Vorschriften und der ePrivacy-Richtlinie."
+            }
+        }
+    },
+    "termsOfService": {
+        "title": "Nutzungsbedingungen",
+        "close": "Modal schließen",
+        "sections": {
+            "acceptance": {
+                "title": "1. Annahme der Bedingungen",
+                "content": "Durch die Nutzung der Blinker-App stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, verwenden Sie die App nicht. Diese Bedingungen gelten für alle Benutzer der App, einschließlich Event-Organisatoren und Teilnehmer."
+            },
+            "serviceDescription": {
+                "title": "2. Dienstleistungsbeschreibung",
+                "content": "Blinker ist eine mobile Anwendung, die die Organisation und Teilnahme an Automobilveranstaltungen erleichtert. Unsere Dienstleistungen umfassen:",
+                "services": [
+                    "Erstellung und Verwaltung von Automobilveranstaltungen",
+                    "Event-Registrierung und Teilnahme",
+                    "Kommunikation zwischen Organisatoren und Teilnehmern",
+                    "Teilen von Fotos und Inhalten zu Veranstaltungen",
+                    "Newsletter und Werbekommunikation"
+                ]
+            },
+            "registration": {
+                "title": "3. Registrierung und Konto",
+                "accountCreation": {
+                    "title": "Kontoerstellung",
+                    "content": "Um einige App-Funktionen zu nutzen, müssen Sie möglicherweise ein Konto erstellen. Sie sind verantwortlich für die Vertraulichkeit Ihrer Anmeldedaten."
+                },
+                "accurateInfo": {
+                    "title": "Genaue Informationen",
+                    "content": "Sie verpflichten sich, während der Registrierung und Nutzung der App genaue, vollständige und aktuelle Informationen bereitzustellen."
+                },
+                "accountResponsibility": {
+                    "title": "Kontoverantwortung",
+                    "content": "Sie sind für alle Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden. Benachrichtigen Sie sofort über jede unbefugte Nutzung."
+                }
+            },
+            "acceptableUse": {
+                "title": "4. Akzeptable Nutzung",
+                "content": "Sie verpflichten sich, die App nur für legitime Zwecke und in Übereinstimmung mit diesen Bedingungen zu verwenden. Es ist verboten:",
+                "prohibited": [
+                    "Die App für illegale oder betrügerische Aktivitäten zu verwenden",
+                    "Geistige Eigentumsrechte zu verletzen",
+                    "Anstößige, diffamierende oder unangemessene Inhalte hochzuladen",
+                    "Mit dem Betrieb der App zu interferieren",
+                    "Unbefugten Zugang zu Systemen oder Konten zu erlangen",
+                    "Malware oder Viren zu verbreiten",
+                    "Personenbezogene Daten anderer Benutzer ohne Zustimmung zu sammeln"
+                ]
+            },
+            "userContent": {
+                "title": "5. Benutzerinhalt",
+                "content": "Wenn Sie Inhalte in die App hochladen:",
+                "rights": [
+                    "Sie behalten das Eigentum an Ihren Inhalten",
+                    "Sie gewähren uns eine nicht-exklusive Lizenz zur Nutzung der Inhalte",
+                    "Sie sind verantwortlich für die Legalität und Angemessenheit der Inhalte",
+                    "Wir können Inhalte entfernen, die diese Bedingungen verletzen"
+                ]
+            },
+            "privacy": {
+                "title": "6. Datenschutz und Datenschutz",
+                "content": "Die Verarbeitung Ihrer personenbezogenen Daten wird durch unsere Datenschutzrichtlinie geregelt, die einen integralen Bestandteil dieser Bedingungen bildet. Durch die Nutzung der App stimmen Sie der Verarbeitung Ihrer Daten gemäß der Datenschutzrichtlinie zu."
+            },
+            "intellectualProperty": {
+                "title": "7. Geistiges Eigentum",
+                "content": "Die App und alle ihre Inhalte (außer Benutzerinhalten) sind durch geistige Eigentumsrechte geschützt. Es ist nicht erlaubt:",
+                "prohibited": [
+                    "Die Software zu kopieren, zu modifizieren oder zu verteilen",
+                    "Reverse Engineering der App durchzuführen",
+                    "Unsere Marken ohne Genehmigung zu verwenden",
+                    "Copyright- oder Eigentumshinweise zu entfernen"
+                ]
+            },
+            "liability": {
+                "title": "8. Haftungsbeschränkung",
+                "content": "Innerhalb der gesetzlich zulässigen Grenzen ist Blinker nicht haftbar für:",
+                "exclusions": [
+                    "Indirekte, zufällige oder Folgeschäden",
+                    "Datenverlust oder Dienstunterbrechungen",
+                    "Handlungen von Dritten oder anderen Benutzern",
+                    "Schäden durch höhere Gewalt"
+                ],
+                "limit": "Unsere Gesamthaftung ist auf den Betrag begrenzt, der für Dienstleistungen in den vorherigen 12 Monaten gezahlt wurde."
+            },
+            "indemnification": {
+                "title": "9. Freistellung",
+                "content": "Sie verpflichten sich, Blinker von jeglichem Anspruch, Schaden oder Aufwand freizustellen, der sich ergibt aus:",
+                "claims": [
+                    "Verletzung dieser Bedingungen",
+                    "Unbefugter Nutzung der App",
+                    "Inhalten, die Sie in die App hochladen",
+                    "Verletzung von Rechten Dritter"
+                ]
+            },
+            "termination": {
+                "title": "10. Suspendierung und Kündigung",
+                "content": "Wir können Ihr Konto in folgenden Fällen suspendieren oder kündigen:",
+                "reasons": [
+                    "Verletzung dieser Bedingungen",
+                    "Betrügerische oder illegale Aktivitäten",
+                    "Unbefugte Nutzung",
+                    "Benutzeranfrage"
+                ],
+                "effect": "Im Falle einer Kündigung verlieren Sie den Zugang zu Ihren Daten und Inhalten."
+            },
+            "modifications": {
+                "title": "11. Änderungen der Bedingungen",
+                "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden ab dem Datum der Veröffentlichung wirksam. Wir werden Sie über wichtige Änderungen informieren über:",
+                "notifications": [
+                    "Benachrichtigung in der App",
+                    "E-Mail",
+                    "Hinweis auf der Website"
+                ],
+                "acceptance": "Durch die weitere Nutzung der App nach den Änderungen stimmen Sie den neuen Bedingungen zu."
+            },
+            "governingLaw": {
+                "title": "12. Anwendbares Recht und Gerichtsbarkeit",
+                "content": "Diese Bedingungen unterliegen italienischem Recht. Jede Streitigkeit wird von den Gerichten in Rom, Italien, gelöst, es sei denn, zwingendes Recht sieht anderes vor."
+            },
+            "general": {
+                "title": "13. Allgemeine Bestimmungen",
+                "provisions": [
+                    "Wenn eine Bestimmung ungültig ist, bleiben die anderen gültig",
+                    "Die Nichtausübung eines Rechts stellt keinen Verzicht dar",
+                    "Diese Bedingungen stellen die vollständige Vereinbarung zwischen den Parteien dar",
+                    "Wir sind nicht verantwortlich für Ereignisse außerhalb unserer Kontrolle"
+                ]
+            },
+            "contact": {
+                "title": "14. Kontakt",
+                "content": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns:",
+                "info": [
+                    "E-Mail: legal@blinker-app.com",
+                    "Adresse: Via Roma 123, 00100 Roma, Italia",
+                    "Telefon: +39 06 12345678"
+                ]
+            },
+            "footer": {
+                "legalCompliance": "Diese Nutzungsbedingungen entsprechen den europäischen und italienischen Vorschriften für digitale Dienste."
+            }
+        }
     }
 }
