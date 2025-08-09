@@ -81,7 +81,10 @@ function HeroSection() {
 
                         <div className="hero-buttons">
                             <button
-                                onClick={() => scrollToSection('download')}
+                                onClick={() => {
+                                    const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
+                                    scrollToSection(isReleased ? 'download' : 'beta');
+                                }}
                                 className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faDownload} />

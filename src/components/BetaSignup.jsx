@@ -94,7 +94,8 @@ function BetaSignup() {
     };
 
     return (
-        <div 
+        <section
+            id="beta"
             className="relative text-white py-16"
             style={{
                 backgroundImage: `
@@ -251,7 +252,7 @@ function BetaSignup() {
                     )}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

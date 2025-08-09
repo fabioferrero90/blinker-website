@@ -37,11 +37,20 @@ function Navbar() {
                     </div>
 
                     <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-                        <a onClick={() => handleNavClick('home')}>Home</a>
-                        <a onClick={() => handleNavClick('features')}>{t('navbar.features')}</a>
-                        <a onClick={() => handleNavClick('why')}>{t('navbar.why')}</a>
-                        <a onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</a>
-                        <a onClick={() => handleNavClick('download')}>{t('navbar.download')}</a>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('home')}>Home</button>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('features')}>{t('navbar.features')}</button>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('why')}>{t('navbar.why')}</button>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</button>
+                        <button
+                            type="button"
+                            className="bg-transparent border-0 text-inherit"
+                            onClick={() => {
+                                const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
+                                handleNavClick(isReleased ? 'download' : 'beta');
+                            }}
+                        >
+                            {t('navbar.download')}
+                        </button>
                     </div>
 
                     <button

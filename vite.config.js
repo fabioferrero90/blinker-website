@@ -16,7 +16,7 @@ export default defineConfig(({ command, mode }) => {
         cert: fs.readFileSync(env.VITE_SSL_CERT_PATH || './ssl/localhost.pem'),
       }
     } catch (error) {
-      console.warn('SSL certificates not found, SSL disabled for build')
+      console.error('SSL certificates not found, SSL disabled for build', error)
       sslConfig = false
     }
   }

@@ -294,15 +294,20 @@
     list-style: none;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
     color: var(--text-dark);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links button:hover {
     color: var(--primary);
 }
 
