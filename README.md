@@ -1,58 +1,62 @@
 # Blinker Website
 
-Sito web one-page moderno e accattivante per l'app mobile Blinker.
+Un sito web moderno e accattivante per l'app mobile **Blinker**, la piattaforma che rivoluziona il modo in cui gli organizzatori di eventi e i partecipanti si connettono e interagiscono.
 
-## Integrazione Sender.net
+## 🎯 Il Progetto Blinker
 
-Il sito include l'integrazione con Sender.net per la gestione della newsletter e della beta.
+**Blinker** è un'applicazione mobile innovativa che facilita la creazione, organizzazione e partecipazione a eventi di ogni dimensione. Il sito web serve come vetrina principale per presentare le funzionalità dell'app e permettere agli utenti di scoprire come Blinker può trasformare la loro esperienza eventi.
 
-### Configurazione
+## 🎨 Design e User Experience
 
-1. **Variabili d'ambiente**: Aggiungi le seguenti variabili al file `.env`:
-   ```bash
-   VITE_SENDER_API_KEY=your-sender-api-key-here
-   VITE_SENDER_LIST_ID=your-sender-list-id-here
-   VITE_RELEASED=false
-   ```
+Il sito web presenta un design moderno e responsive che riflette l'innovazione e la semplicità dell'app Blinker:
 
-2. **API Key**: Ottieni la tua API key da [Sender.net](https://sender.net) nel pannello di controllo.
+- **Interfaccia pulita** e intuitiva
+- **Animazioni fluide** che migliorano l'esperienza utente
+- **Design responsive** ottimizzato per tutti i dispositivi
+- **Palette colori moderna** che trasmette fiducia e professionalità
 
-3. **List ID**: Crea una lista in Sender.net e copia l'ID della lista.
+## 🏠 Homepage
 
-4. **RELEASED**: Imposta su `true` per la versione rilasciata, `false` per la beta.
+![Blinker Website Homepage](https://i.imgur.com/JdNg7T7.png)
 
-### Funzionalità
+La homepage del sito Blinker presenta:
+- **Hero section accattivante** con video di sfondo
+- **Sezione funzionalità** che evidenzia i vantaggi dell'app
+- **Sezione download** con badge per App Store e Google Play
+- **Sezione "Perché Blinker"** che spiega il valore aggiunto
+- **Footer completo** con link utili e social media
 
-- **Iscrizione automatica**: Gli utenti vengono automaticamente iscritti alla newsletter quando compilano il form.
-- **Gestione lingue**: Il campo "Language" viene automaticamente popolato con la lingua corrente dell'utente:
-  - `it` → Italian
-  - `en` → English
-  - `es` → Spanish
-  - `fr` → French
-  - `de` → German
-- **Modalità Beta**: Quando `VITE_RELEASED=false`, mostra il form di preregistrazione beta invece della newsletter.
+## 🌍 Multilingua
 
-### Struttura del codice
+Il sito è completamente localizzato in 5 lingue:
+- 🇮🇹 Italiano
+- 🇬🇧 Inglese
+- 🇪🇸 Spagnolo
+- 🇫🇷 Francese
+- 🇩🇪 Tedesco
 
-- `src/services/senderService.js`: Servizio per le chiamate API a Sender.net
-- `src/components/NewsletterSignup.jsx`: Componente del form di iscrizione newsletter
-- `src/components/BetaSignup.jsx`: Componente del form di preregistrazione beta
-- `src/pages/Homepage.jsx`: Gestisce la logica di visualizzazione basata su RELEASED
+Questo permette a Blinker di raggiungere un pubblico internazionale e di offrire un'esperienza localizzata per ogni utente.
 
-### Gestione errori
+## 📱 Integrazione Mobile
 
-Il sistema gestisce automaticamente:
-- Errori di rete
-- Email non valide
-- Configurazione mancante
-- Errori API di Sender.net
+Il sito web è progettato per essere perfettamente integrato con l'app mobile:
+- **Deep linking** per navigare direttamente alle funzionalità specifiche
+- **QR code** per il download rapido dell'app
+- **Badge ufficiali** per App Store e Google Play
+- **Testimonianze** e demo dell'app
 
-### GDPR Compliance
+## 🎯 Obiettivi del Sito
 
-Tutte le iscrizioni vengono loggate per la compliance GDPR con:
-- Nome e cognome
-- Email
-- Lingua
-- Timestamp
-- Consenso
-- Fonte (footer-newsletter o beta-signup)
+1. **Presentare Blinker** come soluzione innovativa per gli eventi
+2. **Convertire visitatori** in utenti dell'app
+3. **Fornire informazioni** complete su funzionalità e vantaggi
+4. **Costruire fiducia** attraverso design professionale e contenuti chiari
+5. **Facilitare il download** dell'app con processi semplificati
+
+## 🚀 Tecnologie
+
+Il sito è costruito con tecnologie moderne e performanti:
+- **React** per l'interfaccia utente
+- **Tailwind CSS** per lo styling
+- **Vite** per il build system
+- **i18next** per l'internazionalizzazione
