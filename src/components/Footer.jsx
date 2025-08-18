@@ -39,7 +39,7 @@ function Footer() {
                     <div className="footer-content">
                         <div className="footer-section">
                             <div className="footer-logo">
-                                <img src="extended-light.png" alt="Blinker Logo" width={150} />
+                                <img src="mockup-image.webp" alt="Blinker Logo" width={150} />
                             </div>
                             <p className="footer-description text-center">
                                 {t('footer.description')}

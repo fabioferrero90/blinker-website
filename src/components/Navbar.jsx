@@ -33,7 +33,7 @@ function Navbar() {
             <div className="container">
                 <div className="nav-content">
                     <div className="nav-logo">
-                        <img src="extended-light.png" alt="Blinker Logo" width={120} />
+                        <img src="extended-light.webp" alt="Blinker Logo" width={120} />
                     </div>
 
                     <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>

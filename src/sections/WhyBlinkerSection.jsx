@@ -42,7 +42,7 @@ function WhyBlinkerSection() {
 
                     <div className="why-mockup animate-fade-in-right">
                         <div className="app-screenshot">
-                            <img src="/map-screen.png" alt="Blinker App Screenshot" />
+                            <img src="/map-screen.avif" alt="Blinker App Screenshot" />
                         </div>
                     </div>
                 </div>

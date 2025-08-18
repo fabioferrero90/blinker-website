@@ -17,7 +17,7 @@ Il sito web presenta un design moderno e responsive che riflette l'innovazione e
 
 ## 🏠 Homepage
 
-![Blinker Website Homepage](https://i.imgur.com/JdNg7T7.png)
+![Blinker Website Homepage](https://i.imgur.com/JdNg7T7.avif)
 
 La homepage del sito Blinker presenta:
 - **Hero section accattivante** con video di sfondo

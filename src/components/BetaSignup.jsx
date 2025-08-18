@@ -100,7 +100,7 @@ function BetaSignup() {
             style={{
                 backgroundImage: `
                     linear-gradient(135deg, rgba(60, 24, 137, 0.9) 0%, rgba(107, 6, 195, 0.9) 100%),
-                    url('/background-beta.jpg')
+                    url('/background-beta.avif')
                 `,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

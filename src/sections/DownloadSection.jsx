@@ -46,7 +46,7 @@ function DownloadSection() {
                         className="download-btn"
                         onClick={() => handleDownloadClick('google_play')}
                     >
-                        <img src={`/DownloadBadges/GooglePlay-${langCode}.png`} alt={t('download.googlePlay')} />
+                        <img src={`/DownloadBadges/GooglePlay-${langCode}.avif`} alt={t('download.googlePlay')} />
                     </a>
                 </div>
 

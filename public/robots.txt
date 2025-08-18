@@ -1,0 +1,104 @@
+# Blinker Website Robots.txt
+# https://blinker-app.com
+
+# Allow all crawlers
+User-agent: *
+
+# Allow crawling of all content
+Allow: /
+
+# Disallow crawling of admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /sw.js
+Disallow: /manifest.json
+
+# Disallow crawling of temporary files
+Disallow: /*.tmp$
+Disallow: /*.temp$
+Disallow: /*.log$
+
+# Disallow crawling of development files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /tests/
+
+# Allow crawling of important assets
+Allow: /images/
+Allow: /videos/
+Allow: /assets/
+Allow: /fonts/
+Allow: /css/
+Allow: /js/
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://blinker-app.com/sitemap-index.xml
+
+# Host directive (preferred domain)
+Host: https://blinker-app.com
+
+# Performance hints for crawlers
+# Allow crawling of critical pages first
+Allow: /
+Allow: /home
+Allow: /about
+Allow: /features
+Allow: /download
+Allow: /contact
+
+# Block unnecessary file types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Disallow: /*.ppt$
+Disallow: /*.pptx$
+
+# Allow social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Allow search engine crawlers with specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+Crawl-delay: 10
+
+# Last updated
+# Last-Modified: 2024-01-01

@@ -3,6 +3,7 @@ import { faDownload, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import { useAppContext } from '../contexts/AppContext';
+import OptimizedVideo from '../components/OptimizedVideo';
 
 function HeroSection() {
     const { scrollToSection } = useAppContext();
@@ -52,16 +53,12 @@ function HeroSection() {
     return (
         <section id="home" className="hero">
             <div className="hero-background">
-                <video
+                <OptimizedVideo
+                    src="/hero-background.mp4"
+                    poster="/hero-video-poster.avif"
                     className="hero-video"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    poster="/hero-video-poster.png"
-                >
-                    <source src="/hero-background.mp4" type="video/mp4" />
-                </video>
+                    priority={true}
+                />
                 <div className="hero-gradient"></div>
                 <div className="hero-pattern"></div>
             </div>
@@ -102,7 +99,7 @@ function HeroSection() {
 
                     <div className="phone-mockup animate-fade-in-right">
                         <img
-                            src="/home-mockup.png"
+                            src="/home-mockup.webp"
                             alt="Blinker App Mockup"
                             className="mockup-image"
                         />

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage Images -->
+  <url>
+    <loc>https://blinker-app.com/</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/hero-video-poster.png</image:loc>
+      <image:title>Blinker App - Hero Background</image:title>
+      <image:caption>Discover the car meet world with Blinker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/home-mockup.png</image:loc>
+      <image:title>Blinker App Home Screen</image:title>
+      <image:caption>Main interface of the Blinker mobile app</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/icon.png</image:loc>
+      <image:title>Blinker App Icon</image:title>
+      <image:caption>Official Blinker app icon and logo</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Features Section Images -->
+  <url>
+    <loc>https://blinker-app.com/features</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/map-screen.png</image:loc>
+      <image:title>Blinker Map Feature</image:title>
+      <image:caption>Interactive map showing car meets and events</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/background-why.png</image:loc>
+      <image:title>Why Choose Blinker</image:title>
+      <image:caption>Background image for the features section</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Download Section Images -->
+  <url>
+    <loc>https://blinker-app.com/download</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/AppStore-EN.svg</image:loc>
+      <image:title>Download on App Store</image:title>
+      <image:caption>Download Blinker from the Apple App Store</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/GooglePlay-EN.png</image:loc>
+      <image:title>Get it on Google Play</image:title>
+      <image:caption>Download Blinker from Google Play Store</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/AppStore-DE.svg</image:loc>
+      <image:title>Im App Store herunterladen</image:title>
+      <image:caption>Laden Sie Blinker aus dem Apple App Store herunter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/GooglePlay-DE.png</image:loc>
+      <image:title>Bei Google Play</image:title>
+      <image:caption>Laden Sie Blinker aus dem Google Play Store herunter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/AppStore-ES.svg</image:loc>
+      <image:title>Descargar en App Store</image:title>
+      <image:caption>Descarga Blinker desde la App Store de Apple</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/GooglePlay-ES.png</image:loc>
+      <image:title>Consíguelo en Google Play</image:title>
+      <image:caption>Descarga Blinker desde Google Play Store</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/AppStore-FR.svg</image:loc>
+      <image:title>Télécharger sur l'App Store</image:title>
+      <image:caption>Téléchargez Blinker depuis l'App Store d'Apple</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/GooglePlay-FR.png</image:loc>
+      <image:title>Obtenir sur Google Play</image:title>
+      <image:caption>Téléchargez Blinker depuis Google Play Store</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/AppStore-IT.svg</image:loc>
+      <image:title>Scarica su App Store</image:title>
+      <image:caption>Scarica Blinker dall'App Store di Apple</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/DownloadBadges/GooglePlay-IT.png</image:loc>
+      <image:title>Scarica su Google Play</image:title>
+      <image:caption>Scarica Blinker da Google Play Store</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Background Images -->
+  <url>
+    <loc>https://blinker-app.com/</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/background-beta.avif</image:loc>
+      <image:title>Blinker Beta Background</image:title>
+      <image:caption>Background image for beta signup section</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/extended-dark.png</image:loc>
+      <image:title>Dark Theme Extended</image:title>
+      <image:caption>Dark theme interface preview</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blinker-app.com/extended-light.png</image:loc>
+      <image:title>Light Theme Extended</image:title>
+      <image:caption>Light theme interface preview</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Social Media Images -->
+  <url>
+    <loc>https://blinker-app.com/</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/og-image.png</image:loc>
+      <image:title>Blinker App - Social Media Preview</image:title>
+      <image:caption>Open Graph image for social media sharing</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Video Content -->
+  <url>
+    <loc>https://blinker-app.com/</loc>
+    <image:image>
+      <image:loc>https://blinker-app.com/hero-background.mp4</image:loc>
+      <image:title>Blinker App Hero Video</image:title>
+      <image:caption>Background video showcasing the Blinker app experience</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>

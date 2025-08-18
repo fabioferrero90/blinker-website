@@ -1,6 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* ===== OPTIMIZED COMPONENTS ===== */
+@layer components {
+  .optimized-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder-skeleton {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+  }
+
+  .optimized-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .optimized-image.loaded {
+    opacity: 1;
+  }
+
+  .optimized-video-container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .video-placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 74, 28, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .play-button-overlay:hover {
+    background: rgba(255, 74, 28, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .play-icon {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+  }
+
+  .optimized-video{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .optimized-video.loaded{
+    opacity: 1;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  @keyframes skeleton-loading{
+    0%{
+      background-position: 200% 0;
+    }
+    100%{
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Section-specific image styles */
+  .section-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .section-image-hero{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .section-image-mockup{
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .section-image-features{
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .section-image-download{
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .section-image-about{
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .section-image-map{
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .section-image-background{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Lazy section styles */
+  .lazy-section{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .lazy-section.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .section-placeholder {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+  }
+
+  .placeholder-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+
+  .placeholder-content .placeholder-skeleton {
+    height: 20px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .placeholder-content .placeholder-skeleton:nth-child(2) {
+    width: 80%;
+  }
+
+  .placeholder-content .placeholder-skeleton:nth-child(3) {
+    width: 60%;
+  }
+}
+
 /* ===== BASE STYLES ===== */
 @layer base {
     * {
@@ -348,13 +540,41 @@
     bottom: 0;
     z-index: -1;
     overflow: hidden;
-    object-fit: cover;
 }
 
-.hero-video {
+/* Ensure the video container fills the hero background */
+.hero-background .optimized-video-container {
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Ensure the video element itself covers the full container */
+.hero-background .optimized-video-container video {
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Ensure the poster image also covers the full container */
+.hero-background .optimized-video-container .video-placeholder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-background .optimized-video-container .video-poster {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -595,7 +815,7 @@
 .why {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(52, 44, 153, 0.9) 0%, rgba(83, 2, 150, 0.9) 100%), url('/background-why.png');
+    background: linear-gradient(135deg, rgba(52, 44, 153, 0.9) 0%, rgba(83, 2, 150, 0.9) 100%), url('/background-why.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1001,6 +1221,7 @@
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 768px){
     .section {
         padding: 60px 0;
@@ -1029,7 +1250,38 @@
         margin-bottom: 5vh;
     }
 
-    .hero-video {
+    .hero-background .optimized-video-container {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .hero-background .optimized-video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .hero-background .optimized-video-container .video-placeholder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .hero-background .optimized-video-container .video-poster {
         width: 100%;
         height: 100%;
         object-fit: cover;

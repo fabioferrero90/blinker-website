@@ -49,9 +49,32 @@ export default defineConfig(({ command, mode }) => {
           manualChunks: {
             vendor: ['react', 'react-dom'],
             i18n: ['i18next', 'react-i18next'],
+            icons: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons'],
+            flags: ['flag-icons'],
           },
+          // Ottimizzazione per il caching
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: (assetInfo) => {
+            const info = assetInfo.name.split('.')
+            const ext = info[info.length - 1]
+            if (/\.(png|jpe?g|gif|svg|webp|ico)$/i.test(assetInfo.name)) {
+              return `assets/images/[name]-[hash].${ext}`
+            }
+            if (/\.(woff2?|eot|ttf|otf)$/i.test(assetInfo.name)) {
+              return `assets/fonts/[name]-[hash].${ext}`
+            }
+            if (/\.(mp4|webm|ogg)$/i.test(assetInfo.name)) {
+              return `assets/videos/[name]-[hash].${ext}`
+            }
+            return `assets/[name]-[hash].${ext}`
+          }
         },
       },
+      // Ottimizzazioni aggiuntive
+      target: 'es2015',
+      cssCodeSplit: true,
+      reportCompressedSize: false,
     },
     // Configurazione per gestire le variabili d'ambiente
     define: {
@@ -60,5 +83,18 @@ export default defineConfig(({ command, mode }) => {
       __API_URL__: JSON.stringify(env.VITE_API_URL),
       __DEBUG_MODE__: JSON.stringify(env.VITE_ENABLE_DEBUG_MODE === 'true'),
     },
+    // Ottimizzazioni per le prestazioni
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'i18next', 'react-i18next'],
+      exclude: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons']
+    },
+    // Ottimizzazioni per le prestazioni
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'i18next', 'react-i18next'],
+      exclude: ['@fortawesome/fontawesome-svg-icons', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons']
+    },
+    css: {
+      devSourcemap: false,
+    }
   }
 })

@@ -13,7 +13,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "deploy": "node deploy.js",
-    "deploy:build": "npm run build:prod && npm run deploy"
+    "deploy:build": "npm run build:prod && npm run deploy",
+    "optimize:images": "node scripts/optimize-images.js",
+    "analyze": "npm run build:prod && npx vite-bundle-analyzer dist",
+    "lighthouse": "npx lighthouse https://blinker-app.com --output=html --output-path=./lighthouse-report.html"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
@@ -26,7 +29,8 @@
     "i18next-browser-languagedetector": "^8.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-i18next": "^15.6.1"
+    "react-i18next": "^15.6.1",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
