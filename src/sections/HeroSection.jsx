@@ -64,15 +64,15 @@ function HeroSection() {
             </div>
 
             <div className="container">
-                <div className="hero-content">
+                <div className="hero-content pt-4">
                     <div className="hero-text animate-fade-in-up">
-                        <h1 className="font-bold text-4xl lg:w-[80%] lg:text-6xl mb-4 text-white">
+                        <h1 className="font-bold text-4xl lg:w-[80%] lg:text-6xl mb-3 text-white">
                             {t('hero.title')}
                             <br />
                             <span className="gradient-text">{displayText}</span>
                             <span className="typing-cursor-visible">|</span>
                         </h1>
-                        <div className="hero-subtitle text-base lg:text-xl text-white">
+                        <div className="hero-subtitle text-xs lg:text-xl text-white">
                             <p>{t('hero.subtitle')}</p>
                         </div>
 

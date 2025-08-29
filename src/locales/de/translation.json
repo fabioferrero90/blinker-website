@@ -4,7 +4,8 @@
         "features": "Funktionen",
         "organizers": "Organisatoren",
         "why": "Warum Blinker?",
-        "download": "Herunterladen"
+        "download": "Herunterladen",
+        "webLogin": "Web-Anmeldung"
     },
     "hero": {
         "title": "Verpasse keinen",
@@ -17,7 +18,7 @@
             "Drift Event",
             "Tuning Treffen"
         ],
-        "subtitle": "Entdecke Events, organisiere neue, tritt bei oder verwalte deine Crew und zeige der Welt deine Autosammlung, weil das Leben zu kurz ist, um nicht zu wissen, wo die besten Automotive-Events sind...",
+        "subtitle": "Entdecke und organisiere Events, verwalte deine Crew und zeige der Welt deine Garage, weil das Leben zu kurz ist, um nicht zu wissen, wo die besten Events sind...",
         "downloadButton": "App Herunterladen",
         "scrollIndicator": "Mehr Entdecken"
     },

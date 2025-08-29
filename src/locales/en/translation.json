@@ -4,7 +4,8 @@
         "features": "Features",
         "organizers": "Organizers",
         "why": "Why Blinker?",
-        "download": "Download"
+        "download": "Download",
+        "webLogin": "Web Login"
     },
     "hero": {
         "title": "Don't miss any",
@@ -17,7 +18,7 @@
             "Drift Event",
             "Auto Expo"
         ],
-        "subtitle": "Discover events, organize new ones, join or manage your crew and show the world your car collection, because life is too short not to know where the best automotive events are...",
+        "subtitle": "Discover and organize events, manage your crew and show the world your garage, because life is too short not to know where the best events are...",
         "downloadButton": "Download the App",
         "scrollIndicator": "Discover More"
     },

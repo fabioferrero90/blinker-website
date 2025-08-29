@@ -39,7 +39,7 @@ function Footer() {
                     <div className="footer-content">
                         <div className="footer-section">
                             <div className="footer-logo">
-                                <img src="mockup-image.webp" alt="Blinker Logo" width={150} />
+                                <img src="extended-light.webp" alt="Blinker Logo" width={150} />
                             </div>
                             <p className="footer-description text-center">
                                 {t('footer.description')}
@@ -47,12 +47,12 @@ function Footer() {
                         </div>
                         <div className="footer-section">
                             <h4>{t('footer.product')}</h4>
-                            <a href="https://dashboard.blinker-app.com" target="_blank" rel="noopener noreferrer">Dashboard</a>
+                            <a href="https://blinker-app.com" target="_blank" rel="noopener noreferrer">Blinker Web</a>
                         </div>
 
                         <div className="footer-section">
                             <h4>{t('footer.support')}</h4>
-                            <a href="https://help.blinker-app.com" target="_blank" rel="noopener noreferrer">{t('footer.helpCenter')}</a>
+                            {/* <a href="https://help.blinker-app.com" target="_blank" rel="noopener noreferrer">{t('footer.helpCenter')}</a> */}
                             <a href="mailto:support@blinker-app.com">{t('footer.contact')}</a>
                         </div>
                         <div className="footer-section">

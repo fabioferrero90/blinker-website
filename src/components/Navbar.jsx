@@ -36,7 +36,38 @@ function Navbar() {
                         <img src="extended-light.webp" alt="Blinker Logo" width={120} />
                     </div>
 
-                    <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+                    <div className="nav-right">
+                        <div className="nav-links">
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('home')}>Home</button>
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('features')}>{t('navbar.features')}</button>
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('why')}>{t('navbar.why')}</button>
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</button>
+                            <button
+                                type="button"
+                                className="bg-transparent border-0 text-inherit"
+                                onClick={() => {
+                                    const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
+                                    handleNavClick(isReleased ? 'download' : 'beta');
+                                }}
+                            >
+                                {t('navbar.download')}
+                            </button>
+                        </div>
+
+                        {/* Web Login Button - Only visible on tablet and desktop */}
+                        <button
+                            type="button"
+                            className="nav-web-login hidden md:block"
+                            onClick={() => {
+                                window.open('https://blinker-app.com', '_blank');
+                            }}
+                        >
+                            {t('navbar.webLogin')}
+                        </button>
+                    </div>
+
+                    {/* Mobile Menu - Separate from nav-right */}
+                    <div className={`nav-links mobile ${isMenuOpen ? 'open' : ''}`}>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('home')}>Home</button>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('features')}>{t('navbar.features')}</button>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('why')}>{t('navbar.why')}</button>

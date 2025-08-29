@@ -4,7 +4,8 @@
         "features": "Funzionalità",
         "organizers": "Organizzatori",
         "why": "Perchè Blinker?",
-        "download": "Download"
+        "download": "Download",
+        "webLogin": "Accedi via Web"
     },
     "hero": {
         "title": "Non perderti nessun",
@@ -17,7 +18,7 @@
             "Midnight Touge",
             "Car Show"
         ],
-        "subtitle": "Scopri eventi, organizzane di nuovi, unisciti o gestisci la tua crew e mostra al mondo la tua collezione di auto, perché la vita è troppo corta per non sapere dove sono gli eventi automotive migliori...",
+        "subtitle": "Scopri e organizza eventi, gestisci la tua crew e mostra al mondo il tuo garage, perché la vita è troppo corta per non sapere dove sono gli eventi migliori...",
         "downloadButton": "Scarica l'App",
         "scrollIndicator": "Scopri di Più"
     },

@@ -480,10 +480,21 @@
     padding: 1rem 0;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
+}
+
+/* Mobile menu - hidden on desktop */
+.nav-links.mobile {
+    display: none;
 }
 
 .nav-links a,
@@ -521,6 +532,26 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-dark);
+}
+
+/* Web Login Button - Only visible on tablet and desktop */
+.nav-web-login {
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    margin-left: 1rem;
+}
+
+.nav-web-login:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 /* ===== HERO SECTION ===== */
@@ -664,7 +695,7 @@
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -1243,11 +1274,9 @@
     
     .hero-text {
         padding: 0 0.5rem;
-        margin-top: 3vh;
         animation: none !important;
         text-align: left;
         justify-content: center;
-        margin-bottom: 5vh;
     }
 
     .hero-background .optimized-video-container {
@@ -1295,7 +1324,13 @@
         font-size: 1.2rem;
     }
 
-    .nav-links {
+    .nav-right {
+        display: none;
+    }
+
+    /* Mobile menu styling */
+    .nav-links.mobile {
+        display: flex;
         position: fixed;
         top: 100%;
         left: 0;
@@ -1308,16 +1343,22 @@
         opacity: 0;
         visibility: hidden;
         transition: var(--transition);
+        z-index: 999;
     }
 
-    .nav-links.open {
+    .nav-links.mobile.open {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        z-index: 1001;
     }
 
-    .nav-links a {
+    .nav-links.mobile button {
         text-align: right;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
     }
 
     .nav-toggle {

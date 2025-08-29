@@ -4,7 +4,8 @@
         "features": "Características",
         "organizers": "Organizadores",
         "why": "¿Por qué Blinker?",
-        "download": "Descargar"
+        "download": "Descargar",
+        "webLogin": "Acceso Web"
     },
     "hero": {
         "title": "No te pierdas ningún",
@@ -17,7 +18,7 @@
             "Evento Drift",
             "Car Show"
         ],
-        "subtitle": "Descubre eventos, organiza nuevos, únete o gestiona tu crew y muestra al mundo tu colección de autos, porque la vida es muy corta para no saber dónde están los mejores eventos automotrices...",
+        "subtitle": "Descubre y organiza eventos, gestiona tu crew y muestra al mundo tu garaje, porque la vida es muy corta para no saber dónde están los mejores eventos...",
         "downloadButton": "Descargar la App",
         "scrollIndicator": "Descubre Más"
     },
