@@ -58,17 +58,6 @@ function BetaSignup() {
             // Chiamata API a Sender.net per preregistrazione
             await subscribeToPreregister(firstName, lastName, email, i18n.language);
 
-            // Log per GDPR compliance
-
-            firstName,
-                lastName,
-                email,
-                language: i18n.language,
-                    consent: true,
-                        timestamp: new Date().toISOString(),
-                            source: 'beta-signup'
-
-
             setStatus('success');
             setFirstName('');
             setLastName('');

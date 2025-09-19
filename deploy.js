@@ -140,7 +140,7 @@ function uploadFiles(host, user) {
   try {
     info('Uploading files to server...');
     const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`scp -i "${sshKeyPath}" -r dist/* ${user}@${host}:/var/www/get.blinker-app.com/`, { stdio: 'inherit' });
+    execSync(`scp -i "${sshKeyPath}" -r dist/. ${user}@${host}:/var/www/get.blinker-app.com/`, { stdio: 'inherit' });
     success('Files uploaded successfully');
   } catch (err) {
     error(`Upload failed: ${err.message}`);

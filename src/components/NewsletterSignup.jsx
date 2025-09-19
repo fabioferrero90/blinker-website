@@ -58,17 +58,6 @@ function NewsletterSignup() {
             // Chiamata API a Sender.net
             await subscribeToNewsletter(firstName, lastName, email, i18n.language);
 
-            // Log per GDPR compliance
-
-            firstName,
-                lastName,
-                email,
-                language: i18n.language,
-                    consent: true,
-                        timestamp: new Date().toISOString(),
-                            source: 'footer-newsletter'
-
-
             setStatus('success');
             setFirstName('');
             setLastName('');
