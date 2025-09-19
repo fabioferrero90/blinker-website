@@ -37,7 +37,7 @@ function CookieConsent() {
         // Traccia evento analytics
         trackEvent('cookie_consent', 'preferences', 'accept_all');
 
-        console.log('Cookie consent - Accept all:', consent);
+
     };
 
     const acceptSelected = () => {
@@ -54,7 +54,7 @@ function CookieConsent() {
         const preferences = Object.keys(cookiePreferences).filter(key => cookiePreferences[key]).join(',');
         trackEvent('cookie_consent', 'preferences', `accept_selected:${preferences}`);
 
-        console.log('Cookie consent - Accept selected:', consent);
+
     };
 
     const rejectAll = () => {
@@ -71,7 +71,7 @@ function CookieConsent() {
         // Traccia evento analytics
         trackEvent('cookie_consent', 'preferences', 'reject_all');
 
-        console.log('Cookie consent - Reject all:', consent);
+
     };
 
     const updatePreference = (type, value) => {

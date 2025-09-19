@@ -40,7 +40,7 @@ const SUPPORTED_EXTENSIONS = ['.jpg', '.jpeg', '.avif', '.gif', '.bmp'];
 
 // Funzione principale
 async function optimizeImages() {
-    console.log('🚀 Iniziando ottimizzazione immagini...');
+
 
     // Crea directory di output se non esiste
     if (!fs.existsSync(CONFIG.outputDir)) {
@@ -49,13 +49,13 @@ async function optimizeImages() {
 
     try {
         const files = await getImageFiles(CONFIG.inputDir);
-        console.log(`📁 Trovate ${files.length} immagini da ottimizzare`);
+
 
         for (const file of files) {
             await optimizeImage(file);
         }
 
-        console.log('✅ Ottimizzazione completata!');
+
         await generateImageManifest();
 
     } catch (error) {
@@ -99,7 +99,7 @@ async function optimizeImage(inputPath) {
     const ext = path.extname(filename).toLowerCase();
     const nameWithoutExt = path.basename(filename, ext);
 
-    console.log(`🔄 Ottimizzando: ${filename}`);
+
 
     try {
         const image = sharp(inputPath);
@@ -118,7 +118,7 @@ async function optimizeImage(inputPath) {
         // Genera versioni responsive
         await generateResponsiveVersions(image, inputPath, nameWithoutExt, ext);
 
-        console.log(`✅ Completato: ${filename}`);
+
 
     } catch (error) {
         console.error(`❌ Errore con ${filename}:`, error.message);
@@ -182,7 +182,7 @@ async function generateImageManifest() {
     const manifestPath = path.join(CONFIG.outputDir, 'manifest.json');
     fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 
-    console.log('📋 Manifest generato:', manifestPath);
+
 }
 
 // Esegui lo script

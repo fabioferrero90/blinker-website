@@ -4,7 +4,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 export const logger = {
     log: (...args) => {
         if (isDevelopment) {
-            console.log('[Blinker]', ...args);
+
         }
     },
 
@@ -35,7 +35,7 @@ export const logger = {
     // Performance logging (always enabled for critical metrics)
     perf: (label, value, unit = 'ms') => {
         if (isDevelopment) {
-            console.log(`[Blinker Performance] ${label}: ${value}${unit}`);
+
         }
 
         // Send to analytics in production
@@ -52,14 +52,14 @@ export const logger = {
     // Cache logging (only in development)
     cache: (...args) => {
         if (isDevelopment) {
-            console.log('[Blinker Cache]', ...args);
+
         }
     },
 
     // Service Worker logging (only in development)
     sw: (...args) => {
         if (isDevelopment) {
-            console.log('[Blinker SW]', ...args);
+
         }
     }
 };

@@ -30,7 +30,7 @@ export const useCookieConsent = () => {
         setConsent(consentData);
 
         // Log per compliance GDPR
-        console.log('Cookie consent updated:', consentData);
+
     };
 
     const hasConsent = (type) => {
@@ -41,7 +41,7 @@ export const useCookieConsent = () => {
     const revokeConsent = () => {
         localStorage.removeItem('cookieConsent');
         setConsent(null);
-        console.log('Cookie consent revoked');
+
     };
 
     const getConsentAge = () => {

@@ -150,7 +150,7 @@ class PerformanceMonitor {
 
         // Log solo in development
         if (process.env.NODE_ENV === 'development') {
-            console.log(`📊 ${name}: ${value.toFixed(2)}ms - ${status}`);
+
         }
 
         // Track metric for warning management
@@ -174,7 +174,7 @@ class PerformanceMonitor {
         const duration = entry.duration;
 
         if (size > 100 * 1024 && process.env.NODE_ENV === 'development') { // > 100KB
-            console.log(`📦 Risorsa lenta: ${entry.name} - ${(size / 1024).toFixed(2)}KB in ${duration.toFixed(2)}ms`);
+
         }
     }
 

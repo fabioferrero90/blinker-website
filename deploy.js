@@ -115,7 +115,7 @@ function backupRemote(host, user) {
     info('Creating remote backup...');
     const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo cp -r /var/www/blinker-app.com /var/www/blinker-app.com.backup.${timestamp}"`, { stdio: 'pipe' });
+    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo cp -r /var/www/get.blinker-app.com /var/www/get.blinker-app.com.backup.${timestamp}"`, { stdio: 'pipe' });
     success('Remote backup created');
   } catch (err) {
     warning('Backup failed (continuing anyway)');
@@ -128,7 +128,7 @@ function ensureDirectory(host, user) {
     info('Ensuring target directory exists...');
     const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
     // Rimuovi directory esistente e ricreala con permessi corretti
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo rm -rf /var/www/blinker-app.com && sudo mkdir -p /var/www/blinker-app.com && sudo chown ${user}:${user} /var/www/blinker-app.com"`, { stdio: 'pipe' });
+    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo rm -rf /var/www/get.blinker-app.com && sudo mkdir -p /var/www/get.blinker-app.com && sudo chown ${user}:${user} /var/www/get.blinker-app.com"`, { stdio: 'pipe' });
     success('Target directory ready');
   } catch (err) {
     error(`Directory setup failed: ${err.message}`);
@@ -140,7 +140,7 @@ function uploadFiles(host, user) {
   try {
     info('Uploading files to server...');
     const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`scp -i "${sshKeyPath}" -r dist/* ${user}@${host}:/var/www/blinker-app.com/`, { stdio: 'inherit' });
+    execSync(`scp -i "${sshKeyPath}" -r dist/* ${user}@${host}:/var/www/get.blinker-app.com/`, { stdio: 'inherit' });
     success('Files uploaded successfully');
   } catch (err) {
     error(`Upload failed: ${err.message}`);
@@ -152,7 +152,7 @@ function setPermissions(host, user) {
   try {
     info('Setting file permissions...');
     const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo chown -R www-data:www-data /var/www/blinker-app.com && sudo chmod -R 755 /var/www/blinker-app.com"`, { stdio: 'inherit' });
+    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo chown -R www-data:www-data /var/www/get.blinker-app.com && sudo chmod -R 755 /var/www/get.blinker-app.com"`, { stdio: 'inherit' });
     success('Permissions set correctly');
   } catch (err) {
     error(`Permission setting failed: ${err.message}`);
@@ -175,7 +175,7 @@ function reloadNginx(host, user) {
 function testSite(host) {
   try {
     info('Testing site availability...');
-    execSync(`curl -I https://blinker-app.com --connect-timeout 10`, { stdio: 'pipe' });
+    execSync(`curl -I https://get.blinker-app.com --connect-timeout 10`, { stdio: 'pipe' });
     success('Site is online and responding');
   } catch (err) {
     warning('Site test failed (may still be working)');
@@ -185,7 +185,7 @@ function testSite(host) {
 // Funzione principale
 function main() {
   log('🚀 Blinker Website Deployment', 'bright');
-  log('==============================', 'bright');
+  log('================================', 'bright');
 
   // Verifiche iniziali
   const config = checkEnv();
@@ -194,8 +194,8 @@ function main() {
 
   log(`\n📋 Deployment Info:`, 'bright');
   log(`Server: ${config.user}@${config.host}`, 'cyan');
-  log(`Target: /var/www/blinker-app.com`, 'cyan');
-  log(`Site: https://blinker-app.com`, 'cyan');
+  log(`Target: /var/www/get.blinker-app.com`, 'cyan');
+  log(`Site: https://get.blinker-app.com`, 'cyan');
 
   // Test connessione
   testSSH(config.host, config.user);
@@ -219,7 +219,7 @@ function main() {
   testSite(config.host);
 
   log('\n🎉 Deployment completed successfully!', 'bright');
-  log('Your site is now live at: https://blinker-app.com', 'green');
+  log('Your site is now live at: https://get.blinker-app.com', 'green');
 }
 
 // Gestione errori

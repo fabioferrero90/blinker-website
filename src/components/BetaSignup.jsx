@@ -59,15 +59,15 @@ function BetaSignup() {
             await subscribeToPreregister(firstName, lastName, email, i18n.language);
 
             // Log per GDPR compliance
-            console.log('Beta signup:', {
-                firstName,
+
+            firstName,
                 lastName,
                 email,
                 language: i18n.language,
-                consent: true,
-                timestamp: new Date().toISOString(),
-                source: 'beta-signup'
-            });
+                    consent: true,
+                        timestamp: new Date().toISOString(),
+                            source: 'beta-signup'
+
 
             setStatus('success');
             setFirstName('');

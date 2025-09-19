@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.blinker.app",
+      "sha256_cert_fingerprints": [
+        "65:D1:26:9A:7B:08:30:2C:22:97:7B:2E:C0:BE:EC:0F:68:41:14:58:C1:1D:47:A9:6E:D2:4E:4C:69:5D:22:E4"
+      ]
+    }
+  }
+]

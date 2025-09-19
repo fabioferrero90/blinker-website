@@ -18,13 +18,13 @@ if ('serviceWorker' in navigator) {
       .then((registration) => {
         // Log only in development
         if (process.env.NODE_ENV === 'development') {
-          console.log('SW registered: ', registration);
+
         }
       })
       .catch((registrationError) => {
         // Log only in development
         if (process.env.NODE_ENV === 'development') {
-          console.log('SW registration failed: ', registrationError);
+
         }
       });
   });
