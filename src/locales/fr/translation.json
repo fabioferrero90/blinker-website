@@ -165,47 +165,6 @@
         "french": "Français",
         "german": "Deutsch"
     },
-    "beta": {
-        "title": "Rejoignez la Beta de Blinker",
-        "subtitle": "Soyez parmi les premiers à tester l'app qui révolutionnera le monde des car meets ! 🏎️",
-        "firstNamePlaceholder": "Prénom",
-        "lastNamePlaceholder": "Nom",
-        "emailPlaceholder": "Votre email",
-        "button": "Rejoindre la Beta",
-        "loading": "Inscription en cours...",
-        "success": {
-            "title": "🎉 Vous êtes dedans !",
-            "description": "Nous vous avons ajouté à la liste beta. Nous vous contacterons bientôt avec les instructions de téléchargement !"
-        },
-        "error": "Erreur lors de l'inscription. Réessayez.",
-        "firstNameRequired": "Entrez votre prénom",
-        "lastNameRequired": "Entrez votre nom",
-        "emailRequired": "Entrez une adresse email",
-        "emailInvalid": "Entrez une adresse email valide",
-        "consentRequired": "Vous devez accepter la politique de confidentialité",
-        "consentText": "J'accepte de recevoir des communications promotionnelles. Je peux révoquer le consentement à tout moment. Pour plus d'informations, consultez la",
-        "privacyPolicy": "Politique de Confidentialité",
-        "disclaimer": "⚠️ Attention : Ceci est une version beta. Il peut y avoir des bugs, des crashes et des moments de 'pourquoi ça ne marche pas ?' 😅",
-        "benefits": {
-            "title": "Pourquoi rejoindre la Beta ?",
-            "first": {
-                "title": "Accès Anticipé",
-                "description": "Vous serez parmi les premiers à tester les nouvelles fonctionnalités avant qu'elles n'arrivent aux autres !"
-            },
-            "second": {
-                "title": "Influencez le Développement",
-                "description": "Vos opinions et retours aideront à façonner l'app parfaite pour les car lovers !"
-            },
-            "third": {
-                "title": "Statut Exclusif",
-                "description": "Vous obtiendrez un statut spécial de 'Beta Tester' et pourrez vous vanter auprès de vos amis ! 😎"
-            },
-            "fourth": {
-                "title": "Chasseur de Bugs",
-                "description": "Trouvez des bugs et recevez une reconnaissance spéciale. Devenez une légende de la communauté !"
-            }
-        }
-    },
     "privacyPolicy": {
         "title": "Politique de Confidentialité",
         "lastUpdate": "Dernière mise à jour",

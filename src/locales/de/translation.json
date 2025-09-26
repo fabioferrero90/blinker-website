@@ -165,47 +165,6 @@
         "french": "Français",
         "german": "Deutsch"
     },
-    "beta": {
-        "title": "Tritt der Blinker Beta bei",
-        "subtitle": "Sei unter den Ersten, die die App testen, die die Car-Meet-Welt revolutionieren wird! 🏎️",
-        "firstNamePlaceholder": "Vorname",
-        "lastNamePlaceholder": "Nachname",
-        "emailPlaceholder": "Deine E-Mail",
-        "button": "Beta beitreten",
-        "loading": "Anmeldung läuft...",
-        "success": {
-            "title": "🎉 Du bist dabei!",
-            "description": "Wir haben dich zur Beta-Liste hinzugefügt. Wir werden dich bald mit Download-Anweisungen kontaktieren!"
-        },
-        "error": "Fehler bei der Anmeldung. Versuche es erneut.",
-        "firstNameRequired": "Gib deinen Vornamen ein",
-        "lastNameRequired": "Gib deinen Nachnamen ein",
-        "emailRequired": "Gib eine E-Mail-Adresse ein",
-        "emailInvalid": "Gib eine gültige E-Mail-Adresse ein",
-        "consentRequired": "Du musst der Datenschutzerklärung zustimmen",
-        "consentText": "Ich akzeptiere, Werbekommunikation zu erhalten. Ich kann die Zustimmung jederzeit widerrufen. Für weitere Informationen siehe die",
-        "privacyPolicy": "Datenschutzerklärung",
-        "disclaimer": "⚠️ Warnung: Dies ist eine Beta-Version. Es könnte Bugs, Crashes und Momente von 'warum funktioniert das nicht?' geben 😅",
-        "benefits": {
-            "title": "Warum der Beta beitreten?",
-            "first": {
-                "title": "Früher Zugang",
-                "description": "Du wirst unter den Ersten sein, die neue Funktionen testen, bevor sie alle anderen erreichen!"
-            },
-            "second": {
-                "title": "Entwicklung beeinflussen",
-                "description": "Deine Meinungen und Rückmeldungen werden helfen, die perfekte App für Car Lovers zu gestalten!"
-            },
-            "third": {
-                "title": "Exklusiver Status",
-                "description": "Du erhältst einen speziellen 'Beta Tester'-Status und kannst vor deinen Freunden angeben! 😎"
-            },
-            "fourth": {
-                "title": "Bug Hunter",
-                "description": "Finde Bugs und erhalte besondere Anerkennung. Werde eine Community-Legende!"
-            }
-        }
-    },
     "privacyPolicy": {
         "title": "Datenschutzerklärung",
         "lastUpdate": "Zuletzt aktualisiert",

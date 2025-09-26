@@ -35,7 +35,7 @@ function DownloadSection() {
 
                 <div className="download-buttons">
                     <a
-                        href="https://apps.apple.com/it/app/blinker-app/id6746400000"
+                        href="https://apps.apple.com/it/app/blinker/id6751835774"
                         className="download-btn"
                         onClick={() => handleDownloadClick('app_store')}
                     >
@@ -46,7 +46,7 @@ function DownloadSection() {
                         className="download-btn"
                         onClick={() => handleDownloadClick('google_play')}
                     >
-                        <img src={`/DownloadBadges/GooglePlay-${langCode}.avif`} alt={t('download.googlePlay')} />
+                        <img src={`/DownloadBadges/GooglePlay-${langCode}.png`} alt={t('download.googlePlay')} />
                     </a>
                 </div>
 

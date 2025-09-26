@@ -74,16 +74,27 @@ function checkDist() {
 
 // Verifica SSH key
 function checkSSHKey() {
-  const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
+  // Cerca prima la chiave specifica, poi quelle generiche
+  const keyNames = ['blinker_deploy_key_new', 'blinker_deploy_key', 'id_rsa', 'id_ed25519', 'id_ecdsa'];
+  let sshKeyPath = null;
+  
+  for (const keyName of keyNames) {
+    const keyPath = path.join(os.homedir(), '.ssh', keyName);
+    if (fs.existsSync(keyPath)) {
+      sshKeyPath = keyPath;
+      break;
+    }
+  }
 
-  if (!fs.existsSync(sshKeyPath)) {
+  if (!sshKeyPath) {
     warning('SSH key not found!');
     log('Please run: ssh-keygen -t rsa -b 4096 -f ~/.ssh/blinker_deploy_key', 'yellow');
     log('Then copy it to server: ssh-copy-id -i ~/.ssh/blinker_deploy_key.pub user@server', 'yellow');
     error('SSH key setup required');
   }
 
-  success('SSH key found');
+  success(`SSH key found: ${path.basename(sshKeyPath)}`);
+  return sshKeyPath;
 }
 
 // Esegue comando con output
@@ -98,11 +109,10 @@ function runCommand(command, description) {
 }
 
 // Test connessione SSH
-function testSSH(host, user) {
+function testSSH(host, user, sshKeyPath) {
   try {
     info('Testing SSH connection...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`ssh -i "${sshKeyPath}" -o ConnectTimeout=10 ${user}@${host} "echo 'SSH OK'"`, { stdio: 'pipe' });
+    execSync(`ssh -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no -o ConnectTimeout=10 ${user}@${host} "echo 'SSH OK'"`, { stdio: 'pipe' });
     success('SSH connection successful');
   } catch (err) {
     error(`SSH connection failed: ${err.message}`);
@@ -110,12 +120,11 @@ function testSSH(host, user) {
 }
 
 // Backup remoto
-function backupRemote(host, user) {
+function backupRemote(host, user, sshKeyPath) {
   try {
     info('Creating remote backup...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo cp -r /var/www/get.blinker-app.com /var/www/get.blinker-app.com.backup.${timestamp}"`, { stdio: 'pipe' });
+    execSync(`ssh -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no ${user}@${host} "sudo cp -r /var/www/get.blinker-app.com /var/www/get.blinker-app.com.backup.${timestamp}"`, { stdio: 'pipe' });
     success('Remote backup created');
   } catch (err) {
     warning('Backup failed (continuing anyway)');
@@ -123,12 +132,11 @@ function backupRemote(host, user) {
 }
 
 // Crea directory se non esiste
-function ensureDirectory(host, user) {
+function ensureDirectory(host, user, sshKeyPath) {
   try {
     info('Ensuring target directory exists...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
     // Rimuovi directory esistente e ricreala con permessi corretti
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo rm -rf /var/www/get.blinker-app.com && sudo mkdir -p /var/www/get.blinker-app.com && sudo chown ${user}:${user} /var/www/get.blinker-app.com"`, { stdio: 'pipe' });
+    execSync(`ssh -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no ${user}@${host} "sudo rm -rf /var/www/get.blinker-app.com && sudo mkdir -p /var/www/get.blinker-app.com && sudo chown ${user}:${user} /var/www/get.blinker-app.com && sudo chmod 755 /var/www/get.blinker-app.com"`, { stdio: 'pipe' });
     success('Target directory ready');
   } catch (err) {
     error(`Directory setup failed: ${err.message}`);
@@ -136,11 +144,10 @@ function ensureDirectory(host, user) {
 }
 
 // Upload file
-function uploadFiles(host, user) {
+function uploadFiles(host, user, sshKeyPath) {
   try {
     info('Uploading files to server...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`scp -i "${sshKeyPath}" -r dist/. ${user}@${host}:/var/www/get.blinker-app.com/`, { stdio: 'inherit' });
+    execSync(`scp -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no -r dist/. ${user}@${host}:/var/www/get.blinker-app.com/`, { stdio: 'inherit' });
     success('Files uploaded successfully');
   } catch (err) {
     error(`Upload failed: ${err.message}`);
@@ -148,11 +155,10 @@ function uploadFiles(host, user) {
 }
 
 // Imposta permessi
-function setPermissions(host, user) {
+function setPermissions(host, user, sshKeyPath) {
   try {
     info('Setting file permissions...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo chown -R www-data:www-data /var/www/get.blinker-app.com && sudo chmod -R 755 /var/www/get.blinker-app.com"`, { stdio: 'inherit' });
+    execSync(`ssh -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no ${user}@${host} "sudo chown -R www-data:www-data /var/www/get.blinker-app.com && sudo chmod -R 755 /var/www/get.blinker-app.com"`, { stdio: 'inherit' });
     success('Permissions set correctly');
   } catch (err) {
     error(`Permission setting failed: ${err.message}`);
@@ -160,11 +166,10 @@ function setPermissions(host, user) {
 }
 
 // Reload Nginx
-function reloadNginx(host, user) {
+function reloadNginx(host, user, sshKeyPath) {
   try {
     info('Reloading Nginx...');
-    const sshKeyPath = path.join(os.homedir(), '.ssh', 'blinker_deploy_key');
-    execSync(`ssh -i "${sshKeyPath}" ${user}@${host} "sudo systemctl reload nginx"`, { stdio: 'inherit' });
+    execSync(`ssh -i "${sshKeyPath}" -o BatchMode=yes -o StrictHostKeyChecking=no ${user}@${host} "sudo systemctl reload nginx"`, { stdio: 'inherit' });
     success('Nginx reloaded successfully');
   } catch (err) {
     error(`Nginx reload failed: ${err.message}`);
@@ -190,30 +195,31 @@ function main() {
   // Verifiche iniziali
   const config = checkEnv();
   checkDist();
-  checkSSHKey();
+  const sshKeyPath = checkSSHKey();
 
   log(`\n📋 Deployment Info:`, 'bright');
   log(`Server: ${config.user}@${config.host}`, 'cyan');
   log(`Target: /var/www/get.blinker-app.com`, 'cyan');
   log(`Site: https://get.blinker-app.com`, 'cyan');
+  log(`SSH Key: ${path.basename(sshKeyPath)}`, 'cyan');
 
   // Test connessione
-  testSSH(config.host, config.user);
+  testSSH(config.host, config.user, sshKeyPath);
 
   // Assicura che la directory esista
-  ensureDirectory(config.host, config.user);
+  ensureDirectory(config.host, config.user, sshKeyPath);
 
   // Backup
-  backupRemote(config.host, config.user);
+  backupRemote(config.host, config.user, sshKeyPath);
 
   // Upload
-  uploadFiles(config.host, config.user);
+  uploadFiles(config.host, config.user, sshKeyPath);
 
   // Permessi
-  setPermissions(config.host, config.user);
+  setPermissions(config.host, config.user, sshKeyPath);
 
   // Reload Nginx
-  reloadNginx(config.host, config.user);
+  reloadNginx(config.host, config.user, sshKeyPath);
 
   // Test finale
   testSite(config.host);
