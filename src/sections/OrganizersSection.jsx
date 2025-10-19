@@ -70,8 +70,7 @@ function OrganizersSection() {
                     <div className="flex justify-center">
                         <button
                             onClick={() => {
-                                const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
-                                scrollToSection(isReleased ? 'download' : 'beta');
+                                scrollToSection('download');
                             }}
                             className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                         >

@@ -46,8 +46,7 @@ function Navbar() {
                                 type="button"
                                 className="bg-transparent border-0 text-inherit"
                                 onClick={() => {
-                                    const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
-                                    handleNavClick(isReleased ? 'download' : 'beta');
+                                    handleNavClick('download');
                                 }}
                             >
                                 {t('navbar.download')}
@@ -76,8 +75,7 @@ function Navbar() {
                             type="button"
                             className="bg-transparent border-0 text-inherit"
                             onClick={() => {
-                                const isReleased = (import.meta.env.VITE_RELEASED ?? import.meta.env.RELEASED) === 'true';
-                                handleNavClick(isReleased ? 'download' : 'beta');
+                                handleNavClick('download');
                             }}
                         >
                             {t('navbar.download')}
