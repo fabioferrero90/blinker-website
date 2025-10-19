@@ -18,7 +18,13 @@ export const AppProvider = ({ children }) => {
         setCurrentSection(sectionId);
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            // Usa scrollIntoView con offset per la navbar fissa - VERSIONE CACHE BUST
+            const navbarHeight = 80;
+            const elementPosition = element.offsetTop - navbarHeight;
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
         }
     };
 

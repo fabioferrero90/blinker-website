@@ -79,6 +79,7 @@ function HeroSection() {
                         <div className="hero-buttons">
                             <button
                                 onClick={() => {
+                                    console.log('🔍 Download button clicked');
                                     scrollToSection('download');
                                 }}
                                 className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"

@@ -58,6 +58,56 @@ function checkEnv() {
   };
 }
 
+// Ottieni versione corrente del service worker
+function getCurrentServiceWorkerVersion() {
+  const swPath = 'public/sw.js';
+  if (!fs.existsSync(swPath)) {
+    return null;
+  }
+
+  try {
+    const content = fs.readFileSync(swPath, 'utf8');
+    const versionMatch = content.match(/const CACHE_NAME = 'blinker-v(\d+)\.(\d+)\.(\d+)'/);
+    return versionMatch ? versionMatch[0].match(/'([^']+)'/)[1] : null;
+  } catch (err) {
+    return null;
+  }
+}
+
+// Incrementa versione del service worker
+function incrementServiceWorkerVersion() {
+  const swPath = 'public/sw.js';
+  if (!fs.existsSync(swPath)) {
+    warning('Service worker file not found, skipping version increment');
+    return;
+  }
+
+  try {
+    let content = fs.readFileSync(swPath, 'utf8');
+    
+    // Estrai la versione corrente
+    const versionMatch = content.match(/const CACHE_NAME = 'blinker-v(\d+)\.(\d+)\.(\d+)'/);
+    if (!versionMatch) {
+      warning('Could not parse service worker version, skipping increment');
+      return;
+    }
+
+    const [, major, minor, patch] = versionMatch;
+    const currentVersion = `blinker-v${major}.${minor}.${patch}`;
+    const newPatch = parseInt(patch) + 1;
+    const newVersion = `blinker-v${major}.${minor}.${newPatch}`;
+    
+    // Aggiorna entrambe le versioni nel file
+    content = content.replace(/const CACHE_NAME = 'blinker-v\d+\.\d+\.\d+'/, `const CACHE_NAME = '${newVersion}'`);
+    content = content.replace(/const STATIC_CACHE_NAME = 'blinker-static-v\d+\.\d+\.\d+'/, `const STATIC_CACHE_NAME = '${newVersion}'`);
+    
+    fs.writeFileSync(swPath, content);
+    success(`Service worker version incremented: ${currentVersion} → ${newVersion}`);
+  } catch (err) {
+    warning(`Failed to increment service worker version: ${err.message}`);
+  }
+}
+
 // Verifica se esiste dist/
 function checkDist() {
   if (!fs.existsSync('dist')) {
@@ -194,6 +244,14 @@ function main() {
 
   // Verifiche iniziali
   const config = checkEnv();
+  
+  // Incrementa versione del service worker prima del build
+  incrementServiceWorkerVersion();
+  
+  // Esegui build di produzione
+  log('\n🔨 Building for production...', 'bright');
+  runCommand('npm run build:prod', 'Production build');
+  
   checkDist();
   const sshKeyPath = checkSSHKey();
 
@@ -202,6 +260,11 @@ function main() {
   log(`Target: /var/www/get.blinker-app.com`, 'cyan');
   log(`Site: https://get.blinker-app.com`, 'cyan');
   log(`SSH Key: ${path.basename(sshKeyPath)}`, 'cyan');
+  
+  const currentVersion = getCurrentServiceWorkerVersion();
+  if (currentVersion) {
+    log(`Service Worker: ${currentVersion}`, 'cyan');
+  }
 
   // Test connessione
   testSSH(config.host, config.user, sshKeyPath);
