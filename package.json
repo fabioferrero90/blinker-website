@@ -12,7 +12,7 @@
     "preview:ssl": "vite preview --https",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "deploy": "node deploy.js",
+    "deploy": "node ops/scripts/deploy.js",
     "deploy:build": "npm run build:prod && npm run deploy",
     "optimize:images": "node scripts/optimize-images.js",
     "analyze": "npm run build:prod && npx vite-bundle-analyzer dist",
