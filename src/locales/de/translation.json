@@ -217,173 +217,140 @@
     },
     "privacyPolicy": {
         "title": "Datenschutzerklärung",
-        "lastUpdate": "Zuletzt aktualisiert",
-        "sections": {
-            "introduction": {
-                "title": "1. Einführung",
-                "content": "Blinker (\"wir\", \"unser\", \"uns\") ist verpflichtet, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unsere mobile App und zugehörige Dienste nutzen."
-            },
-            "dataController": {
-                "title": "2. Verantwortlicher für die Datenverarbeitung",
-                "content": "Der Verantwortliche für die Verarbeitung Ihrer personenbezogenen Daten ist:",
-                "company": "Blinker App",
-                "email": "Email: privacy@blinker-app.com"
-            },
-            "dataCollected": {
-                "title": "3. Gesammelte personenbezogene Daten",
-                "content": "Wir sammeln verschiedene Arten von persönlichen Informationen:",
-                "categories": {
-                    "identification": {
-                        "title": "Identifikationsdaten",
-                        "items": [
-                            "Vor- und Nachname",
-                            "E-Mail-Adresse",
-                            "Telefonnummer",
-                            "Benutzername und Passwort"
-                        ]
-                    },
-                    "usage": {
-                        "title": "Nutzungsdaten",
-                        "items": [
-                            "Event-Präferenzen",
-                            "Teilnahmehistorie",
-                            "App-Interaktionen",
-                            "Geolokationsdaten"
-                        ]
-                    },
-                    "technical": {
-                        "title": "Technische Daten",
-                        "items": [
-                            "IP-Adresse",
-                            "Gerätetyp",
-                            "Betriebssystem",
-                            "Cookies und ähnliche Technologien"
-                        ]
-                    },
-                    "content": {
-                        "title": "Benutzerinhalt",
-                        "items": [
-                            "Hochgeladene Fotos",
-                            "Kommentare und Bewertungen",
-                            "Erstellte Events",
-                            "Gesendete Nachrichten"
-                        ]
-                    }
-                }
-            },
-            "purposes": {
-                "title": "4. Verarbeitungszwecke",
-                "content": "Wir verwenden Ihre personenbezogenen Daten für folgende Zwecke:",
-                "purposes": [
-                    "Dienstleistungserbringung: Zur Bereitstellung und Wartung unserer Dienstleistungen, einschließlich der Verwaltung von Automobilveranstaltungen",
-                    "Kommunikation: Zur Kommunikation mit Ihnen bezüglich Veranstaltungen, Updates und Support",
-                    "Verbesserung: Zur Analyse der Nutzung und Verbesserung unserer Dienstleistungen",
-                    "Marketing: Zum Versenden von Werbekommunikation (nur mit Ihrer Zustimmung)",
-                    "Rechtliche Compliance: Zur Einhaltung rechtlicher und regulatorischer Verpflichtungen"
+        "subtitle": "Ihre Privatsphäre ist uns wichtig. Erfahren Sie, wie wir Ihre Daten erheben, verwenden und schützen.",
+        "lastUpdatedUpper": "Letzte Aktualisierung:",
+        "lastUpdatedDate": "April 2026",
+        "welcome": "Willkommen in der Datenschutzerklärung von Blinker. ",
+        "welcomeDescription": "Dieses Dokument erklärt, wie wir Ihre persönlichen Informationen erheben, verwenden, teilen und schützen, wenn Sie Blinker nutzen — sei es über das Web-Dashboard (https://blinker-app.com) oder über die nativen Apps für iOS (App Store) und Android (Google Play).",
+        "privacyImportant": "Blinker ist eine Social-Plattform für Auto-Enthusiasten, die vollständig auf der Identität der Nutzer aufgebaut ist: Jedes Event, jede Crew, jedes Fahrzeug und jeder Inhalt wird von einer realen, identifizierbaren Person erstellt. Um die Privatsphäre der registrierten Nutzer und die Sicherheit der Community zu schützen, erfordert der Zugriff auf Blinker stets ein Konto. Bitte lesen Sie diese Richtlinie, um zu verstehen, wie wir Ihre Daten verarbeiten.",
+        "section1": {
+            "title": "1. Informationen, die wir erheben",
+            "registrationData": {
+                "title": "Registrierungsdaten",
+                "description": "Wenn Sie ein Konto bei Blinker erstellen, erheben wir nur das, was zur Identifikation und Teilnahme an der Community notwendig ist:",
+                "items": [
+                    "Spitzname (eindeutig)",
+                    "Vor- und Nachname (sichtbar in Ihrem Profil)",
+                    "E-Mail-Adresse (für Authentifizierung, Servicemitteilungen und Kontowiederherstellung)",
+                    "Verschlüsseltes Passwort — nur wenn Sie sich mit E-Mail/Passwort registrieren. Wird nicht festgelegt oder verlangt für Nutzer, die sich mit Sign in with Apple oder Sign in with Google anmelden",
+                    "OAuth-Provider-ID (Apple ID, Google-Konto), wenn Sie sich mit ihnen anmelden",
+                    "Stadt und Wohnsitzland (für geografische Filter und regionale Statistiken)",
+                    "Profilbild (optional)",
+                    "Persönliche Bio, Links zu Instagram und TikTok (optional, im öffentlichen Profil sichtbar)",
+                    "Telefonnummer (optional)"
                 ]
             },
-            "legalBasis": {
-                "title": "5. Rechtsgrundlage der Verarbeitung",
-                "content": "Wir verarbeiten Ihre personenbezogenen Daten auf der Grundlage von:",
-                "bases": [
-                    "Zustimmung: Für Marketing und nicht-essentielle Cookies",
-                    "Vertragserfüllung: Zur Bereitstellung unserer Dienstleistungen",
-                    "Berechtigtes Interesse: Zur Verbesserung von Dienstleistungen und Sicherheit",
-                    "Rechtliche Verpflichtung: Zur Einhaltung anwendbarer Vorschriften"
+            "usageData": {
+                "title": "Nutzungsdaten",
+                "description": "Während der Nutzung von Blinker erheben wir, ausschließlich für den Betrieb und die Sicherheit der Plattform:",
+                "items": [
+                    "Events, die Sie erstellen, verfolgen, an denen Sie teilnehmen oder für die Sie Auswahl-Anfragen senden",
+                    "Crews, in denen Sie Mitglied oder Founder sind oder denen Sie beitreten möchten, mit Ihrer Rolle (Founder, Admin, Moderator, Supporter, Member)",
+                    "Fahrzeuge, die Sie in Ihrer Garage veröffentlichen (Name, Hauptfoto, Galerie, Beschreibung, Motor, Federung, Räder, Kennzeichen, Jahr, Tags)",
+                    "Soziale Interaktionen: Likes auf Fahrzeuge, Event-Teilnahmen, Abos, News, die in einem Event veröffentlicht werden",
+                    "Stimmen und Moderationsentscheidungen zu Auswahlen (für diejenigen, die selektive Events verwalten)",
+                    "Monatliche Boosts, die Sie Crews zuweisen",
+                    "Geräte-Geolokalisierung — nur wenn Sie ausdrücklich Distanz-Filter aktivieren oder ein georeferenziertes Event erstellen. Sie wird nicht kontinuierlich gespeichert oder im Hintergrund verfolgt",
+                    "Push-Notification-Tokens (Apple Push Notification Service für iOS, Firebase Cloud Messaging für Android), um Ihnen Updates zu Events, Crews und Interaktionen zu senden",
+                    "Grundlegende technische Daten: Anzahl der Aufrufe (aggregiert), Referrer, aus IP-Adresse abgeleitetes Land/Stadt, anonymer Sitzungsbezeichner, Sprache, Theme, App-Version — ausschließlich für aggregierte Statistiken zu Inhalten, die Ihnen gehören (oder zu Events von Crews, in denen Sie Mitglied sind)",
+                    "Meldungen, die Sie absenden (zu Nutzern, Events, News, Fahrzeugen, Crews) und Blockierungen, die Sie auf andere Nutzer anwenden"
                 ]
-            },
-            "dataSharing": {
-                "title": "6. Datenweitergabe",
-                "content": "Wir verkaufen Ihre personenbezogenen Daten nicht. Wir könnten Ihre Daten teilen mit:",
-                "parties": [
-                    "Dienstleister: Die uns bei der Bereitstellung unserer Dienstleistungen helfen",
-                    "Event-Partner: Für spezifische Veranstaltungen (nur mit Ihrer Zustimmung)",
-                    "Behörden: Wenn gesetzlich erforderlich",
-                    "Unternehmensübertragungen: Im Falle einer Fusion oder Übernahme"
-                ]
-            },
-            "retention": {
-                "title": "7. Datenaufbewahrung",
-                "content": "Wir speichern Ihre personenbezogenen Daten nur für die Zeit, die notwendig ist, um:",
-                "purposes": [
-                    "Unsere Dienstleistungen bereitzustellen",
-                    "Rechtliche Verpflichtungen einzuhalten",
-                    "Streitigkeiten zu lösen",
-                    "Unsere Vereinbarungen durchzusetzen"
-                ],
-                "deletion": "Daten werden gelöscht oder anonymisiert, wenn sie nicht mehr erforderlich sind."
-            },
-            "rights": {
-                "title": "8. Ihre Rechte",
-                "content": "Sie haben das Recht zu:",
-                "userRights": [
-                    "Zugang: Eine Kopie Ihrer personenbezogenen Daten zu erhalten",
-                    "Berichtigung: Unrichtige oder unvollständige Daten zu korrigieren",
-                    "Löschung: Die Löschung Ihrer Daten zu beantragen",
-                    "Einschränkung: Die Verarbeitung in bestimmten Umständen zu beschränken",
-                    "Datenübertragbarkeit: Ihre Daten in strukturiertem Format zu erhalten",
-                    "Widerspruch: Der Verarbeitung für Marketing zu widersprechen",
-                    "Zustimmungsentzug: Die Zustimmung jederzeit zu widerrufen"
-                ]
-            },
-            "security": {
-                "title": "9. Datensicherheit",
-                "content": "Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer personenbezogenen Daten, einschließlich:",
-                "technicalMeasures": "Technische Maßnahmen",
-                "measures": [
-                    "Verschlüsselung von Daten bei Übertragung und Speicherung",
-                    "Strenge Zugangskontrollen",
-                    "Kontinuierliche Sicherheitsüberwachung",
-                    "Schulung des Personals im Datenschutz"
-                ]
-            },
-            "cookies": {
-                "title": "10. Cookies und ähnliche Technologien",
-                "content": "Wir verwenden Cookies und ähnliche Technologien für:",
-                "purposes": [
-                    "Verbesserung der Benutzererfahrung",
-                    "Analyse der Website-Nutzung",
-                    "Bereitstellung personalisierter Inhalte",
-                    "Sicherstellung der Sicherheit"
-                ],
-                "management": "Sie können Ihre Cookie-Einstellungen über die Einstellungen Ihres Browsers oder unser Zustimmungsbanner verwalten.",
-                "managementTitle": "Cookie-Verwaltung"
-            },
-            "internationalTransfers": {
-                "title": "11. Internationale Übertragungen",
-                "content": "Ihre Daten könnten in Länder außerhalb der EU/EWR übertragen und verarbeitet werden. In diesen Fällen stellen wir sicher, dass:",
-                "guarantees": [
-                    "Das Zielland ein angemessenes Schutzniveau bietet",
-                    "Angemessene vertragliche Garantien bestehen",
-                    "Die Übertragung von den zuständigen Behörden genehmigt ist"
-                ]
-            },
-            "minors": {
-                "title": "12. Minderjährige",
-                "content": "Unsere Dienstleistungen sind nicht für Minderjährige unter 16 Jahren bestimmt. Wir sammeln wissentlich keine personenbezogenen Daten von Minderjährigen unter 16 Jahren. Wenn wir feststellen, dass wir Daten von einem Minderjährigen gesammelt haben, werden wir diese sofort löschen."
-            },
-            "changes": {
-                "title": "13. Änderungen der Datenschutzrichtlinie",
-                "content": "Wir könnten diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über wichtige Änderungen informieren über:",
-                "notifications": [
-                    "Benachrichtigung in der App",
-                    "E-Mail",
-                    "Hinweis auf unserer Website"
-                ],
-                "review": "Wir ermutigen Sie, diese Richtlinie regelmäßig zu überprüfen.",
-                "notificationTitle": "Änderungsbenachrichtigung"
-            },
-            "contact": {
-                "title": "14. Kontakt",
-                "content": "Bei Fragen zu dieser Datenschutzrichtlinie oder der Verarbeitung Ihrer personenbezogenen Daten kontaktieren Sie uns:",
-                "info": [
-                    "E-Mail: privacy@blinker-app.com"
-                ],
-                "complaint": "Sie haben auch das Recht, eine Beschwerde bei der Datenschutzbehörde einzureichen."
-            },
-            "footer": {
-                "gdprCompliance": "Diese Datenschutzrichtlinie entspricht der DSGVO und den europäischen Datenschutzvorschriften."
             }
+        },
+        "section2": {
+            "title": "2. Wie wir Ihre Informationen verwenden",
+            "description": "Wir verarbeiten Ihre Daten ausschließlich, um:",
+            "items": [
+                "Die Blinker-Dienste zu erbringen (Erstellung und Verwaltung von Events, Crews, Fahrzeugen, News, Auswahlen, Galerie)",
+                "Sie via E-Mail/Passwort, Sign in with Apple oder Sign in with Google zu authentifizieren",
+                "Die App-Erfahrung zu personalisieren (Sprache, Theme, relevante Inhalte für Ihre Zone und für Ihre Crews)",
+                "Ihnen Push- und In-App-Benachrichtigungen zu Events, denen Sie folgen, veröffentlichten News, Einladungen, Beitrittsanfragen und Auswahlentscheidungen zu senden",
+                "Ihnen aggregierte Statistiken zu den Inhalten, die Ihnen gehören, und zu den Events der Crews, in denen Sie Mitglied sind, anzuzeigen",
+                "Sicherheit zu gewährleisten, automatisierte Missbräuche zu verhindern, Blockierungen anzuwenden, Meldungen zu verwalten und Inhalte zu moderieren",
+                "Die Funktionen der App zu verbessern, Bugs zu identifizieren und zu beheben",
+                "Auf Ihre Support-Anfragen zu antworten",
+                "Gesetzliche Verpflichtungen zu erfüllen"
+            ]
+        },
+        "section3": {
+            "title": "3. Weitergabe der Informationen",
+            "description": "Wir verkaufen oder vermieten Ihre persönlichen Daten nicht. Wir geben sie nur in den folgenden Fällen weiter:",
+            "items": [
+                {
+                    "title": "An andere registrierte Nutzer:",
+                    "description": "Öffentliches Profil, Events, Crews, Fahrzeuge, Likes, Teilnahmen, News und Multimedia-Inhalte, die Sie veröffentlichen, sind für andere Nutzer der Community sichtbar. Blinker ist eine geschlossene Plattform: Kein Inhalt ist für nicht authentifizierte Besucher zugänglich."
+                },
+                {
+                    "title": "An technische Dienstleister (Auftragsverarbeiter):",
+                    "description": "Supabase (Authentifizierung, PostgreSQL-Datenbank und Speicherung in der EU — eu-central-1), BunnyCDN (Verteilung der hochgeladenen Bilder), Apple Push Notification Service (iOS-Benachrichtigungen), Firebase Cloud Messaging (Android-Benachrichtigungen), Apple und Google (OAuth-Authentifizierung, wenn Sie sich mit ihnen anmelden), Google Analytics und Vercel Analytics (aggregierte Web-Analytik — nur mit vorheriger Zustimmung). Alle Anbieter operieren unter DSGVO-konformen Auftragsverarbeitungsverträgen."
+                },
+                {
+                    "title": "Aus rechtlichen Gründen:",
+                    "description": "Wenn von einer zuständigen Behörde verlangt oder zum Schutz der Rechte, Sicherheit oder des Eigentums von Blinker und seinen Nutzern."
+                },
+                {
+                    "title": "Im Falle eines Unternehmensvorgangs:",
+                    "description": "Daten könnten übertragen werden, wenn Blinker erworben wird oder mit einem anderen Unternehmen fusioniert; in diesem Fall werden wir Sie im Voraus benachrichtigen und Sie haben das Recht, zu widersprechen."
+                }
+            ]
+        },
+        "section4": {
+            "title": "4. Aufbewahrung der Daten",
+            "description": "Wir bewahren Ihre Daten für die Zeit auf, die zur Erbringung des Dienstes und zur Erfüllung der gesetzlichen Verpflichtungen erforderlich ist. Wenn Sie die Löschung des Kontos auf der Einstellungsseite oder per Kontakt an privacy@blinker-app.com anfordern, werden das Konto und die persönlichen Daten innerhalb von 30 Tagen gelöscht; die von Ihnen veröffentlichten Inhalte (Events, News, Fahrzeuge) werden anonymisiert oder entsprechend entfernt. Aggregierte Analytik-Daten ohne Identifikationsmerkmale werden für maximal 24 Monate aufbewahrt."
+        },
+        "section5": {
+            "title": "5. Sicherheit",
+            "description": "Wir treffen angemessene technische und organisatorische Maßnahmen: TLS-verschlüsselte Übertragung, mit starkem Hashing verwaltete Passwörter, Row-Level Security auf PostgreSQL, die an Ihre User-ID gebunden ist, auf autorisiertes Personal beschränkter Backend-Zugriff, Audit-Logs administrativer Operationen. Kein System ist absolut unverwundbar: Bitte wählen Sie ein robustes Passwort (oder verwenden Sie Sign in with Apple/Google) und teilen Sie es nicht."
+        },
+        "section6": {
+            "title": "6. Minderjährige",
+            "description": "Blinker richtet sich an Nutzer ab 16 Jahren. Wir erheben nicht wissentlich persönliche Daten von Personen unter 16 Jahren. Sollten wir eine Meldung erhalten (oder feststellen), dass ein Konto von einem Minderjährigen erstellt wurde, löschen wir es innerhalb von 24 Stunden."
+        },
+        "section7": {
+            "title": "7. Internationale Übermittlungen",
+            "description": "Die Datenbank, der Bildspeicher und die meisten technischen Dienste befinden sich in der Europäischen Union (Supabase eu-central-1, BunnyCDN EU-Edges). Einige Anbieter (Apple, Google, Firebase) können Übermittlungen in Drittländer mit sich bringen: In allen Fällen wenden wir die von der Europäischen Kommission genehmigten Standardvertragsklauseln oder gleichwertige Garantien an."
+        },
+        "section8": {
+            "title": "8. Ihre Rechte",
+            "description": "Gemäß DSGVO haben Sie das Recht:",
+            "rights": [
+                "Auf Ihre persönlichen Daten zuzugreifen und eine Kopie zu erhalten",
+                "Ungenaue oder unvollständige Daten in Ihrem Profil zu korrigieren oder per E-Mail anzufordern",
+                "Die Löschung des Kontos und aller zugehörigen Daten zu beantragen (innerhalb von 30 Tagen)",
+                "Die Verarbeitung aus berechtigten Gründen einzuschränken",
+                "Die Datenübertragbarkeit in einem lesbaren Format anzufordern",
+                "Der Verarbeitung zu widersprechen",
+                "Die Einwilligung jederzeit zu widerrufen (z. B. Push-Benachrichtigungen deaktivieren oder Apple/Google trennen)",
+                "Eine Beschwerde bei der italienischen Datenschutzbehörde einzureichen (https://www.garanteprivacy.it)"
+            ],
+            "contact": "Um diese Rechte auszuüben, schreiben Sie an privacy@blinker-app.com. Wir antworten innerhalb von 30 Tagen."
+        },
+        "section9": {
+            "title": "9. Cookies und ähnliche Technologien",
+            "description": "Auf dem Web-Dashboard verwenden wir technische Cookies (immer aktiv: Authentifizierungssitzung, Sprache, Theme, Cookie-Präferenzen) und mit Ihrer Einwilligung Analytics-Cookies (Google Analytics, Vercel Analytics). Die nativen iOS/Android-Apps verwenden keine Drittanbieter-Cookies, sondern interne Bezeichner, die für den Betrieb erforderlich sind (Sitzungstoken, anonymer Sitzungsbezeichner für aggregierte Statistiken). Für Details lesen Sie die Cookie-Richtlinie, die im Footer verfügbar ist."
+        },
+        "section10": {
+            "title": "10. Änderungen dieser Datenschutzerklärung",
+            "description": "Wir können die Richtlinie aktualisieren, wenn wir neue Funktionen hinzufügen oder sich der regulatorische Rahmen ändert. Wesentliche Änderungen werden Ihnen per E-Mail und/oder In-App-Benachrichtigung mitgeteilt. Das Datum der letzten Aktualisierung steht oben im Dokument."
+        },
+        "section11": {
+            "title": "11. Kontakt",
+            "description": "Für jede Frage oder Anfrage zu Ihren persönlichen Daten:",
+            "email": "E-Mail",
+            "address": "Adresse",
+            "website": "Website"
+        },
+        "lastUpdated": "Diese Datenschutzerklärung wurde zuletzt im April 2026 aktualisiert.",
+        "summary": {
+            "title": "📋 Zusammenfassung",
+            "items": [
+                "Blinker ist eine account-basierte Plattform: Jeder Inhalt erfordert eine Identität, um zu existieren und angezeigt zu werden",
+                "Wir erheben nur die für den Betrieb der Community und die Verbindung zwischen Nutzern erforderlichen Daten",
+                "Wir verkaufen oder geben Ihre Daten niemals zu kommerziellen Zwecken an Dritte weiter",
+                "Sie können jederzeit über die Einstellungen auf Ihre Daten zugreifen, sie korrigieren oder löschen",
+                "Sign in with Apple und Google werden als schnelle Alternative zu E-Mail/Passwort angeboten — bei deren Verwendung müssen Sie kein Passwort festlegen",
+                "Bei Fragen kontaktieren Sie uns unter privacy@blinker-app.com"
+            ]
         }
     },
     "cookiePolicy": {
@@ -507,141 +474,163 @@
         }
     },
     "termsOfService": {
-        "title": "Nutzungsbedingungen",
-        "close": "Modal schließen",
-        "sections": {
-            "acceptance": {
-                "title": "1. Annahme der Bedingungen",
-                "content": "Durch die Nutzung der Blinker-App stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, verwenden Sie die App nicht. Diese Bedingungen gelten für alle Benutzer der App, einschließlich Event-Organisatoren und Teilnehmer."
-            },
-            "serviceDescription": {
-                "title": "2. Dienstleistungsbeschreibung",
-                "content": "Blinker ist eine mobile Anwendung, die die Organisation und Teilnahme an Automobilveranstaltungen erleichtert. Unsere Dienstleistungen umfassen:",
-                "services": [
-                    "Erstellung und Verwaltung von Automobilveranstaltungen",
-                    "Event-Registrierung und Teilnahme",
-                    "Kommunikation zwischen Organisatoren und Teilnehmern",
-                    "Teilen von Fotos und Inhalten zu Veranstaltungen",
-                    "Newsletter und Werbekommunikation"
-                ]
-            },
-            "registration": {
-                "title": "3. Registrierung und Konto",
-                "accountCreation": {
-                    "title": "Kontoerstellung",
-                    "content": "Um einige App-Funktionen zu nutzen, müssen Sie möglicherweise ein Konto erstellen. Sie sind verantwortlich für die Vertraulichkeit Ihrer Anmeldedaten."
-                },
-                "accurateInfo": {
-                    "title": "Genaue Informationen",
-                    "content": "Sie verpflichten sich, während der Registrierung und Nutzung der App genaue, vollständige und aktuelle Informationen bereitzustellen."
-                },
-                "accountResponsibility": {
-                    "title": "Kontoverantwortung",
-                    "content": "Sie sind für alle Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden. Benachrichtigen Sie sofort über jede unbefugte Nutzung."
-                }
-            },
-            "acceptableUse": {
-                "title": "4. Akzeptable Nutzung",
-                "content": "Sie verpflichten sich, die App nur für legitime Zwecke und in Übereinstimmung mit diesen Bedingungen zu verwenden. Es ist verboten:",
-                "prohibited": [
-                    "Die App für illegale oder betrügerische Aktivitäten zu verwenden",
-                    "Geistige Eigentumsrechte zu verletzen",
-                    "Anstößige, diffamierende oder unangemessene Inhalte hochzuladen",
-                    "Mit dem Betrieb der App zu interferieren",
-                    "Unbefugten Zugang zu Systemen oder Konten zu erlangen",
-                    "Malware oder Viren zu verbreiten",
-                    "Personenbezogene Daten anderer Benutzer ohne Zustimmung zu sammeln"
-                ]
-            },
-            "userContent": {
-                "title": "5. Benutzerinhalt",
-                "content": "Wenn Sie Inhalte in die App hochladen:",
-                "rights": [
-                    "Sie behalten das Eigentum an Ihren Inhalten",
-                    "Sie gewähren uns eine nicht-exklusive Lizenz zur Nutzung der Inhalte",
-                    "Sie sind verantwortlich für die Legalität und Angemessenheit der Inhalte",
-                    "Wir können Inhalte entfernen, die diese Bedingungen verletzen"
-                ]
-            },
-            "privacy": {
-                "title": "6. Datenschutz und Datenschutz",
-                "content": "Die Verarbeitung Ihrer personenbezogenen Daten wird durch unsere Datenschutzrichtlinie geregelt, die einen integralen Bestandteil dieser Bedingungen bildet. Durch die Nutzung der App stimmen Sie der Verarbeitung Ihrer Daten gemäß der Datenschutzrichtlinie zu."
-            },
-            "intellectualProperty": {
-                "title": "7. Geistiges Eigentum",
-                "content": "Die App und alle ihre Inhalte (außer Benutzerinhalten) sind durch geistige Eigentumsrechte geschützt. Es ist nicht erlaubt:",
-                "prohibited": [
-                    "Die Software zu kopieren, zu modifizieren oder zu verteilen",
-                    "Reverse Engineering der App durchzuführen",
-                    "Unsere Marken ohne Genehmigung zu verwenden",
-                    "Copyright- oder Eigentumshinweise zu entfernen"
-                ]
-            },
-            "liability": {
-                "title": "8. Haftungsbeschränkung",
-                "content": "Innerhalb der gesetzlich zulässigen Grenzen ist Blinker nicht haftbar für:",
-                "exclusions": [
-                    "Indirekte, zufällige oder Folgeschäden",
-                    "Datenverlust oder Dienstunterbrechungen",
-                    "Handlungen von Dritten oder anderen Benutzern",
-                    "Schäden durch höhere Gewalt"
-                ],
-                "limit": "Unsere Gesamthaftung ist auf den Betrag begrenzt, der für Dienstleistungen in den vorherigen 12 Monaten gezahlt wurde."
-            },
-            "indemnification": {
-                "title": "9. Freistellung",
-                "content": "Sie verpflichten sich, Blinker von jeglichem Anspruch, Schaden oder Aufwand freizustellen, der sich ergibt aus:",
-                "claims": [
-                    "Verletzung dieser Bedingungen",
-                    "Unbefugter Nutzung der App",
-                    "Inhalten, die Sie in die App hochladen",
-                    "Verletzung von Rechten Dritter"
-                ]
-            },
-            "termination": {
-                "title": "10. Suspendierung und Kündigung",
-                "content": "Wir können Ihr Konto in folgenden Fällen suspendieren oder kündigen:",
-                "reasons": [
-                    "Verletzung dieser Bedingungen",
-                    "Betrügerische oder illegale Aktivitäten",
-                    "Unbefugte Nutzung",
-                    "Benutzeranfrage"
-                ],
-                "effect": "Im Falle einer Kündigung verlieren Sie den Zugang zu Ihren Daten und Inhalten."
-            },
-            "modifications": {
-                "title": "11. Änderungen der Bedingungen",
-                "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden ab dem Datum der Veröffentlichung wirksam. Wir werden Sie über wichtige Änderungen informieren über:",
-                "notifications": [
-                    "Benachrichtigung in der App",
-                    "E-Mail",
-                    "Hinweis auf der Website"
-                ],
-                "acceptance": "Durch die weitere Nutzung der App nach den Änderungen stimmen Sie den neuen Bedingungen zu."
-            },
-            "governingLaw": {
-                "title": "12. Anwendbares Recht und Gerichtsbarkeit",
-                "content": "Diese Bedingungen unterliegen italienischem Recht. Jede Streitigkeit wird von den Gerichten in Rom, Italien, gelöst, es sei denn, zwingendes Recht sieht anderes vor."
-            },
-            "general": {
-                "title": "13. Allgemeine Bestimmungen",
-                "provisions": [
-                    "Wenn eine Bestimmung ungültig ist, bleiben die anderen gültig",
-                    "Die Nichtausübung eines Rechts stellt keinen Verzicht dar",
-                    "Diese Bedingungen stellen die vollständige Vereinbarung zwischen den Parteien dar",
-                    "Wir sind nicht verantwortlich für Ereignisse außerhalb unserer Kontrolle"
-                ]
-            },
-            "contact": {
-                "title": "14. Kontakt",
-                "content": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns:",
-                "info": [
-                    "E-Mail: legal@blinker-app.com"
-                ]
-            },
-            "footer": {
-                "legalCompliance": "Diese Nutzungsbedingungen entsprechen den europäischen und italienischen Vorschriften für digitale Dienste."
-            }
+        "title": "Endbenutzer-Lizenzvertrag (EULA)",
+        "subtitle": "Die Bedingungen für die Nutzung von Blinker",
+        "lastUpdated": "Letzte Aktualisierung: April 2026",
+        "welcome": "Willkommen bei Blinker. Blinker ist eine Social-Plattform für Auto-Enthusiasten, die es Ihnen ermöglicht, Meetups, Treffen, Trackdays und jedes Auto-bezogene Event zu entdecken und zu organisieren, Ihre Crew aufzubauen und Ihre Fahrzeuge der Community zu zeigen.",
+        "readCarefully": "Bevor Sie Blinker verwenden, lesen Sie bitte diesen Endbenutzer-Lizenzvertrag (EULA) sorgfältig. Durch die Nutzung der App oder des Web-Dashboards akzeptieren Sie die hier beschriebenen Bedingungen. Wenn Sie nicht zustimmen, bitten wir Sie, Blinker nicht zu verwenden.",
+        "section1": {
+            "title": "1. Lizenzgewährung",
+            "description": "Wir gewähren Ihnen das Recht, Blinker (Web-Dashboard auf https://blinker-app.com, iOS-App im App Store und Android-App auf Google Play) auf Ihren persönlichen Geräten in eingeschränkter, nicht-exklusiver, nicht übertragbarer und widerrufbarer Weise zu nutzen.",
+            "additionalInfo": "Die App ist für persönliche und Freizeit-Nutzung bestimmt. Sie dürfen sie nicht für kommerzielle Zwecke (z. B. Event-Agentur, Autoverkauf, Werbung) ohne unsere schriftliche Zustimmung verwenden."
+        },
+        "section1bis": {
+            "title": "1-bis. Account-basierte Natur des Dienstes",
+            "description": "Blinker ist eine Social-Plattform, die auf der Identität der Nutzer aufgebaut ist: Jedes Event, jede Crew, jedes Fahrzeug und jeder Inhalt wird von einer realen, identifizierbaren Person erstellt und enthält oft Koordinaten privater oder halbprivater Orte, persönliche Fotos und Kontakt-Links. Um die Privatsphäre der registrierten Nutzer zu schützen, die Sicherheit der Community zu gewährleisten und Missbrauch zu verhindern (z. B. automatisiertes Scraping von Standorten, Fotos, Namen, Follower-Listen), erfordert der Zugriff auf Blinker ab dem ersten Start stets ein Konto. Kein Inhalt ist für nicht authentifizierte Besucher sichtbar.",
+            "items": [
+                "Die von den Nutzern veröffentlichten Daten sind durch Row-Level Security geschützt, die an die Identität des Erstellers gebunden sind: Die Aufhebung der Authentifizierungsanforderung würde eine Neuverhandlung der von den bestehenden Nutzern erteilten Einwilligung erfordern.",
+                "Die Funktionen Blockieren, Melden und Moderieren sind nur dann sinnvoll, wenn beide Parteien eine Identität haben.",
+                "Die Authentifizierung ist unsere primäre Grenze gegen automatisierten Missbrauch.",
+                "Alle primären Aktionen in der App (Events erstellen, Crews beitreten, Nutzern folgen, Auswahl-Anfragen senden, News veröffentlichen, kommentieren) erfordern naturgemäß eine Identität."
+            ]
+        },
+        "section1ter": {
+            "title": "1-ter. Anmeldemethoden",
+            "description": "Um die Registrierungs-Reibung zu minimieren, bietet Blinker mehrere Anmeldeoptionen:",
+            "items": [
+                "E-Mail + Passwort mit Verifizierung per Link",
+                "Sign in with Apple — verfügbar auf iOS, Web und Android. Nutzer, die sich mit Apple anmelden, müssen kein Passwort festlegen und können ihre Apple ID gemäß Apple-Richtlinien zur Kontolöschung verwenden.",
+                "Sign in with Google — verfügbar auf allen Plattformen",
+                "Sie können OAuth-Anbieter jederzeit über Ihr Profil verbinden und trennen. Wenn Sie alle OAuth-Anbieter entfernen und ein Passwort festgelegt haben, können Sie sich weiterhin per E-Mail/Passwort anmelden."
+            ]
+        },
+        "section2": {
+            "title": "2. App-Funktionen",
+            "description": "Blinker ermöglicht Ihnen:",
+            "items": [
+                "Automotive-Events zu erkunden und nach Kategorie, geografischer Distanz, Zeitraum, Land und veranstaltender Crew zu filtern",
+                "Events sowohl als private Nutzer als auch als Teil einer Crew zu erstellen und zu verwalten — mit Bild, Banner, Beschreibung, Geolokalisierung, zugelassenen Fahrzeugtypen und optionalem Auswahlmechanismus (Teilnehmer-Genehmigung)",
+                "News innerhalb der Events zu veröffentlichen, die Sie verwalten oder für die Sie in der veranstaltenden Crew die Berechtigung haben",
+                "Events zu folgen und Benachrichtigungen über Updates, News, Datums- oder Ortsänderungen zu erhalten",
+                "Eine Crew mit Rollen (Founder, Admin, Moderator, Supporter, Member) und granularen Berechtigungen für die Verwaltung von Events, News, Mitgliedern und Auswahlen aufzubauen",
+                "Andere Nutzer in Ihre Crew einzuladen, Beitrittsanfragen zu verwalten und das Eigentum zu übertragen",
+                "Ihre Fahrzeuge mit Fotos, Galerie, technischen Details (Motor, Federung, Räder, Kennzeichen, Tags, Jahr) zu veröffentlichen und Likes von der Community zu erhalten",
+                "Mit anderen Community-Mitgliedern zu interagieren: Nutzern folgen, Fahrzeuge liken, an Events teilnehmen",
+                "Crews monatliche Boosts zuzuweisen, um im Community-Ranking aufzusteigen",
+                "Aggregierte Statistiken zu Ihren Inhalten und zu den von Ihren Crews organisierten Events anzuzeigen",
+                "Ihr Konto und alle zugehörigen Daten autonom über die Einstellungen-Seite zu löschen"
+            ]
+        },
+        "section3": {
+            "title": "3. Was Sie nicht tun dürfen",
+            "description": "Um Blinker als sicheren und respektvollen Raum zu erhalten, verpflichten Sie sich, nicht:",
+            "items": [
+                "Blinker für illegale, anstößige oder schädliche Aktivitäten zu nutzen",
+                "Falsche, diffamierende, gewalttätige, pornografische, hetzerische Inhalte oder Inhalte zu veröffentlichen, die Rechte Dritter verletzen (einschließlich Urheberrecht und Bildrecht)",
+                "Zu versuchen, die Sicherheit der App oder der Systeme zu kompromittieren (Reverse Engineering, Exploits, unbefugter Zugriff)",
+                "Mehrfache oder gefälschte Konten zu erstellen oder die Identität eines anderen Nutzers anzunehmen",
+                "Bots, automatisierte Skripte oder Scraping-Tools zu verwenden, um auf Inhalte zuzugreifen",
+                "Ihr Konto zu verkaufen, zu übertragen oder zu teilen",
+                "Events oder Inhalte zu veröffentlichen, die unsicheres Verhalten im Straßenverkehr fördern oder gegen die Straßenverkehrsordnung verstoßen",
+                "Lokale, nationale oder internationale Gesetze zu verletzen",
+                "Blinker verfolgt eine Null-Toleranz-Politik gegenüber anstößigen oder missbräuchlichen Inhalten und Verhaltensweisen: Jeder Verstoß führt zur sofortigen Entfernung der Inhalte und/oder Sperrung des Kontos."
+            ]
+        },
+        "section4": {
+            "title": "4. Nutzergenerierte Inhalte",
+            "description": "Wenn Sie Inhalte auf Blinker veröffentlichen (Fotos, Beschreibungen, Events, News, Fahrzeuge, Profil):",
+            "items": [
+                "Sie bleiben Eigentümer Ihrer Inhalte.",
+                "Sie gewähren uns eine nicht-exklusive, weltweite, gebührenfreie Lizenz, um sie zu hosten, zu verteilen (auch über unser CDN BunnyCDN), anderen registrierten Nutzern anzuzeigen und für den Betrieb des Dienstes zu verwenden.",
+                "Sie sind verantwortlich für die Wahrhaftigkeit, Rechtmäßigkeit und Rechte der Inhalte, die Sie veröffentlichen.",
+                "Wir können nicht für die Genauigkeit der von anderen Nutzern veröffentlichten Inhalte garantieren."
+            ]
+        },
+        "section4bis": {
+            "title": "4-bis. Inhalts-Moderation und Sicherheit",
+            "description": "Blinker verfolgt eine Null-Toleranz-Politik gegenüber anstößigen, gewalttätigen, illegalen, diskriminierenden, pornografischen, hetzerischen Inhalten oder Inhalten, die Rechte Dritter verletzen.",
+            "securityInfo": "Um die Sicherheit der Community zu gewährleisten:",
+            "items": [
+                "Jeder Nutzer kann unangemessene Inhalte oder Verhaltensweisen direkt aus der App melden oder eine E-Mail an support@blinker-app.com senden",
+                "Jeder Nutzer kann andere Nutzer, die er für missbräuchlich oder belästigend hält, blockieren — die Blockierung verhindert, dass der blockierte Nutzer die Inhalte des Blockierenden sieht und mit ihm interagiert",
+                "Das Blinker-Staff und die Crew-Organisatoren können je nach zugewiesenen Berechtigungen Inhalte entfernen und Konten sperren",
+                "Wir verpflichten uns, Meldungen innerhalb von 24 Stunden nach Eingang zu prüfen und bei Bedarf einzugreifen."
+            ]
+        },
+        "section5": {
+            "title": "5. Crew-Verwaltung",
+            "description": "Wenn Sie eine Crew erstellen oder verwalten:",
+            "items": [
+                "Sie sind verantwortlich für die Inhalte, Events und Aktionen, die Sie im Namen der Crew veröffentlichen",
+                "Sie müssen die Nutzungsbedingungen einhalten und sicherstellen, dass auch die Crew-Mitglieder dies tun",
+                "Die Berechtigungen (Event-Erstellung, Auswahl-Verwaltung, Mitglieder-Beförderung, News-Veröffentlichung, etc.) sind vom Founder für jede Rolle konfigurierbar",
+                "Die Übertragung des Crew-Eigentums erfolgt nur mit der ausdrücklichen Zustimmung des neuen Founders",
+                "Blinker ist nicht verantwortlich für interne Crew-Konflikte oder die operative Verwaltung der von der Crew veröffentlichten Events."
+            ]
+        },
+        "section6": {
+            "title": "6. In-App-Käufe",
+            "description": "Derzeit sieht Blinker keine In-App-Käufe oder kostenpflichtigen Funktionen vor. Sollten wir in Zukunft Premium-Funktionen einführen, werden sie durch spezifische, zum Zeitpunkt des Kaufs mitgeteilte Bedingungen geregelt. Eventuelle Käufe folgen den Rückerstattungsrichtlinien des Apple App Store, Google Play Store oder anderer anwendbarer Vertriebskanäle."
+        },
+        "section7": {
+            "title": "7. Updates und Änderungen",
+            "description": "Wir veröffentlichen regelmäßige Updates, um Funktionen zu verbessern, Bugs zu beheben und neue Eigenschaften hinzuzufügen. Auf der Mobile-App werden Updates über App Store / Google Play verteilt. Auf dem Web-Dashboard werden sie automatisch beim Browser-Refresh ausgeliefert."
+        },
+        "section8": {
+            "title": "8. Garantieausschlüsse",
+            "description": "Blinker wird „wie besehen\" bereitgestellt. Wir garantieren nicht, dass:",
+            "items": [
+                "Die App immer ohne Unterbrechungen oder Fehler funktioniert",
+                "Alle veröffentlichten Daten genau oder aktuell sind",
+                "Die App mit jedem Gerät oder Betriebssystem kompatibel ist",
+                "Trotz unserer Schutzmaßnahmen keine Sicherheitsprobleme oder Datenverluste auftreten"
+            ]
+        },
+        "section9": {
+            "title": "9. Haftungsbeschränkung",
+            "description": "Im maximal gesetzlich zulässigen Umfang ist Blinker nicht verantwortlich für:",
+            "items": [
+                "Schäden oder Verluste, die sich aus der Nutzung der App ergeben",
+                "Fehlende, falsche oder veraltete Daten in von Nutzern oder Crews veröffentlichten Events",
+                "Unangemessenes, rechtswidriges oder gefährliches Verhalten anderer Nutzer",
+                "Unfälle, Personen- oder Sachschäden, rechtliche Folgen aus der Teilnahme an in der App veröffentlichten oder durch die Community organisierten Events"
+            ]
+        },
+        "section10": {
+            "title": "10. Vertragsbeendigung",
+            "items": [
+                "Wir können Ihr Konto bei Verletzung dieses EULA oder unsachgemäßer Nutzung der App sperren oder löschen, mit Benachrichtigung per E-Mail außer in dringenden Fällen für die Sicherheit der Community.",
+                "Sie können den Vertrag jederzeit beenden, indem Sie das Konto über die Einstellungen löschen: Ihre persönlichen Daten werden innerhalb von 30 Tagen entfernt, wie in der Datenschutzerklärung beschrieben."
+            ]
+        },
+        "section11": {
+            "title": "11. Datenschutz",
+            "description": "Der Schutz Ihrer Daten wird durch die Datenschutzerklärung von Blinker geregelt, einsehbar auf https://blinker-app.com/privacy."
+        },
+        "section12": {
+            "title": "12. Änderungen dieses EULA",
+            "description": "Wir können dieses Dokument aktualisieren, um neue Funktionen oder regulatorische Änderungen widerzuspiegeln. Bei wesentlichen Änderungen werden wir Sie per E-Mail oder In-App-Benachrichtigung informieren. Die fortgesetzte Nutzung von Blinker nach der Änderung stellt eine Annahme des neuen EULA dar."
+        },
+        "section13": {
+            "title": "13. Anwendbares Recht und Gerichtsbarkeit",
+            "description": "Dieses EULA unterliegt italienischem Recht. Bei Streitigkeiten ist das zuständige Gericht das des Wohnsitzes des Verbrauchers, sofern nichts anderes vereinbart ist."
+        },
+        "section14": {
+            "title": "14. Kontakt",
+            "description": "Für Fragen oder Support-Anfragen:",
+            "email": "📧 support@blinker-app.com",
+            "website": "🌐 https://get.blinker-app.com"
+        },
+        "summary": {
+            "title": "📋 Kurz gefasst",
+            "items": [
+                "Blinker ist eine account-basierte Social-Plattform: Ein Konto ist erforderlich, um sie zu nutzen (Sie können sich mit E-Mail, Apple oder Google anmelden)",
+                "Sie sind verantwortlich für die Inhalte, die Sie veröffentlichen (Events, News, Fahrzeuge, Profil)",
+                "Null Toleranz für missbräuchliches Verhalten: Blockierungen, Meldungen und Moderation aktiv",
+                "Blinker ist nicht verantwortlich für die operative Organisation der von Nutzern erstellten Events",
+                "Datenschutz wird durch die Datenschutzerklärung geregelt",
+                "Bei Streitigkeiten gilt italienisches Recht"
+            ]
         }
     }
 }
