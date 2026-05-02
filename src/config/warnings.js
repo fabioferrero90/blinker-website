@@ -1,7 +1,7 @@
 // Warning management configuration for production
 export const WARNING_CONFIG = {
     // Suppress specific console warnings in production
-    suppressWarnings: process.env.NODE_ENV === 'production',
+    suppressWarnings: import.meta.env.PROD,
 
     // Warning patterns to suppress
     suppressedPatterns: [

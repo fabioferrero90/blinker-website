@@ -82,16 +82,12 @@ export default defineConfig(({ command, mode }) => {
       __SSL_ENABLED__: JSON.stringify(env.VITE_SSL_ENABLED === 'true'),
       __API_URL__: JSON.stringify(env.VITE_API_URL),
       __DEBUG_MODE__: JSON.stringify(env.VITE_ENABLE_DEBUG_MODE === 'true'),
+      'process.env.FA_VERSION': JSON.stringify(''),
     },
     // Ottimizzazioni per le prestazioni
     optimizeDeps: {
       include: ['react', 'react-dom', 'i18next', 'react-i18next'],
       exclude: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons']
-    },
-    // Ottimizzazioni per le prestazioni
-    optimizeDeps: {
-      include: ['react', 'react-dom', 'i18next', 'react-i18next'],
-      exclude: ['@fortawesome/fontawesome-svg-icons', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons']
     },
     css: {
       devSourcemap: false,

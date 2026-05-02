@@ -149,7 +149,7 @@ class PerformanceMonitor {
         const status = this.getMetricStatus(name, value);
 
         // Log solo in development
-        if (process.env.NODE_ENV === 'development') {
+        if (import.meta.env.DEV) {
 
         }
 
@@ -173,7 +173,7 @@ class PerformanceMonitor {
         const size = entry.transferSize || 0;
         const duration = entry.duration;
 
-        if (size > 100 * 1024 && process.env.NODE_ENV === 'development') { // > 100KB
+        if (size > 100 * 1024 && import.meta.env.DEV) { // > 100KB
 
         }
     }
@@ -181,7 +181,7 @@ class PerformanceMonitor {
     // Log degli errori
     logError(type, details) {
         // Log solo in development
-        if (process.env.NODE_ENV === 'development') {
+        if (import.meta.env.DEV) {
             console.error(`❌ ${type}:`, details);
         }
 

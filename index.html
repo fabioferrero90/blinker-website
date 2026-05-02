@@ -2,51 +2,195 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon.avif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover the car meet world. Connect with enthusiasts and manage your car collection." />
-    <meta name="keywords" content="auto, eventi, automotive, community, app, blinker" />
+    <meta name="theme-color" content="#1a0033" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/avif" href="/icon.avif" />
+    <link rel="apple-touch-icon" href="/icon.avif" />
+
+    <!-- Primary SEO -->
+    <title>Blinker — Trova Car Meet, Raduni Auto e Track Day vicino a te</title>
+    <meta name="description" content="Blinker è l'app per chi vive di motori: scopri car meet, raduni auto, track day e ritrovi serali nella tua zona. Crea la tua crew, mostra il garage e organizza eventi automotive in pochi tap." />
     <meta name="author" content="Blinker Team" />
-    
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    
+    <link rel="canonical" href="https://get.blinker-app.com/" />
+
+    <!-- Hreflang alternates -->
+    <link rel="alternate" hreflang="it" href="https://get.blinker-app.com/?lng=it" />
+    <link rel="alternate" hreflang="en" href="https://get.blinker-app.com/?lng=en" />
+    <link rel="alternate" hreflang="es" href="https://get.blinker-app.com/?lng=es" />
+    <link rel="alternate" hreflang="fr" href="https://get.blinker-app.com/?lng=fr" />
+    <link rel="alternate" hreflang="de" href="https://get.blinker-app.com/?lng=de" />
+    <link rel="alternate" hreflang="x-default" href="https://get.blinker-app.com/" />
+
     <!-- Performance optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-    
+
     <!-- Preload critical resources -->
     <link rel="preload" href="/hero-video-poster.avif" as="image" type="image/avif" media="(min-width: 768px)" />
-    
-    <!-- Prefetch non-critical resources -->
-    <link rel="prefetch" href="/icon.avif" as="image" type="image/avif" />
-    <link rel="prefetch" href="/critical.css" as="style" type="text/css" />
-    
-    <!-- Prefetch non-critical resources -->
-    <link rel="prefetch" href="/features" />
-    <link rel="prefetch" href="/download" />
-    <link rel="prefetch" href="/about" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Blinker" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="de_DE" />
     <meta property="og:url" content="https://get.blinker-app.com/" />
-    <meta property="og:title" content="Blinker - Find Car Meets around you" />
-    <meta property="og:description" content="Discover the car meet world. Connect with enthusiasts and manage your car collection." />
-    <meta property="og:image" content="/og-image.avif" />
+    <meta property="og:title" content="Blinker — Trova Car Meet e Raduni Auto vicino a te" />
+    <meta property="og:description" content="L'app per chi vive di motori: scopri car meet, track day e ritrovi automotive nella tua zona. Crea la tua crew, mostra il garage e non perderti più nessun evento." />
+    <meta property="og:image" content="https://get.blinker-app.com/og-image.avif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Blinker — l'app per scoprire eventi automotive" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://get.blinker-app.com/" />
-    <meta property="twitter:title" content="Blinker - Find Car Meets around you" />
-    <meta property="twitter:description" content="Discover the car meet world. Connect with enthusiasts and manage your car collection." />
-    <meta property="twitter:image" content="/og-image.avif" />
-    
-    <title>Blinker - Find Car Meets around you</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://get.blinker-app.com/" />
+    <meta name="twitter:title" content="Blinker — Trova Car Meet e Raduni Auto vicino a te" />
+    <meta name="twitter:description" content="L'app per chi vive di motori: scopri car meet, track day e ritrovi automotive nella tua zona." />
+    <meta name="twitter:image" content="https://get.blinker-app.com/og-image.avif" />
+    <meta name="twitter:image:alt" content="Blinker — l'app per scoprire eventi automotive" />
+
+    <!-- Structured data: MobileApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Blinker",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Automotive",
+      "description": "App per scoprire e organizzare eventi automotive: car meet, raduni, track day, ritrovi serali. Gestisci la tua crew e mostra il tuo garage.",
+      "url": "https://get.blinker-app.com/",
+      "image": "https://get.blinker-app.com/og-image.avif",
+      "inLanguage": ["it", "en", "es", "fr", "de"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    }
+    </script>
+
+    <!-- Structured data: WebApplication (versione web) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Blinker Web",
+      "url": "https://blinker-app.com/",
+      "applicationCategory": "LifestyleApplication",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Versione web di Blinker: gestisci eventi, crew e candidature direttamente dal browser, senza installare l'app.",
+      "inLanguage": ["it", "en", "es", "fr", "de"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    }
+    </script>
+
+    <!-- Structured data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Blinker",
+      "url": "https://get.blinker-app.com/",
+      "logo": "https://get.blinker-app.com/icon.avif",
+      "email": "support@blinker-app.com",
+      "sameAs": []
+    }
+    </script>
+
+    <!-- Structured data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Blinker è gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, scaricare e usare Blinker è completamente gratuito. Puoi cercare eventi, candidarti, gestire la tua crew e pubblicare il tuo garage senza costi nascosti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come trovo car meet vicino a me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apri la mappa eventi: vedrai car meet, raduni e track day nella tua zona. Filtra per tipologia (raduno serale, track day, monomarca, road tour) e per distanza per trovare subito quello che cerchi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso organizzare un mio evento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Certo. Crea l'evento direttamente dall'app: data, luogo, categoria (raduno, track day, monomarca, ritrovo serale…) e tipologia di veicoli accettati. Puoi gestire le candidature, comunicare con i partecipanti e analizzare le statistiche dell'evento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come funzionano le selezioni e le candidature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per gli eventi a ingresso su selezione, gli utenti candidano uno dei veicoli del proprio garage virtuale e l'organizzatore approva, rifiuta o mette in lista d'attesa direttamente in app. Niente moduli Google, gruppi WhatsApp o strumenti esterni: tutto il flusso di selezione resta dentro Blinker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Su quali dispositivi funziona Blinker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Blinker è un'app nativa per iOS (App Store) e Android (Google Play), ed è anche accessibile da qualsiasi browser su blinker-app.com — così puoi gestire eventi e crew anche da desktop, senza installare nulla."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Devo creare un account per usare Blinker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, l'accesso ai contenuti richiede un account gratuito. È una scelta voluta: ci teniamo alla privacy della community, e chi pubblica un evento sa esattamente chi può vederlo e candidarsi. La registrazione richiede pochi secondi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cos'è una crew?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una crew è un gruppo di appassionati che partecipano insieme agli eventi. Puoi unirti a una crew esistente o crearne una per il tuo club, forum o gruppo di amici."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Blinker funziona anche fuori dall'Italia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, l'app è disponibile in 5 lingue (italiano, inglese, spagnolo, francese, tedesco) e mostra eventi pubblicati ovunque. La community più attiva al momento è in Italia ed Europa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come trattate i dati personali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nel pieno rispetto del GDPR. Non vendiamo i tuoi dati e raccogliamo solo quanto serve a far funzionare l'app. Tutti i dettagli nella Privacy Policy."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

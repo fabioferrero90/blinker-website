@@ -38,6 +38,11 @@ function LanguageSelector() {
 
         // Salva la preferenza nel localStorage
         localStorage.setItem('blinker-language', languageCode);
+
+        // Aggiorna ?lng= nell'URL senza ricaricare la pagina (utile per condivisione + SEO)
+        const url = new URL(window.location.href);
+        url.searchParams.set('lng', languageCode);
+        window.history.replaceState({}, '', url);
     };
 
     return (

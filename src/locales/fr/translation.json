@@ -2,8 +2,10 @@
     "navbar": {
         "logo": "Blinker",
         "features": "Fonctionnalités",
+        "howItWorks": "Comment ça marche",
         "organizers": "Organisateurs",
         "why": "Pourquoi Blinker ?",
+        "faq": "FAQ",
         "download": "Télécharger",
         "webLogin": "Connexion Web"
     },
@@ -18,13 +20,15 @@
             "Événement Drift",
             "Salon Auto"
         ],
-        "subtitle": "Découvrez et organisez des événements, gérez votre crew et montrez au monde votre garage, parce que la vie est trop courte pour ne pas savoir où sont les meilleurs événements...",
+        "subtitle": "L'app pour les passionnés d'auto. Trouvez des car meets près de chez vous, montrez votre garage et ne demandez plus jamais «il y avait un événement hier ?»",
+        "seoTagline": "Car meets, rassemblements auto, track days et événements automobiles près de chez vous",
+        "mockupAlt": "Écran d'accueil de l'app Blinker",
         "downloadButton": "Télécharger l'App",
         "scrollIndicator": "Découvrir Plus"
     },
     "features": {
-        "title": "Fonctionnalités Principales",
-        "subtitle": "Toutes les fonctionnalités qui vous feront dire \"où étiez-vous toute ma vie ?\" 🤯",
+        "title": "Ce que vous pouvez faire avec Blinker",
+        "subtitle": "Tout ce qu'il vous faut pour vivre la scène automobile — dans une seule app. 🤯",
         "discover": {
             "title": "Événements Auto",
             "description": "Du meetup du vendredi au prochain Tokyo Auto Salon, vous ne manquerez plus rien ! Découvrez des événements dans votre région et participez sans avoir à harceler les groupes Facebook qui ne sont jamais mis à jour."
@@ -50,9 +54,30 @@
             "description": "Explorez des voitures incroyables et des styles de personnalisation qui vous feront dire 'wow' ! Parfait pour s'inspirer (et pour faire un peu d'envie saine - c'est normal, nous le faisons tous) 👀"
         }
     },
+    "howItWorks": {
+        "title": "Comment ça marche",
+        "subtitle": "Trois étapes pour ne plus jamais manquer un événement automobile",
+        "steps": {
+            "download": {
+                "number": "01",
+                "title": "Téléchargez l'app",
+                "description": "Gratuit sur App Store et Google Play. Créez votre compte en quelques secondes : l'inscription protège la confidentialité de la communauté."
+            },
+            "explore": {
+                "number": "02",
+                "title": "Explorez la carte",
+                "description": "Filtrez par type d'événement, distance et date. Trouvez car meets, salons, track days et rassemblements nocturnes près de chez vous en temps réel."
+            },
+            "join": {
+                "number": "03",
+                "title": "Participez ou organisez",
+                "description": "Présentez un véhicule de votre garage à l'événement qui vous intéresse, rejoignez une crew ou publiez votre propre rassemblement et touchez des milliers de passionnés."
+            }
+        }
+    },
     "organizers": {
         "title": "Pour les Organisateurs",
-        "subtitle": "Êtes-vous un organisateur d'événements ? Alors cette section est faite spécialement pour vous ! Blinker n'est pas seulement pour les participants, mais aussi pour ceux qui créent la magie des événements ! ✨",
+        "subtitle": "Publiez vos événements, touchez des milliers de passionnés et gérez sélections et candidatures sans plus de Google Forms ni de groupes WhatsApp. Tout dans une seule app. ✨",
         "management": {
             "title": "Plus Grande Visibilité",
             "description": "Vos événements atteindront des milliers d'enthousiastes ! Plus de publications sur les réseaux sociaux qui se perdent dans le flux, ici tout le monde verra votre événement et arrêtera enfin de dire 'je ne savais pas que ça se passait' 📈"
@@ -67,18 +92,19 @@
         },
         "ticketing": {
             "title": "Gestion des Sélections",
-            "description": "Événements à capacité limitée ? Gérez les demandes de participation directement depuis l'app ! Approuvez, rejetez ou gardez en liste d'attente avec quelques tapotements et enfin vous pourrez dire 'non' sans vous sentir coupable ✅"
+            "description": "Événement sur sélection ? Les utilisateurs présentent un véhicule de leur garage et vous approuvez, refusez ou mettez en liste d'attente en quelques tapotements. Plus de Google Forms, de feuilles Excel ou de groupes WhatsApp ✅"
         },
         "cta": {
             "title": "Prêt à révolutionner vos événements ? 🚀",
-            "description": "Rejoignez les organisateurs qui ont déjà choisi Blinker pour leurs événements !, vous ne voulez pas être laissé de côté, n'est-ce pas ?",
-            "button": "Télécharger l'App"
+            "description": "Publiez votre événement en quelques minutes, gérez les candidatures de véhicules et touchez des passionnés qui aiment vraiment les voitures. Gratuit.",
+            "button": "Publier votre événement"
         }
     },
     "whyBlinker": {
         "title": "Pourquoi Blinker ? 🤔",
         "subtitle": "Blinker est né de la frustration de toujours manquer les meilleurs car meets ! 😅",
         "description": "Nous sommes une équipe de passionnés qui a dit \"ça suffit\" et a créé l'app que nous attendions tous. Parce que nous en avons marre d'entendre \"oh mais il y avait un événement hier ?\"",
+        "mockupAlt": "Écran de la carte des événements de l'app Blinker",
         "mapFilter": {
             "title": "Filtrer les événements depuis la carte",
             "description": "Cherchez seulement le type d'événement qui vous intéresse, et ne manquez rien ! 🎯"
@@ -92,32 +118,56 @@
             "description": "Vous recevrez toutes les mises à jour des organisateurs en temps réel 📱"
         }
     },
+    "faq": {
+        "title": "Questions Fréquentes",
+        "subtitle": "Tout ce que vous devez savoir sur Blinker",
+        "items": [
+            {
+                "q": "Blinker est-il gratuit ?",
+                "a": "Oui, télécharger et utiliser Blinker est entièrement gratuit. Vous pouvez chercher des événements, postuler, gérer votre crew et publier votre garage sans frais cachés."
+            },
+            {
+                "q": "Comment trouver des car meets près de chez moi ?",
+                "a": "Ouvrez la carte des événements : vous verrez car meets, rassemblements et track days dans votre zone. Filtrez par type (rassemblement nocturne, track day, monomarque, road tour) et distance pour trouver ce que vous cherchez."
+            },
+            {
+                "q": "Puis-je organiser mon propre événement ?",
+                "a": "Bien sûr. Créez l'événement directement dans l'app : date, lieu, catégorie (rassemblement, track day, monomarque, rassemblement nocturne…) et types de véhicules acceptés. Gérez les candidatures, communiquez avec les inscrits et consultez les statistiques de l'événement."
+            },
+            {
+                "q": "Comment fonctionnent les sélections et les candidatures ?",
+                "a": "Pour les événements sur sélection, les utilisateurs présentent l'un des véhicules de leur garage virtuel et l'organisateur approuve, refuse ou met sur liste d'attente chaque candidature directement dans l'app. Pas de formulaires Google, groupes WhatsApp ou outils externes : tout le flux de sélection reste dans Blinker."
+            },
+            {
+                "q": "Sur quels appareils fonctionne Blinker ?",
+                "a": "Blinker est une app native pour iOS (App Store) et Android (Google Play), et également accessible depuis n'importe quel navigateur sur blinker-app.com — vous pouvez ainsi gérer événements et crews depuis votre ordinateur, sans rien installer."
+            },
+            {
+                "q": "Faut-il créer un compte pour utiliser Blinker ?",
+                "a": "Oui, l'accès aux contenus nécessite un compte gratuit. C'est un choix délibéré : nous tenons à la confidentialité de la communauté, et celui qui publie un événement sait exactement qui peut le voir et postuler. L'inscription prend quelques secondes."
+            },
+            {
+                "q": "Qu'est-ce qu'une crew ?",
+                "a": "Une crew est un groupe de passionnés qui participe ensemble aux événements. Vous pouvez rejoindre une crew existante ou en créer une pour votre club, forum ou groupe d'amis."
+            },
+            {
+                "q": "Blinker fonctionne-t-il en dehors de la France ?",
+                "a": "Oui, l'app est disponible en 5 langues (italien, anglais, espagnol, français, allemand) et montre les événements publiés partout dans le monde. La communauté la plus active est actuellement en Italie et en Europe."
+            },
+            {
+                "q": "Comment gérez-vous mes données personnelles ?",
+                "a": "Dans le respect total du RGPD. Nous ne vendons pas vos données et ne collectons que ce qui est nécessaire au fonctionnement de l'app. Tous les détails dans notre Politique de Confidentialité."
+            }
+        ]
+    },
     "download": {
         "title": "Télécharger Blinker",
-        "subtitle": "Rejoignez la communauté des passionnés de voitures et ne manquez plus jamais un événement",
+        "subtitle": "Gratuit, compte en 30 secondes, votre premier car meet à un tap.",
         "appStore": "Télécharger sur App Store",
         "googlePlay": "Télécharger sur Google Play",
-        "secure": "100% Sécurisé (promis ! ✌🏻)",
-        "updates": "Mises à jour gratuites (pour toujours)",
-        "support": "Support 24/7 (quand on ne dort pas)"
-    },
-    "newsletter": {
-        "title": "Abonnez-vous et Restez informé des nouveautés (c'est Gratuit !)",
-        "subtitle": "Entrez vos données pour vous abonner à la newsletter pour recevoir les dernières nouvelles sur les mises à jour de l'app et les nouveaux événements automobiles, nous vous promettons que vous ne recevrez jamais de spam de notre part !",
-        "firstNamePlaceholder": "Prénom",
-        "lastNamePlaceholder": "Nom",
-        "placeholder": "Votre email",
-        "button": "S'abonner",
-        "loading": "Inscription en cours...",
-        "success": "Inscription terminée avec succès !",
-        "error": "Erreur lors de l'inscription. Réessayez.",
-        "firstNameRequired": "Entrez votre prénom",
-        "lastNameRequired": "Entrez votre nom",
-        "emailRequired": "Entrez une adresse email",
-        "emailInvalid": "Entrez une adresse email valide",
-        "consentRequired": "Vous devez accepter la politique de confidentialité",
-        "consentText": "J'accepte de recevoir des communications promotionnelles. Je peux révoquer le consentement à tout moment. Pour plus d'informations, consultez la",
-        "privacyPolicy": "Politique de Confidentialité"
+        "secure": "Vie privée respectée : nous ne vendons pas vos données",
+        "updates": "Mises à jour gratuites, toujours",
+        "support": "Support humain, rapide"
     },
     "footer": {
         "description": "La seule app qui vous sauve du FOMO automobile",
@@ -132,7 +182,7 @@
         "privacyPolicy": "Politique de Confidentialité",
         "cookiePolicy": "Politique des Cookies",
         "termsOfService": "Conditions de Service",
-        "copyright": "© 2025 Blinker App - Fait pour les passionnés de voitures, par des gens qui ne peuvent pas se permettre une GT-R (encore)."
+        "copyright": "© 2026 Blinker App - Fait pour les passionnés de voitures, par des gens qui ne peuvent pas se permettre une GT-R (encore)."
     },
     "cookieConsent": {
         "title": "Paramètres des Cookies",

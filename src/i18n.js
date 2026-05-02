@@ -46,13 +46,16 @@ i18n
         },
 
         detection: {
-            // Ordine di rilevamento della lingua - prima localStorage, poi browser
-            order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+            // Ordine di rilevamento: prima ?lng= in URL, poi localStorage, poi browser
+            order: ['querystring', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+
+            // Parametro query per la lingua (es: ?lng=en)
+            lookupQuerystring: 'lng',
 
             // Chiave per localStorage
             lookupLocalStorage: 'blinker-language',
 
-            // Cache della lingua rilevata
+            // Cache della lingua rilevata (querystring escluso: non riscriviamo l'URL automaticamente)
             caches: ['localStorage'],
 
             // Lingue supportate

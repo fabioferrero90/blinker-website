@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram as faInstagramIcon, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import PolicyModal from './PolicyModal';
@@ -18,19 +18,6 @@ function Footer() {
         setIsModalOpen(false);
         setModalType(null);
     };
-
-    // Listen for privacy modal events from newsletter
-    useEffect(() => {
-        const handlePrivacyModal = () => {
-            openModal('privacy');
-        };
-
-        window.addEventListener('openPrivacyModal', handlePrivacyModal);
-
-        return () => {
-            window.removeEventListener('openPrivacyModal', handlePrivacyModal);
-        };
-    }, []);
 
     return (
         <>
@@ -70,7 +57,7 @@ function Footer() {
                     </div>
 
                     <div className="footer-bottom text-sm">
-                        <p><span className='text-white font-semibold text-sm'>&copy; 2025 Blinker App </span>- {t('footer.copyright')}</p>
+                        <p><span className='text-white font-semibold text-sm'>&copy; 2026 Blinker App</span>- {t('footer.copyright')}</p>
                         <div className="footer-social">
                             <a href="https://discord.gg/6uD7KrEWEk" aria-label="Discord" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faDiscord} size="sm" />

@@ -32,16 +32,23 @@ function Navbar() {
         <nav className="navbar animate-fade-in-up">
             <div className="container">
                 <div className="nav-content">
-                    <div className="nav-logo">
+                    <button
+                        type="button"
+                        className="nav-logo bg-transparent border-0 p-0 cursor-pointer"
+                        onClick={() => handleNavClick('home')}
+                        aria-label="Blinker — torna in cima"
+                    >
                         <img src="extended-light.webp" alt="Blinker Logo" width={120} />
-                    </div>
+                    </button>
 
                     <div className="nav-right">
                         <div className="nav-links">
                             <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('home')}>Home</button>
                             <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('features')}>{t('navbar.features')}</button>
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('how-it-works')}>{t('navbar.howItWorks')}</button>
                             <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('why')}>{t('navbar.why')}</button>
                             <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</button>
+                            <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('faq')}>{t('navbar.faq')}</button>
                             <button
                                 type="button"
                                 className="bg-transparent border-0 text-inherit"
@@ -69,8 +76,10 @@ function Navbar() {
                     <div className={`nav-links mobile ${isMenuOpen ? 'open' : ''}`}>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('home')}>Home</button>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('features')}>{t('navbar.features')}</button>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('how-it-works')}>{t('navbar.howItWorks')}</button>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('why')}>{t('navbar.why')}</button>
                         <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('organizers')}>{t('navbar.organizers')}</button>
+                        <button type="button" className="bg-transparent border-0 text-inherit" onClick={() => handleNavClick('faq')}>{t('navbar.faq')}</button>
                         <button
                             type="button"
                             className="bg-transparent border-0 text-inherit"

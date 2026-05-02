@@ -68,9 +68,10 @@ function HeroSection() {
                     <div className="hero-text animate-fade-in-up">
                         <h1 className="font-bold text-4xl lg:w-[80%] lg:text-6xl mb-3 text-white">
                             {t('hero.title')}
-                            <br />
-                            <span className="gradient-text">{displayText}</span>
-                            <span className="typing-cursor-visible">|</span>
+                            <span className="sr-only"> {t('hero.seoTagline')}</span>
+                            <br aria-hidden="true" />
+                            <span aria-hidden="true" className="gradient-text">{displayText}</span>
+                            <span aria-hidden="true" className="typing-cursor-visible">|</span>
                         </h1>
                         <div className="hero-subtitle text-xs lg:text-xl text-white">
                             <p>{t('hero.subtitle')}</p>
@@ -78,10 +79,7 @@ function HeroSection() {
 
                         <div className="hero-buttons">
                             <button
-                                onClick={() => {
-                                    console.log('🔍 Download button clicked');
-                                    scrollToSection('download');
-                                }}
+                                onClick={() => scrollToSection('download')}
                                 className="btn btn-primary hover:scale-105 transition-transform duration-200 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faDownload} />
@@ -100,7 +98,7 @@ function HeroSection() {
                     <div className="phone-mockup animate-fade-in-right">
                         <img
                             src="/home-mockup.webp"
-                            alt="Blinker App Mockup"
+                            alt={t('hero.mockupAlt')}
                             className="mockup-image"
                         />
                     </div>
