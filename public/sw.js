@@ -1,6 +1,6 @@
 // Service Worker per gestire il cache e forzare aggiornamenti
-const CACHE_NAME = 'blinker-v1.0.5'; // Incrementa questo numero ad ogni deploy
-const STATIC_CACHE_NAME = 'blinker-v1.0.3';
+const CACHE_NAME = 'blinker-v1.0.7'; // Incrementa questo numero ad ogni deploy
+const STATIC_CACHE_NAME = 'blinker-static-v1.0.7';
 
 // File da cachare
 const STATIC_FILES = [
@@ -57,6 +57,33 @@ self.addEventListener('fetch', (event) => {
   const request = event.request;
   const url = new URL(request.url);
 
+  // /index.html e navigazioni HTML: network-first. Motivo: l'HTML
+  // referenzia gli asset JS/CSS con hash che cambiano a ogni deploy
+  // (Vite bundle hashing) — servire un index.html cached significa
+  // tentare di caricare hash che il deploy ha rimosso (rm -rf su
+  // /var/www/get.blinker-app.com). Network-first evita la finestra
+  // di "sito bianco" post-deploy. Fallback a cache solo offline.
+  if (
+    request.mode === 'navigate' ||
+    url.pathname === '/' ||
+    url.pathname === '/index.html'
+  ) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response.status === 200) {
+            const responseClone = response.clone();
+            caches.open(STATIC_CACHE_NAME).then((cache) => {
+              cache.put(request, responseClone);
+            });
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
   // Per file dinamici (JS, CSS), sempre controlla la rete prima
   if (DYNAMIC_FILES.some(path => url.pathname.startsWith(path))) {
     event.respondWith(
@@ -79,7 +106,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Per file statici, usa cache-first strategy
+  // Per altri file statici (icone, manifest, ecc), cache-first.
   event.respondWith(
     caches.match(request)
       .then((response) => {

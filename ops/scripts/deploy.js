@@ -97,9 +97,13 @@ function incrementServiceWorkerVersion() {
     const newPatch = parseInt(patch) + 1;
     const newVersion = `blinker-v${major}.${minor}.${newPatch}`;
     
-    // Aggiorna entrambe le versioni nel file
+    // Aggiorna entrambe le versioni nel file. Regex permissivo sul
+    // suffisso di STATIC_CACHE_NAME perche' storicamente il prefisso
+    // ha oscillato tra `blinker-v` e `blinker-static-v` — il bug
+    // precedente lo lasciava bloccato a una vecchia patch causando
+    // pagine bianche post-deploy (vedi commit fix SW).
     content = content.replace(/const CACHE_NAME = 'blinker-v\d+\.\d+\.\d+'/, `const CACHE_NAME = '${newVersion}'`);
-    content = content.replace(/const STATIC_CACHE_NAME = 'blinker-static-v\d+\.\d+\.\d+'/, `const STATIC_CACHE_NAME = '${newVersion}'`);
+    content = content.replace(/const STATIC_CACHE_NAME = '[^']+'/, `const STATIC_CACHE_NAME = 'blinker-static-v${major}.${minor}.${newPatch}'`);
     
     fs.writeFileSync(swPath, content);
     success(`Service worker version incremented: ${currentVersion} → ${newVersion}`);
