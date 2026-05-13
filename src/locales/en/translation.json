@@ -1,636 +1,652 @@
 {
-    "navbar": {
-        "logo": "Blinker",
-        "features": "Features",
-        "howItWorks": "How it works",
-        "organizers": "Organizers",
-        "why": "Why Blinker?",
-        "faq": "FAQ",
-        "download": "Download",
-        "webLogin": "Web Login"
+  "navbar": {
+    "logo": "Blinker",
+    "features": "Features",
+    "howItWorks": "How it works",
+    "organizers": "Organizers",
+    "why": "Why Blinker?",
+    "faq": "FAQ",
+    "download": "Download",
+    "webLogin": "Web Login"
+  },
+  "hero": {
+    "title": "Don't miss any",
+    "typingTexts": [
+      "Car Meet",
+      "Car Show",
+      "Track Day",
+      "Cars & Coffee",
+      "Road Tour",
+      "Drift Event",
+      "Auto Expo"
+    ],
+    "subtitle": "The app for petrolheads. Find car meets near you, show off your garage and never ask «was there an event yesterday?» again.",
+    "seoTagline": "Car meets, car shows, track days and automotive events near you",
+    "mockupAlt": "Blinker app home screen",
+    "downloadButton": "Download the App",
+    "scrollIndicator": "Discover More"
+  },
+  "stats": {
+    "title": "Our community in numbers",
+    "subtitle": "Updated in real time",
+    "users": {
+      "label": "Registered users"
     },
-    "hero": {
-        "title": "Don't miss any",
-        "typingTexts": [
-            "Car Meet",
-            "Car Show",
-            "Track Day",
-            "Cars & Coffee",
-            "Road Tour",
-            "Drift Event",
-            "Auto Expo"
-        ],
-        "subtitle": "The app for petrolheads. Find car meets near you, show off your garage and never ask «was there an event yesterday?» again.",
-        "seoTagline": "Car meets, car shows, track days and automotive events near you",
-        "mockupAlt": "Blinker app home screen",
-        "downloadButton": "Download the App",
-        "scrollIndicator": "Discover More"
+    "crews": {
+      "label": "Active crews"
     },
-    "features": {
-        "title": "What you can do with Blinker",
-        "subtitle": "Everything you need to live the automotive scene — in one app. 🤯",
-        "discover": {
-            "title": "Car Events",
-            "description": "From Friday's meetup to the next Tokyo Auto Salon, you won't miss anything anymore! Discover events in your area and participate without having to stalk Facebook groups that never get updated."
-        },
-        "notifications": {
-            "title": "Instant Notifications",
-            "description": "Get notifications about new events before your friends! No more 'oh but there was an event yesterday?' - you'll always be the first to know everything!"
-        },
-        "social": {
-            "title": "Crew & Community",
-            "description": "Join existing crews or create your own! Perfect for those who want to make friends with other enthusiasts (and maybe find someone who lends you their GT-R for the weekend - dreaming doesn't cost anything 😅)."
-        },
-        "organize": {
-            "title": "Personal Garage",
-            "description": "Show the world your collection! Manage your cars, add photos, specs and customizations. And the best part? Apply for events in just a few taps! (Perfect for flexing) 💪"
-        },
-        "maps": {
-            "title": "Event Map",
-            "description": "The map that saves you from driving around the city randomly! Find nearby events, discover new places, and never miss a car meet again because 'you didn't know where it was'"
-        },
-        "calendar": {
-            "title": "Discover the Community",
-            "description": "Explore incredible cars and customization styles that will make you say 'wow'! Perfect for getting inspiration (and for doing some healthy envy - it's normal, we all do it) 👀"
-        }
+    "vehicles": {
+      "label": "Published vehicles"
     },
-    "howItWorks": {
-        "title": "How it works",
-        "subtitle": "Three steps and you'll never miss another automotive event",
-        "steps": {
-            "download": {
-                "number": "01",
-                "title": "Download the app",
-                "description": "Free on App Store and Google Play. Create your account in a few seconds — signup keeps the community private."
-            },
-            "explore": {
-                "number": "02",
-                "title": "Explore the map",
-                "description": "Filter by event type, distance and date. Find car meets, shows, track days and night gatherings around you in real time."
-            },
-            "join": {
-                "number": "03",
-                "title": "Join or organize",
-                "description": "Submit a vehicle from your garage to the event you want, join a crew or publish your own meet and reach thousands of enthusiasts."
-            }
-        }
+    "events": {
+      "label": "Published events"
+    }
+  },
+  "features": {
+    "title": "What you can do with Blinker",
+    "subtitle": "Everything you need to live the automotive scene — in one app. 🤯",
+    "discover": {
+      "title": "Car Events",
+      "description": "From Friday's meetup to the next Tokyo Auto Salon, you won't miss anything anymore! Discover events in your area and participate without having to stalk Facebook groups that never get updated."
     },
-    "organizers": {
-        "title": "For Organizers",
-        "subtitle": "Publish your events, reach thousands of enthusiasts and run selections and candidacies without Google Forms or WhatsApp groups. All in one app. ✨",
-        "management": {
-            "title": "Greater Visibility",
-            "description": "Your events will reach thousands of enthusiasts! No more social media posts that get lost in the feed, here everyone will see your event and finally stop saying 'I didn't know it was happening' 📈"
-        },
-        "analytics": {
-            "title": "Advanced Analytics",
-            "description": "Find out how many people saw your event, who was interested and who actually participated! Data that will help you improve more and more and brag with numbers! 📊"
-        },
-        "communication": {
-            "title": "Effective Communication",
-            "description": "Publish news, updates and changes in real time! All participants will receive instant notifications, no more WhatsApp groups exploding with 500 messages 📢"
-        },
-        "ticketing": {
-            "title": "Selection Management",
-            "description": "Invite-only event? Users submit a vehicle from their garage and you approve, reject or waitlist with a few taps. No more Google Forms, spreadsheets or WhatsApp groups ✅"
-        },
-        "cta": {
-            "title": "Ready to revolutionize your events? 🚀",
-            "description": "Publish your event in minutes, manage vehicle candidacies and reach enthusiasts who actually love cars. Free.",
-            "button": "Publish your event"
-        }
+    "notifications": {
+      "title": "Instant Notifications",
+      "description": "Get notifications about new events before your friends! No more 'oh but there was an event yesterday?' - you'll always be the first to know everything!"
     },
-    "whyBlinker": {
-        "title": "Why Blinker? 🤔",
-        "subtitle": "Blinker was born from the frustration of always missing the best car meets! 😅",
-        "description": "We are a team of enthusiasts who said \"enough is enough\" and created the app we were all waiting for. Because we're tired of hearing \"oh but there was an event yesterday?\"",
-        "mockupAlt": "Blinker app event map screen",
-        "mapFilter": {
-            "title": "Filter events from the map",
-            "description": "Search only for the type of event that interests you, and don't miss anything! 🎯"
-        },
-        "modernApp": {
-            "title": "Modern and Simple App",
-            "description": "Interface so intuitive that even your grandmother could use it!"
-        },
-        "followEvents": {
-            "title": "Follow the events that interest you",
-            "description": "You'll receive all updates from organizers in real time 📱"
-        }
+    "social": {
+      "title": "Crew & Community",
+      "description": "Join existing crews or create your own! Perfect for those who want to make friends with other enthusiasts (and maybe find someone who lends you their GT-R for the weekend - dreaming doesn't cost anything 😅)."
     },
-    "faq": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Everything you need to know about Blinker",
+    "organize": {
+      "title": "Personal Garage",
+      "description": "Show the world your collection! Manage your cars, add photos, specs and customizations. And the best part? Apply for events in just a few taps! (Perfect for flexing) 💪"
+    },
+    "maps": {
+      "title": "Event Map",
+      "description": "The map that saves you from driving around the city randomly! Find nearby events, discover new places, and never miss a car meet again because 'you didn't know where it was'"
+    },
+    "calendar": {
+      "title": "Discover the Community",
+      "description": "Explore incredible cars and customization styles that will make you say 'wow'! Perfect for getting inspiration (and for doing some healthy envy - it's normal, we all do it) 👀"
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Three steps and you'll never miss another automotive event",
+    "steps": {
+      "download": {
+        "number": "01",
+        "title": "Download the app",
+        "description": "Free on App Store and Google Play. Create your account in a few seconds — signup keeps the community private."
+      },
+      "explore": {
+        "number": "02",
+        "title": "Explore the map",
+        "description": "Filter by event type, distance and date. Find car meets, shows, track days and night gatherings around you in real time."
+      },
+      "join": {
+        "number": "03",
+        "title": "Join or organize",
+        "description": "Submit a vehicle from your garage to the event you want, join a crew or publish your own meet and reach thousands of enthusiasts."
+      }
+    }
+  },
+  "organizers": {
+    "title": "For Organizers",
+    "subtitle": "Publish your events, reach thousands of enthusiasts and run selections and candidacies without Google Forms or WhatsApp groups. All in one app. ✨",
+    "management": {
+      "title": "Greater Visibility",
+      "description": "Your events will reach thousands of enthusiasts! No more social media posts that get lost in the feed, here everyone will see your event and finally stop saying 'I didn't know it was happening' 📈"
+    },
+    "analytics": {
+      "title": "Advanced Analytics",
+      "description": "Find out how many people saw your event, who was interested and who actually participated! Data that will help you improve more and more and brag with numbers! 📊"
+    },
+    "communication": {
+      "title": "Effective Communication",
+      "description": "Publish news, updates and changes in real time! All participants will receive instant notifications, no more WhatsApp groups exploding with 500 messages 📢"
+    },
+    "ticketing": {
+      "title": "Selection Management",
+      "description": "Invite-only event? Users submit a vehicle from their garage and you approve, reject or waitlist with a few taps. No more Google Forms, spreadsheets or WhatsApp groups ✅"
+    },
+    "cta": {
+      "title": "Ready to revolutionize your events? 🚀",
+      "description": "Publish your event in minutes, manage vehicle candidacies and reach enthusiasts who actually love cars. Free.",
+      "button": "Publish your event"
+    }
+  },
+  "whyBlinker": {
+    "title": "Why Blinker? 🤔",
+    "subtitle": "Blinker was born from the frustration of always missing the best car meets! 😅",
+    "description": "We are a team of enthusiasts who said \"enough is enough\" and created the app we were all waiting for. Because we're tired of hearing \"oh but there was an event yesterday?\"",
+    "mockupAlt": "Blinker app event map screen",
+    "mapFilter": {
+      "title": "Filter events from the map",
+      "description": "Search only for the type of event that interests you, and don't miss anything! 🎯"
+    },
+    "modernApp": {
+      "title": "Modern and Simple App",
+      "description": "Interface so intuitive that even your grandmother could use it!"
+    },
+    "followEvents": {
+      "title": "Follow the events that interest you",
+      "description": "You'll receive all updates from organizers in real time 📱"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Blinker",
+    "items": [
+      {
+        "q": "Is Blinker free?",
+        "a": "Yes, downloading and using Blinker is completely free. You can search events, apply, manage your crew and showcase your garage with no hidden costs."
+      },
+      {
+        "q": "How do I find car meets near me?",
+        "a": "Open the events map: you'll see car meets, shows and track days in your area. Filter by type (night meet, track day, single-marque, road tour) and distance to find what you're after."
+      },
+      {
+        "q": "Can I organize my own event?",
+        "a": "Absolutely. Create your event in the app: date, location, category (car meet, track day, single-marque, night gathering…) and which vehicle types you accept. Manage candidacies, communicate with attendees and review event analytics."
+      },
+      {
+        "q": "How do selections and candidacies work?",
+        "a": "For invite-only events, users submit one of the vehicles from their virtual garage and the organizer approves, rejects or waitlists each candidacy directly in the app. No Google Forms, WhatsApp groups or third-party tools — the whole selection flow stays inside Blinker."
+      },
+      {
+        "q": "Which devices does Blinker support?",
+        "a": "Blinker is a native app for iOS (App Store) and Android (Google Play), and it's also accessible from any browser at blinker-app.com — so you can manage events and crews from desktop too, no install required."
+      },
+      {
+        "q": "Do I need an account to use Blinker?",
+        "a": "Yes — content access requires a free account. It's a deliberate choice: we care about the privacy of the community, and event organizers know exactly who can see their events and apply. Signup takes just a few seconds."
+      },
+      {
+        "q": "What is a crew?",
+        "a": "A crew is a group of enthusiasts attending events together. You can join an existing crew or create one for your club, forum or group of friends."
+      },
+      {
+        "q": "Does Blinker work outside Italy?",
+        "a": "Yes, the app is available in 5 languages (Italian, English, Spanish, French, German) and lists events posted anywhere. The most active community right now is in Italy and Europe."
+      },
+      {
+        "q": "How is my personal data handled?",
+        "a": "Fully GDPR-compliant. We don't sell your data and only collect what's needed to run the app. All details in our Privacy Policy."
+      }
+    ]
+  },
+  "download": {
+    "title": "Download Blinker",
+    "subtitle": "Free, account in 30 seconds, your first car meet a tap away.",
+    "appStore": "Download on App Store",
+    "googlePlay": "Download on Google Play",
+    "secure": "Serious privacy: we never sell your data",
+    "updates": "Free updates, always",
+    "support": "Real human support, fast"
+  },
+  "footer": {
+    "description": "The only app that saves you from automotive FOMO",
+    "product": "Useful Links",
+    "support": "Support",
+    "legal": "Legal",
+    "features": "Features",
+    "download": "Download",
+    "about": "About",
+    "helpCenter": "Help Center",
+    "contact": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "Made for car lovers, by people who can't afford a GT-R (yet)."
+  },
+  "cookieConsent": {
+    "title": "Cookie Settings",
+    "description": "We use cookies to improve your experience. You can customize your preferences or accept all cookies.",
+    "acceptAll": "Accept All",
+    "customize": "Customize",
+    "reject": "Reject",
+    "close": "Close",
+    "savePreferences": "Save Preferences",
+    "cancel": "Cancel",
+    "essential": {
+      "title": "Essential Cookies",
+      "description": "Necessary for the website to function"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "To analyze website usage"
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "For personalized advertising"
+    },
+    "reopenLabel": "Reopen cookie settings"
+  },
+  "languageSelector": {
+    "title": "Language",
+    "italian": "Italiano",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us. Learn how we collect, use and protect your data.",
+    "lastUpdatedUpper": "Last updated:",
+    "lastUpdatedDate": "April 2026",
+    "welcome": "Welcome to Blinker's Privacy Policy. ",
+    "welcomeDescription": "This document explains how we collect, use, share and protect your personal information when you use Blinker, both via the web dashboard (https://blinker-app.com) and the native iOS (App Store) and Android (Google Play) apps.",
+    "privacyImportant": "Blinker is a social platform for car enthusiasts built entirely on user identity: every event, crew, vehicle and piece of content is created by a real, identifiable person. To protect the privacy of registered users and the safety of the community, accessing Blinker always requires an account. We ask you to read this policy to understand how we handle your data.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "registrationData": {
+        "title": "Registration Data",
+        "description": "When you create an account on Blinker we collect only what is needed to identify you and let you participate in the community:",
         "items": [
-            {
-                "q": "Is Blinker free?",
-                "a": "Yes, downloading and using Blinker is completely free. You can search events, apply, manage your crew and showcase your garage with no hidden costs."
-            },
-            {
-                "q": "How do I find car meets near me?",
-                "a": "Open the events map: you'll see car meets, shows and track days in your area. Filter by type (night meet, track day, single-marque, road tour) and distance to find what you're after."
-            },
-            {
-                "q": "Can I organize my own event?",
-                "a": "Absolutely. Create your event in the app: date, location, category (car meet, track day, single-marque, night gathering…) and which vehicle types you accept. Manage candidacies, communicate with attendees and review event analytics."
-            },
-            {
-                "q": "How do selections and candidacies work?",
-                "a": "For invite-only events, users submit one of the vehicles from their virtual garage and the organizer approves, rejects or waitlists each candidacy directly in the app. No Google Forms, WhatsApp groups or third-party tools — the whole selection flow stays inside Blinker."
-            },
-            {
-                "q": "Which devices does Blinker support?",
-                "a": "Blinker is a native app for iOS (App Store) and Android (Google Play), and it's also accessible from any browser at blinker-app.com — so you can manage events and crews from desktop too, no install required."
-            },
-            {
-                "q": "Do I need an account to use Blinker?",
-                "a": "Yes — content access requires a free account. It's a deliberate choice: we care about the privacy of the community, and event organizers know exactly who can see their events and apply. Signup takes just a few seconds."
-            },
-            {
-                "q": "What is a crew?",
-                "a": "A crew is a group of enthusiasts attending events together. You can join an existing crew or create one for your club, forum or group of friends."
-            },
-            {
-                "q": "Does Blinker work outside Italy?",
-                "a": "Yes, the app is available in 5 languages (Italian, English, Spanish, French, German) and lists events posted anywhere. The most active community right now is in Italy and Europe."
-            },
-            {
-                "q": "How is my personal data handled?",
-                "a": "Fully GDPR-compliant. We don't sell your data and only collect what's needed to run the app. All details in our Privacy Policy."
-            }
+          "Nickname (unique)",
+          "First and last name (shown on your profile)",
+          "Email address (for authentication, service communications and account recovery)",
+          "Hashed password — only if you sign up with email/password. It is not set or required for users signing in with Sign in with Apple or Sign in with Google",
+          "OAuth provider identifier (Apple ID, Google Account) if you choose to sign in with them",
+          "City and country of residence (for geographic filters and regional statistics)",
+          "Profile picture (optional)",
+          "Personal bio, links to Instagram and TikTok (optional, visible on your public profile)",
+          "Phone number (optional)"
         ]
+      },
+      "usageData": {
+        "title": "Usage Data",
+        "description": "While using Blinker we collect, exclusively for platform operation and safety:",
+        "items": [
+          "Events you create, follow, attend or for which you submit selection requests",
+          "Crews where you are a member, founder or to which you have requested to join, with your role (Founder, Admin, Moderator, Supporter, Member)",
+          "Vehicles you publish in your garage (name, main photo, gallery, description, engine, suspension, wheels, license plate, year, tags)",
+          "Social interactions: likes on vehicles, event participations, subscriptions, news posted inside an event",
+          "Votes and moderation decisions on selections (for those managing selection-based events)",
+          "Monthly boosts you assign to crews",
+          "Device geolocation — only when you explicitly enable distance filters or when you create a geolocated event. It is not stored continuously nor tracked in the background",
+          "Push notification tokens (Apple Push Notification Service for iOS, Firebase Cloud Messaging for Android) used to send you updates on events, crews and interactions",
+          "Basic technical data: aggregated view counts, referrer, country/city derived from IP address, anonymous session identifier, language, theme, app version — used exclusively for aggregate analytics on the content you own (or on events of crews you are a member of)",
+          "Reports you submit (on users, events, news, vehicles, crews) and blocks you apply to other users"
+        ]
+      }
     },
-    "download": {
-        "title": "Download Blinker",
-        "subtitle": "Free, account in 30 seconds, your first car meet a tap away.",
-        "appStore": "Download on App Store",
-        "googlePlay": "Download on Google Play",
-        "secure": "Serious privacy: we never sell your data",
-        "updates": "Free updates, always",
-        "support": "Real human support, fast"
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "description": "We process your data exclusively to:",
+      "items": [
+        "Deliver Blinker services (creating and managing events, crews, vehicles, news, selections, gallery)",
+        "Authenticate you via email/password, Sign in with Apple or Sign in with Google",
+        "Personalize the in-app experience (language, theme, content relevant to your area and your crews)",
+        "Send you push and in-app notifications about events you follow, news posted, invitations, join requests, selection decisions",
+        "Show you aggregate statistics on the content you own and on events organized by the crews you are a member of",
+        "Ensure security, prevent automated abuse, enforce blocks, manage reports and moderate content",
+        "Improve app features, identify and fix bugs",
+        "Respond to your support requests",
+        "Comply with legal obligations"
+      ]
     },
-    "footer": {
-        "description": "The only app that saves you from automotive FOMO",
-        "product": "Useful Links",
-        "support": "Support",
-        "legal": "Legal",
-        "features": "Features",
-        "download": "Download",
-        "about": "About",
-        "helpCenter": "Help Center",
-        "contact": "Contact Us",
-        "privacyPolicy": "Privacy Policy",
-        "cookiePolicy": "Cookie Policy",
-        "termsOfService": "Terms of Service",
-        "copyright": "Made for car lovers, by people who can't afford a GT-R (yet)."
+    "section3": {
+      "title": "3. Information Sharing",
+      "description": "We do not sell or rent your personal data. We share it only in the following cases:",
+      "items": [
+        {
+          "title": "With other registered users:",
+          "description": "Public profile, events, crews, vehicles, likes, participations, news and media you publish are visible to other community users. Blinker is a closed platform: no content is accessible to unauthenticated visitors."
+        },
+        {
+          "title": "With technical providers (data processors):",
+          "description": "Supabase (authentication, PostgreSQL database and EU storage — eu-central-1), BunnyCDN (delivery of uploaded images), Apple Push Notification Service (iOS notifications), Firebase Cloud Messaging (Android notifications), Apple and Google (OAuth authentication when you choose to sign in with them), Google Analytics and Vercel Analytics (aggregate web analytics — only with consent). All providers operate under GDPR-compliant data processing agreements."
+        },
+        {
+          "title": "For legal reasons:",
+          "description": "When required by a competent authority or to protect the rights, safety or property of Blinker and its users."
+        },
+        {
+          "title": "In case of a corporate transaction:",
+          "description": "Data may be transferred if Blinker is acquired by or merges with another company; in such case we will notify you in advance and you will have the right to object."
+        }
+      ]
     },
-    "cookieConsent": {
-        "title": "Cookie Settings",
-        "description": "We use cookies to improve your experience. You can customize your preferences or accept all cookies.",
-        "acceptAll": "Accept All",
-        "customize": "Customize",
-        "reject": "Reject",
-        "close": "Close",
-        "savePreferences": "Save Preferences",
-        "cancel": "Cancel",
+    "section4": {
+      "title": "4. Data Retention",
+      "description": "We retain your data for as long as necessary to provide the service and to fulfil legal obligations. When you request account deletion from the Settings page or by contacting privacy@blinker-app.com, the account and personal data are deleted within 30 days; content you have published (events, news, vehicles) is anonymized or removed accordingly. Aggregated analytics, free of identifying data, are retained for a maximum of 24 months."
+    },
+    "section5": {
+      "title": "5. Security",
+      "description": "We adopt appropriate technical and organizational measures: TLS-encrypted transmission, passwords managed with strong hashing, Row-Level Security on PostgreSQL bound to your user ID, backend access restricted to authorized personnel, audit logs of administrative operations. No system is fully invulnerable: please choose a strong password (or use Sign in with Apple/Google) and do not share it."
+    },
+    "section6": {
+      "title": "6. Minors",
+      "description": "Blinker is intended for users at least 16 years old. We do not knowingly collect personal data from minors under 16. If we receive a report (or become aware) of an account created by a minor, we will delete it within 24 hours."
+    },
+    "section7": {
+      "title": "7. International Transfers",
+      "description": "The database, image storage and most technical services reside in the European Union (Supabase eu-central-1, BunnyCDN EU edges). Some providers (Apple, Google, Firebase) may involve transfers to third countries: in all cases we apply Standard Contractual Clauses approved by the European Commission or equivalent safeguards."
+    },
+    "section8": {
+      "title": "8. Your Rights",
+      "description": "Under the GDPR, you have the right to:",
+      "rights": [
+        "Access your personal data and obtain a copy",
+        "Correct inaccurate or incomplete data from your profile or by request via email",
+        "Request deletion of your account and all associated data (within 30 days)",
+        "Restrict processing for legitimate reasons",
+        "Request data portability in a readable format",
+        "Object to processing",
+        "Withdraw consent at any time (e.g. disable push notifications or disconnect Apple/Google)",
+        "Lodge a complaint with the Italian Data Protection Authority (https://www.garanteprivacy.it)"
+      ],
+      "contact": "To exercise these rights write to privacy@blinker-app.com. We will respond within 30 days."
+    },
+    "section9": {
+      "title": "9. Cookies and Similar Technologies",
+      "description": "On the web dashboard we use technical cookies (always on: authentication session, language, theme, cookie preferences) and, with your consent, analytics cookies (Google Analytics, Vercel Analytics). The native iOS/Android apps do not use third-party cookies but rely on internal identifiers needed for operation (session token, anonymous session identifier for aggregate analytics). For details read the Cookie Policy available from the footer."
+    },
+    "section10": {
+      "title": "10. Changes to this Privacy Policy",
+      "description": "We may update this policy when we add new features or when the regulatory landscape changes. Significant changes will be communicated via email and/or in-app notification. The date of the last update is shown at the top of the document."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "description": "For any questions or requests about your personal data:",
+      "email": "Email",
+      "address": "Address",
+      "website": "Website"
+    },
+    "lastUpdated": "This Privacy Policy was last updated in April 2026.",
+    "summary": {
+      "title": "📋 Summary",
+      "items": [
+        "Blinker is an account-based platform: every piece of content requires an identity to exist and to be viewed",
+        "We collect only the data needed to run the community and connect users with each other",
+        "We never sell or transfer your data to third parties for commercial purposes",
+        "You can access, correct or delete your data at any time from Settings",
+        "Sign in with Apple and Google are offered as a fast alternative to email/password — using them you don't need to set any password",
+        "For any question contact us at privacy@blinker-app.com"
+      ]
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "close": "Close modal",
+    "sections": {
+      "whatAreCookies": {
+        "title": "What are Cookies?",
+        "content": "Cookies are small text files that are stored on your device when you visit a website. These files contain information that helps the site remember your preferences and improve your browsing experience."
+      },
+      "types": {
+        "title": "Types of Cookies We Use",
         "essential": {
-            "title": "Essential Cookies",
-            "description": "Necessary for the website to function"
+          "title": "Essential Cookies",
+          "description": "These cookies are necessary for the website to function. They include cookies for:",
+          "items": [
+            "User session management",
+            "Language preferences",
+            "Security and authentication",
+            "Shopping cart (if applicable)"
+          ]
         },
         "analytics": {
-            "title": "Analytics Cookies",
-            "description": "To analyze website usage"
+          "title": "Analytics Cookies",
+          "description": "We use Google Analytics to collect information about how visitors use our site:",
+          "items": [
+            "Most visited pages",
+            "Time spent on site",
+            "Traffic sources",
+            "User behavior"
+          ]
         },
         "marketing": {
-            "title": "Marketing Cookies",
-            "description": "For personalized advertising"
-        },
-        "reopenLabel": "Reopen cookie settings"
-    },
-    "languageSelector": {
-        "title": "Language",
-        "italian": "Italiano",
-        "english": "English",
-        "spanish": "Español",
-        "french": "Français",
-        "german": "Deutsch"
-    },
-    "privacyPolicy": {
-        "title": "Privacy Policy",
-        "subtitle": "Your privacy is important to us. Learn how we collect, use and protect your data.",
-        "lastUpdatedUpper": "Last updated:",
-        "lastUpdatedDate": "April 2026",
-        "welcome": "Welcome to Blinker's Privacy Policy. ",
-        "welcomeDescription": "This document explains how we collect, use, share and protect your personal information when you use Blinker, both via the web dashboard (https://blinker-app.com) and the native iOS (App Store) and Android (Google Play) apps.",
-        "privacyImportant": "Blinker is a social platform for car enthusiasts built entirely on user identity: every event, crew, vehicle and piece of content is created by a real, identifiable person. To protect the privacy of registered users and the safety of the community, accessing Blinker always requires an account. We ask you to read this policy to understand how we handle your data.",
-        "section1": {
-            "title": "1. Information We Collect",
-            "registrationData": {
-                "title": "Registration Data",
-                "description": "When you create an account on Blinker we collect only what is needed to identify you and let you participate in the community:",
-                "items": [
-                    "Nickname (unique)",
-                    "First and last name (shown on your profile)",
-                    "Email address (for authentication, service communications and account recovery)",
-                    "Hashed password — only if you sign up with email/password. It is not set or required for users signing in with Sign in with Apple or Sign in with Google",
-                    "OAuth provider identifier (Apple ID, Google Account) if you choose to sign in with them",
-                    "City and country of residence (for geographic filters and regional statistics)",
-                    "Profile picture (optional)",
-                    "Personal bio, links to Instagram and TikTok (optional, visible on your public profile)",
-                    "Phone number (optional)"
-                ]
-            },
-            "usageData": {
-                "title": "Usage Data",
-                "description": "While using Blinker we collect, exclusively for platform operation and safety:",
-                "items": [
-                    "Events you create, follow, attend or for which you submit selection requests",
-                    "Crews where you are a member, founder or to which you have requested to join, with your role (Founder, Admin, Moderator, Supporter, Member)",
-                    "Vehicles you publish in your garage (name, main photo, gallery, description, engine, suspension, wheels, license plate, year, tags)",
-                    "Social interactions: likes on vehicles, event participations, subscriptions, news posted inside an event",
-                    "Votes and moderation decisions on selections (for those managing selection-based events)",
-                    "Monthly boosts you assign to crews",
-                    "Device geolocation — only when you explicitly enable distance filters or when you create a geolocated event. It is not stored continuously nor tracked in the background",
-                    "Push notification tokens (Apple Push Notification Service for iOS, Firebase Cloud Messaging for Android) used to send you updates on events, crews and interactions",
-                    "Basic technical data: aggregated view counts, referrer, country/city derived from IP address, anonymous session identifier, language, theme, app version — used exclusively for aggregate analytics on the content you own (or on events of crews you are a member of)",
-                    "Reports you submit (on users, events, news, vehicles, crews) and blocks you apply to other users"
-                ]
-            }
-        },
-        "section2": {
-            "title": "2. How We Use Your Information",
-            "description": "We process your data exclusively to:",
-            "items": [
-                "Deliver Blinker services (creating and managing events, crews, vehicles, news, selections, gallery)",
-                "Authenticate you via email/password, Sign in with Apple or Sign in with Google",
-                "Personalize the in-app experience (language, theme, content relevant to your area and your crews)",
-                "Send you push and in-app notifications about events you follow, news posted, invitations, join requests, selection decisions",
-                "Show you aggregate statistics on the content you own and on events organized by the crews you are a member of",
-                "Ensure security, prevent automated abuse, enforce blocks, manage reports and moderate content",
-                "Improve app features, identify and fix bugs",
-                "Respond to your support requests",
-                "Comply with legal obligations"
-            ]
-        },
-        "section3": {
-            "title": "3. Information Sharing",
-            "description": "We do not sell or rent your personal data. We share it only in the following cases:",
-            "items": [
-                {
-                    "title": "With other registered users:",
-                    "description": "Public profile, events, crews, vehicles, likes, participations, news and media you publish are visible to other community users. Blinker is a closed platform: no content is accessible to unauthenticated visitors."
-                },
-                {
-                    "title": "With technical providers (data processors):",
-                    "description": "Supabase (authentication, PostgreSQL database and EU storage — eu-central-1), BunnyCDN (delivery of uploaded images), Apple Push Notification Service (iOS notifications), Firebase Cloud Messaging (Android notifications), Apple and Google (OAuth authentication when you choose to sign in with them), Google Analytics and Vercel Analytics (aggregate web analytics — only with consent). All providers operate under GDPR-compliant data processing agreements."
-                },
-                {
-                    "title": "For legal reasons:",
-                    "description": "When required by a competent authority or to protect the rights, safety or property of Blinker and its users."
-                },
-                {
-                    "title": "In case of a corporate transaction:",
-                    "description": "Data may be transferred if Blinker is acquired by or merges with another company; in such case we will notify you in advance and you will have the right to object."
-                }
-            ]
-        },
-        "section4": {
-            "title": "4. Data Retention",
-            "description": "We retain your data for as long as necessary to provide the service and to fulfil legal obligations. When you request account deletion from the Settings page or by contacting privacy@blinker-app.com, the account and personal data are deleted within 30 days; content you have published (events, news, vehicles) is anonymized or removed accordingly. Aggregated analytics, free of identifying data, are retained for a maximum of 24 months."
-        },
-        "section5": {
-            "title": "5. Security",
-            "description": "We adopt appropriate technical and organizational measures: TLS-encrypted transmission, passwords managed with strong hashing, Row-Level Security on PostgreSQL bound to your user ID, backend access restricted to authorized personnel, audit logs of administrative operations. No system is fully invulnerable: please choose a strong password (or use Sign in with Apple/Google) and do not share it."
-        },
-        "section6": {
-            "title": "6. Minors",
-            "description": "Blinker is intended for users at least 16 years old. We do not knowingly collect personal data from minors under 16. If we receive a report (or become aware) of an account created by a minor, we will delete it within 24 hours."
-        },
-        "section7": {
-            "title": "7. International Transfers",
-            "description": "The database, image storage and most technical services reside in the European Union (Supabase eu-central-1, BunnyCDN EU edges). Some providers (Apple, Google, Firebase) may involve transfers to third countries: in all cases we apply Standard Contractual Clauses approved by the European Commission or equivalent safeguards."
-        },
-        "section8": {
-            "title": "8. Your Rights",
-            "description": "Under the GDPR, you have the right to:",
-            "rights": [
-                "Access your personal data and obtain a copy",
-                "Correct inaccurate or incomplete data from your profile or by request via email",
-                "Request deletion of your account and all associated data (within 30 days)",
-                "Restrict processing for legitimate reasons",
-                "Request data portability in a readable format",
-                "Object to processing",
-                "Withdraw consent at any time (e.g. disable push notifications or disconnect Apple/Google)",
-                "Lodge a complaint with the Italian Data Protection Authority (https://www.garanteprivacy.it)"
-            ],
-            "contact": "To exercise these rights write to privacy@blinker-app.com. We will respond within 30 days."
-        },
-        "section9": {
-            "title": "9. Cookies and Similar Technologies",
-            "description": "On the web dashboard we use technical cookies (always on: authentication session, language, theme, cookie preferences) and, with your consent, analytics cookies (Google Analytics, Vercel Analytics). The native iOS/Android apps do not use third-party cookies but rely on internal identifiers needed for operation (session token, anonymous session identifier for aggregate analytics). For details read the Cookie Policy available from the footer."
-        },
-        "section10": {
-            "title": "10. Changes to this Privacy Policy",
-            "description": "We may update this policy when we add new features or when the regulatory landscape changes. Significant changes will be communicated via email and/or in-app notification. The date of the last update is shown at the top of the document."
-        },
-        "section11": {
-            "title": "11. Contact",
-            "description": "For any questions or requests about your personal data:",
-            "email": "Email",
-            "address": "Address",
-            "website": "Website"
-        },
-        "lastUpdated": "This Privacy Policy was last updated in April 2026.",
-        "summary": {
-            "title": "📋 Summary",
-            "items": [
-                "Blinker is an account-based platform: every piece of content requires an identity to exist and to be viewed",
-                "We collect only the data needed to run the community and connect users with each other",
-                "We never sell or transfer your data to third parties for commercial purposes",
-                "You can access, correct or delete your data at any time from Settings",
-                "Sign in with Apple and Google are offered as a fast alternative to email/password — using them you don't need to set any password",
-                "For any question contact us at privacy@blinker-app.com"
-            ]
+          "title": "Marketing Cookies",
+          "description": "These cookies are used for:",
+          "items": [
+            "Newsletter and promotional communications",
+            "Personalized advertising",
+            "Marketing campaign analysis",
+            "Advertising retargeting"
+          ]
         }
-    },
-    "cookiePolicy": {
-        "title": "Cookie Policy",
-        "close": "Close modal",
-        "sections": {
-            "whatAreCookies": {
-                "title": "What are Cookies?",
-                "content": "Cookies are small text files that are stored on your device when you visit a website. These files contain information that helps the site remember your preferences and improve your browsing experience."
-            },
-            "types": {
-                "title": "Types of Cookies We Use",
-                "essential": {
-                    "title": "Essential Cookies",
-                    "description": "These cookies are necessary for the website to function. They include cookies for:",
-                    "items": [
-                        "User session management",
-                        "Language preferences",
-                        "Security and authentication",
-                        "Shopping cart (if applicable)"
-                    ]
-                },
-                "analytics": {
-                    "title": "Analytics Cookies",
-                    "description": "We use Google Analytics to collect information about how visitors use our site:",
-                    "items": [
-                        "Most visited pages",
-                        "Time spent on site",
-                        "Traffic sources",
-                        "User behavior"
-                    ]
-                },
-                "marketing": {
-                    "title": "Marketing Cookies",
-                    "description": "These cookies are used for:",
-                    "items": [
-                        "Newsletter and promotional communications",
-                        "Personalized advertising",
-                        "Marketing campaign analysis",
-                        "Advertising retargeting"
-                    ]
-                }
-            },
-            "management": {
-                "title": "How to Manage Cookies",
-                "content": "You can control and manage cookies through your browser settings. Here's how:",
-                "browsers": {
-                    "chrome": {
-                        "title": "Chrome",
-                        "steps": [
-                            "Open Chrome and go to Settings",
-                            "Scroll down and click \"Advanced\"",
-                            "Under \"Privacy and security\", click \"Content settings\"",
-                            "Click \"Cookies\"",
-                            "Manage your cookie preferences"
-                        ]
-                    },
-                    "firefox": {
-                        "title": "Firefox",
-                        "steps": [
-                            "Open Firefox and go to Options",
-                            "Click \"Privacy & Security\"",
-                            "In the \"Cookies and Site Data\" section, manage settings",
-                            "You can block all cookies or only third-party ones"
-                        ]
-                    },
-                    "safari": {
-                        "title": "Safari",
-                        "steps": [
-                            "Open Safari and go to Preferences",
-                            "Click \"Privacy\"",
-                            "Manage cookie settings",
-                            "You can block all cookies or only third-party ones"
-                        ]
-                    },
-                    "edge": {
-                        "title": "Edge",
-                        "steps": [
-                            "Open Edge and go to Settings",
-                            "Click \"Cookies and site permissions\"",
-                            "Manage your cookie preferences",
-                            "You can block all cookies or only third-party ones"
-                        ]
-                    }
-                }
-            },
-            "duration": {
-                "title": "Cookie Duration",
-                "content": "Cookies have different durations:",
-                "types": [
-                    "Session Cookies: Are deleted when you close the browser",
-                    "Persistent Cookies: Remain on your device for a specific period",
-                    "Analytics Cookies: Generally last 2 years (Google Analytics)",
-                    "Marketing Cookies: Can last up to 2 years"
-                ]
-            },
-            "thirdParty": {
-                "title": "Third-Party Cookies",
-                "content": "We use third-party services that may set cookies:",
-                "services": [
-                    "Google Analytics: To analyze site usage",
-                    "Google Fonts: To load site fonts",
-                    "Social Media: For sharing buttons"
-                ],
-                "note": "These services have their own cookie policies that we encourage you to review."
-            },
-            "updates": {
-                "title": "Cookie Policy Updates",
-                "content": "We may update this Cookie Policy from time to time. Changes will be published on this page with a new update date."
-            },
-            "contact": {
-                "title": "Contact",
-                "content": "For questions about this Cookie Policy, contact us:",
-                "info": [
-                    "Email: privacy@blinker-app.com"
-                ]
-            },
-            "footer": {
-                "ePrivacyCompliance": "This Cookie Policy complies with European cookie regulations and the ePrivacy directive."
-            }
+      },
+      "management": {
+        "title": "How to Manage Cookies",
+        "content": "You can control and manage cookies through your browser settings. Here's how:",
+        "browsers": {
+          "chrome": {
+            "title": "Chrome",
+            "steps": [
+              "Open Chrome and go to Settings",
+              "Scroll down and click \"Advanced\"",
+              "Under \"Privacy and security\", click \"Content settings\"",
+              "Click \"Cookies\"",
+              "Manage your cookie preferences"
+            ]
+          },
+          "firefox": {
+            "title": "Firefox",
+            "steps": [
+              "Open Firefox and go to Options",
+              "Click \"Privacy & Security\"",
+              "In the \"Cookies and Site Data\" section, manage settings",
+              "You can block all cookies or only third-party ones"
+            ]
+          },
+          "safari": {
+            "title": "Safari",
+            "steps": [
+              "Open Safari and go to Preferences",
+              "Click \"Privacy\"",
+              "Manage cookie settings",
+              "You can block all cookies or only third-party ones"
+            ]
+          },
+          "edge": {
+            "title": "Edge",
+            "steps": [
+              "Open Edge and go to Settings",
+              "Click \"Cookies and site permissions\"",
+              "Manage your cookie preferences",
+              "You can block all cookies or only third-party ones"
+            ]
+          }
         }
-    },
-    "termsOfService": {
-        "title": "End User License Agreement (EULA)",
-        "subtitle": "The terms and conditions for using Blinker",
-        "lastUpdated": "Last updated: April 2026",
-        "welcome": "Welcome to Blinker. Blinker is a social platform for automotive enthusiasts that lets you discover and organize meetups, gatherings, track days and any car-related event, build your crew and showcase your vehicles to the community.",
-        "readCarefully": "Before using Blinker please read this End User License Agreement (EULA) carefully. By using the app or web dashboard you accept the terms described here. If you do not agree, please do not use Blinker.",
-        "section1": {
-            "title": "1. License Grant",
-            "description": "We grant you the right to use Blinker (web dashboard at https://blinker-app.com, iOS app on the App Store and Android app on Google Play) on your personal devices, in a limited, non-exclusive, non-transferable and revocable manner.",
-            "additionalInfo": "The app is intended for personal and recreational use. You may not use it for commercial purposes (e.g. event agency, car sales, advertising) without our written consent."
-        },
-        "section1bis": {
-            "title": "1-bis. Account-Based Nature of the Service",
-            "description": "Blinker is a social platform built on user identity: every event, crew, vehicle and piece of content is created by a real, identifiable person, often including coordinates of private or semi-private locations, personal photos and contact links. To protect the privacy of registered users, ensure community safety and prevent abuse (e.g. automated scraping of locations, photos, names, follower lists), accessing Blinker always requires an account from first launch. No content is visible to unauthenticated visitors.",
-            "items": [
-                "Data published by users is protected by Row-Level Security tied to the identity of who created it: removing the authentication gate would require renegotiating the consent existing users opted into.",
-                "Block, report and moderation features are meaningful only when both parties have an identity.",
-                "Authentication is our primary boundary against automated abuse.",
-                "All primary actions in the app (creating events, joining crews, following users, sending selection requests, posting news, commenting) require identity by their nature."
-            ]
-        },
-        "section1ter": {
-            "title": "1-ter. Sign-in Methods",
-            "description": "To minimize registration friction, Blinker offers multiple sign-in options:",
-            "items": [
-                "Email + password with link verification",
-                "Sign in with Apple — available on iOS, web and Android. Users signing in with Apple are not required to set a password and can use their Apple ID to delete their account in line with Apple guidelines.",
-                "Sign in with Google — available on all platforms",
-                "You can connect and disconnect OAuth providers from your profile at any time. If you remove all OAuth providers and have set a password, you can keep signing in via email/password."
-            ]
-        },
-        "section2": {
-            "title": "2. App Functionality",
-            "description": "Blinker lets you:",
-            "items": [
-                "Explore automotive events and filter them by category, geographic distance, period, country and organizing crew",
-                "Create and manage events both as a private user and as part of a crew, with image, banner, description, geolocation, allowed car types and an optional selection mechanism (participant approval)",
-                "Publish news inside events you manage or for which you have permissions in the organizing crew",
-                "Follow events and receive notifications on updates, news, date or location changes",
-                "Build a crew with roles (Founder, Admin, Moderator, Supporter, Member) and granular permissions for managing events, news, members and selections",
-                "Invite other users to your crew, manage join requests and transfer ownership",
-                "Publish your vehicles with photos, gallery, technical details (engine, suspension, wheels, license plate, tags, year) and receive likes from the community",
-                "Interact with other community members: follow users, like vehicles, attend events",
-                "Assign monthly boosts to crews to climb the community ranking",
-                "View aggregate statistics on your content and on events organized by crews you are a member of",
-                "Delete your account and all associated data on your own from the Settings page"
-            ]
-        },
-        "section3": {
-            "title": "3. What You Cannot Do",
-            "description": "To keep Blinker a safe and respectful space, you commit not to:",
-            "items": [
-                "Use Blinker for illegal, offensive or harmful activities",
-                "Publish false, defamatory, violent, pornographic, hate-inciting content or content that violates third-party rights (including copyright and image rights)",
-                "Attempt to compromise the security of the app or systems (reverse engineering, exploits, unauthorized access)",
-                "Create multiple or fake accounts, or impersonate another user",
-                "Use bots, automated scripts or scraping tools to access content",
-                "Sell, transfer or share your account",
-                "Publish events or content that promote unsafe road behavior or violate traffic laws",
-                "Violate local, national or international laws",
-                "Blinker enforces a zero-tolerance policy toward offensive or abusive content and behavior: any violation will result in immediate content removal and/or account suspension."
-            ]
-        },
-        "section4": {
-            "title": "4. User-Generated Content",
-            "description": "When you publish content on Blinker (photos, descriptions, events, news, vehicles, profile):",
-            "items": [
-                "You remain the owner of your content.",
-                "You grant us a non-exclusive, worldwide, royalty-free license to host it, distribute it (also via our CDN BunnyCDN), display it to other registered users and use it for the operation of the service.",
-                "You are responsible for the truthfulness, legality and rights of the content you publish.",
-                "We cannot guarantee the accuracy of content published by other users."
-            ]
-        },
-        "section4bis": {
-            "title": "4-bis. Content Moderation and Safety",
-            "description": "Blinker enforces a zero-tolerance policy toward offensive, violent, illegal, discriminatory, pornographic, hate-inciting content or content that violates third-party rights.",
-            "securityInfo": "To ensure community safety:",
-            "items": [
-                "Any user can report inappropriate content or behavior directly from the app, or by writing to support@blinker-app.com",
-                "Any user can block other users they consider abusive or harassing — blocking prevents the blocked user from seeing the blocker's content and from interacting with them",
-                "Blinker staff and crew organizers, according to assigned permissions, can remove content and suspend accounts",
-                "We commit to reviewing reports within 24 hours of receipt and taking action where necessary."
-            ]
-        },
-        "section5": {
-            "title": "5. Crew Management",
-            "description": "If you create or manage a crew:",
-            "items": [
-                "You are responsible for the content, events and actions you publish on behalf of the crew",
-                "You must comply with the Terms of Service and ensure crew members do too",
-                "Permissions (event creation, selection management, member promotion, news publishing, etc.) are configurable by the Founder for each role",
-                "Crew ownership transfer happens only with explicit consent of the new Founder",
-                "Blinker is not responsible for internal crew conflicts or for the operational management of events published by the crew."
-            ]
-        },
-        "section6": {
-            "title": "6. In-App Purchases",
-            "description": "Blinker currently does not offer in-app purchases or paid features. If we introduce premium features in the future, they will be governed by specific terms communicated at the time of purchase. Any purchases will follow the refund policies of the Apple App Store, Google Play Store or other applicable sales channels."
-        },
-        "section7": {
-            "title": "7. Updates and Changes",
-            "description": "We release regular updates to improve features, fix bugs and add new capabilities. On mobile, updates are distributed via the App Store / Google Play. On the web dashboard they are delivered automatically on browser refresh."
-        },
-        "section8": {
-            "title": "8. Warranty Disclaimers",
-            "description": "Blinker is provided \"as is\". We do not guarantee that:",
-            "items": [
-                "The app will always work without interruptions or errors",
-                "All published data is accurate or up-to-date",
-                "The app is compatible with every device or operating system",
-                "No security issues or data loss will occur despite our protection measures"
-            ]
-        },
-        "section9": {
-            "title": "9. Limitation of Liability",
-            "description": "To the maximum extent permitted by law, Blinker is not liable for:",
-            "items": [
-                "Damages or losses arising from use of the app",
-                "Missing, incorrect or outdated data in events published by users or crews",
-                "Improper, unlawful or dangerous behavior of other users",
-                "Accidents, harm to people or property, legal consequences arising from participation in events published in the app or organized through the community"
-            ]
-        },
-        "section10": {
-            "title": "10. Termination",
-            "items": [
-                "We may suspend or delete your account in case of violation of this EULA or improper use of the app, with notice via email except for urgent community-safety cases.",
-                "You can terminate the agreement at any time by deleting your account from the Settings: your personal data will be removed within 30 days as described in the Privacy Policy."
-            ]
-        },
-        "section11": {
-            "title": "11. Privacy",
-            "description": "Protection of your data is governed by the Blinker Privacy Policy, available at https://blinker-app.com/privacy."
-        },
-        "section12": {
-            "title": "12. Changes to this EULA",
-            "description": "We may update this document to reflect new features or regulatory changes. In case of significant changes we will notify you via email or in-app notification. Continuing to use Blinker after the change constitutes acceptance of the new EULA."
-        },
-        "section13": {
-            "title": "13. Governing Law and Jurisdiction",
-            "description": "This EULA is governed by Italian law. For any dispute the competent court is the one of the consumer's place of residence, unless otherwise agreed."
-        },
-        "section14": {
-            "title": "14. Contact",
-            "description": "For any question or support request:",
-            "email": "📧 support@blinker-app.com",
-            "website": "🌐 https://get.blinker-app.com"
-        },
-        "summary": {
-            "title": "📋 In short",
-            "items": [
-                "Blinker is an account-based social platform: an account is required to use it (you can sign in with email, Apple or Google)",
-                "You are responsible for the content you publish (events, news, vehicles, profile)",
-                "Zero tolerance for abusive behavior: blocks, reports and moderation are active",
-                "Blinker is not responsible for the operational organization of user-created events",
-                "Privacy is governed by the Privacy Policy",
-                "In case of dispute, Italian law applies"
-            ]
-        }
+      },
+      "duration": {
+        "title": "Cookie Duration",
+        "content": "Cookies have different durations:",
+        "types": [
+          "Session Cookies: Are deleted when you close the browser",
+          "Persistent Cookies: Remain on your device for a specific period",
+          "Analytics Cookies: Generally last 2 years (Google Analytics)",
+          "Marketing Cookies: Can last up to 2 years"
+        ]
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "content": "We use third-party services that may set cookies:",
+        "services": [
+          "Google Analytics: To analyze site usage",
+          "Google Fonts: To load site fonts",
+          "Social Media: For sharing buttons"
+        ],
+        "note": "These services have their own cookie policies that we encourage you to review."
+      },
+      "updates": {
+        "title": "Cookie Policy Updates",
+        "content": "We may update this Cookie Policy from time to time. Changes will be published on this page with a new update date."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about this Cookie Policy, contact us:",
+        "info": [
+          "Email: privacy@blinker-app.com"
+        ]
+      },
+      "footer": {
+        "ePrivacyCompliance": "This Cookie Policy complies with European cookie regulations and the ePrivacy directive."
+      }
     }
+  },
+  "termsOfService": {
+    "title": "End User License Agreement (EULA)",
+    "subtitle": "The terms and conditions for using Blinker",
+    "lastUpdated": "Last updated: April 2026",
+    "welcome": "Welcome to Blinker. Blinker is a social platform for automotive enthusiasts that lets you discover and organize meetups, gatherings, track days and any car-related event, build your crew and showcase your vehicles to the community.",
+    "readCarefully": "Before using Blinker please read this End User License Agreement (EULA) carefully. By using the app or web dashboard you accept the terms described here. If you do not agree, please do not use Blinker.",
+    "section1": {
+      "title": "1. License Grant",
+      "description": "We grant you the right to use Blinker (web dashboard at https://blinker-app.com, iOS app on the App Store and Android app on Google Play) on your personal devices, in a limited, non-exclusive, non-transferable and revocable manner.",
+      "additionalInfo": "The app is intended for personal and recreational use. You may not use it for commercial purposes (e.g. event agency, car sales, advertising) without our written consent."
+    },
+    "section1bis": {
+      "title": "1-bis. Account-Based Nature of the Service",
+      "description": "Blinker is a social platform built on user identity: every event, crew, vehicle and piece of content is created by a real, identifiable person, often including coordinates of private or semi-private locations, personal photos and contact links. To protect the privacy of registered users, ensure community safety and prevent abuse (e.g. automated scraping of locations, photos, names, follower lists), accessing Blinker always requires an account from first launch. No content is visible to unauthenticated visitors.",
+      "items": [
+        "Data published by users is protected by Row-Level Security tied to the identity of who created it: removing the authentication gate would require renegotiating the consent existing users opted into.",
+        "Block, report and moderation features are meaningful only when both parties have an identity.",
+        "Authentication is our primary boundary against automated abuse.",
+        "All primary actions in the app (creating events, joining crews, following users, sending selection requests, posting news, commenting) require identity by their nature."
+      ]
+    },
+    "section1ter": {
+      "title": "1-ter. Sign-in Methods",
+      "description": "To minimize registration friction, Blinker offers multiple sign-in options:",
+      "items": [
+        "Email + password with link verification",
+        "Sign in with Apple — available on iOS, web and Android. Users signing in with Apple are not required to set a password and can use their Apple ID to delete their account in line with Apple guidelines.",
+        "Sign in with Google — available on all platforms",
+        "You can connect and disconnect OAuth providers from your profile at any time. If you remove all OAuth providers and have set a password, you can keep signing in via email/password."
+      ]
+    },
+    "section2": {
+      "title": "2. App Functionality",
+      "description": "Blinker lets you:",
+      "items": [
+        "Explore automotive events and filter them by category, geographic distance, period, country and organizing crew",
+        "Create and manage events both as a private user and as part of a crew, with image, banner, description, geolocation, allowed car types and an optional selection mechanism (participant approval)",
+        "Publish news inside events you manage or for which you have permissions in the organizing crew",
+        "Follow events and receive notifications on updates, news, date or location changes",
+        "Build a crew with roles (Founder, Admin, Moderator, Supporter, Member) and granular permissions for managing events, news, members and selections",
+        "Invite other users to your crew, manage join requests and transfer ownership",
+        "Publish your vehicles with photos, gallery, technical details (engine, suspension, wheels, license plate, tags, year) and receive likes from the community",
+        "Interact with other community members: follow users, like vehicles, attend events",
+        "Assign monthly boosts to crews to climb the community ranking",
+        "View aggregate statistics on your content and on events organized by crews you are a member of",
+        "Delete your account and all associated data on your own from the Settings page"
+      ]
+    },
+    "section3": {
+      "title": "3. What You Cannot Do",
+      "description": "To keep Blinker a safe and respectful space, you commit not to:",
+      "items": [
+        "Use Blinker for illegal, offensive or harmful activities",
+        "Publish false, defamatory, violent, pornographic, hate-inciting content or content that violates third-party rights (including copyright and image rights)",
+        "Attempt to compromise the security of the app or systems (reverse engineering, exploits, unauthorized access)",
+        "Create multiple or fake accounts, or impersonate another user",
+        "Use bots, automated scripts or scraping tools to access content",
+        "Sell, transfer or share your account",
+        "Publish events or content that promote unsafe road behavior or violate traffic laws",
+        "Violate local, national or international laws",
+        "Blinker enforces a zero-tolerance policy toward offensive or abusive content and behavior: any violation will result in immediate content removal and/or account suspension."
+      ]
+    },
+    "section4": {
+      "title": "4. User-Generated Content",
+      "description": "When you publish content on Blinker (photos, descriptions, events, news, vehicles, profile):",
+      "items": [
+        "You remain the owner of your content.",
+        "You grant us a non-exclusive, worldwide, royalty-free license to host it, distribute it (also via our CDN BunnyCDN), display it to other registered users and use it for the operation of the service.",
+        "You are responsible for the truthfulness, legality and rights of the content you publish.",
+        "We cannot guarantee the accuracy of content published by other users."
+      ]
+    },
+    "section4bis": {
+      "title": "4-bis. Content Moderation and Safety",
+      "description": "Blinker enforces a zero-tolerance policy toward offensive, violent, illegal, discriminatory, pornographic, hate-inciting content or content that violates third-party rights.",
+      "securityInfo": "To ensure community safety:",
+      "items": [
+        "Any user can report inappropriate content or behavior directly from the app, or by writing to support@blinker-app.com",
+        "Any user can block other users they consider abusive or harassing — blocking prevents the blocked user from seeing the blocker's content and from interacting with them",
+        "Blinker staff and crew organizers, according to assigned permissions, can remove content and suspend accounts",
+        "We commit to reviewing reports within 24 hours of receipt and taking action where necessary."
+      ]
+    },
+    "section5": {
+      "title": "5. Crew Management",
+      "description": "If you create or manage a crew:",
+      "items": [
+        "You are responsible for the content, events and actions you publish on behalf of the crew",
+        "You must comply with the Terms of Service and ensure crew members do too",
+        "Permissions (event creation, selection management, member promotion, news publishing, etc.) are configurable by the Founder for each role",
+        "Crew ownership transfer happens only with explicit consent of the new Founder",
+        "Blinker is not responsible for internal crew conflicts or for the operational management of events published by the crew."
+      ]
+    },
+    "section6": {
+      "title": "6. In-App Purchases",
+      "description": "Blinker currently does not offer in-app purchases or paid features. If we introduce premium features in the future, they will be governed by specific terms communicated at the time of purchase. Any purchases will follow the refund policies of the Apple App Store, Google Play Store or other applicable sales channels."
+    },
+    "section7": {
+      "title": "7. Updates and Changes",
+      "description": "We release regular updates to improve features, fix bugs and add new capabilities. On mobile, updates are distributed via the App Store / Google Play. On the web dashboard they are delivered automatically on browser refresh."
+    },
+    "section8": {
+      "title": "8. Warranty Disclaimers",
+      "description": "Blinker is provided \"as is\". We do not guarantee that:",
+      "items": [
+        "The app will always work without interruptions or errors",
+        "All published data is accurate or up-to-date",
+        "The app is compatible with every device or operating system",
+        "No security issues or data loss will occur despite our protection measures"
+      ]
+    },
+    "section9": {
+      "title": "9. Limitation of Liability",
+      "description": "To the maximum extent permitted by law, Blinker is not liable for:",
+      "items": [
+        "Damages or losses arising from use of the app",
+        "Missing, incorrect or outdated data in events published by users or crews",
+        "Improper, unlawful or dangerous behavior of other users",
+        "Accidents, harm to people or property, legal consequences arising from participation in events published in the app or organized through the community"
+      ]
+    },
+    "section10": {
+      "title": "10. Termination",
+      "items": [
+        "We may suspend or delete your account in case of violation of this EULA or improper use of the app, with notice via email except for urgent community-safety cases.",
+        "You can terminate the agreement at any time by deleting your account from the Settings: your personal data will be removed within 30 days as described in the Privacy Policy."
+      ]
+    },
+    "section11": {
+      "title": "11. Privacy",
+      "description": "Protection of your data is governed by the Blinker Privacy Policy, available at https://blinker-app.com/privacy."
+    },
+    "section12": {
+      "title": "12. Changes to this EULA",
+      "description": "We may update this document to reflect new features or regulatory changes. In case of significant changes we will notify you via email or in-app notification. Continuing to use Blinker after the change constitutes acceptance of the new EULA."
+    },
+    "section13": {
+      "title": "13. Governing Law and Jurisdiction",
+      "description": "This EULA is governed by Italian law. For any dispute the competent court is the one of the consumer's place of residence, unless otherwise agreed."
+    },
+    "section14": {
+      "title": "14. Contact",
+      "description": "For any question or support request:",
+      "email": "📧 support@blinker-app.com",
+      "website": "🌐 https://get.blinker-app.com"
+    },
+    "summary": {
+      "title": "📋 In short",
+      "items": [
+        "Blinker is an account-based social platform: an account is required to use it (you can sign in with email, Apple or Google)",
+        "You are responsible for the content you publish (events, news, vehicles, profile)",
+        "Zero tolerance for abusive behavior: blocks, reports and moderation are active",
+        "Blinker is not responsible for the operational organization of user-created events",
+        "Privacy is governed by the Privacy Policy",
+        "In case of dispute, Italian law applies"
+      ]
+    }
+  }
 }
