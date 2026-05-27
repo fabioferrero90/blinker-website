@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram as faInstagramIcon, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram as faInstagramIcon, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import PolicyModal from './PolicyModal';
 import { useTranslation } from 'react-i18next';
 
@@ -35,6 +35,7 @@ function Footer() {
                         <div className="footer-section">
                             <h4>{t('footer.product')}</h4>
                             <a href="https://blinker-app.com" target="_blank" rel="noopener noreferrer">Blinker Web</a>
+                            <a href="https://merch.blinker-app.com" target="_blank" rel="noopener noreferrer">{t('footer.merch')}</a>
                         </div>
 
                         <div className="footer-section">
@@ -59,14 +60,14 @@ function Footer() {
                     <div className="footer-bottom text-sm">
                         <p><span className='text-white font-semibold text-sm'>&copy; 2026 Blinker App</span>- {t('footer.copyright')}</p>
                         <div className="footer-social">
-                            <a href="https://discord.gg/6uD7KrEWEk" aria-label="Discord" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faDiscord} size="sm" />
-                            </a>
                             <a href="https://www.instagram.com/blinker.social/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagramIcon} size="sm" />
                             </a>
-                            <a href="https://x.com/blinker_social" aria-label="X" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faXTwitter} size="sm" />
+                            <a href="https://www.youtube.com/@BlinkerSocial" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faYoutube} size="sm" />
+                            </a>
+                            <a href="https://tiktok.com/@blinker.social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faTiktok} size="sm" />
                             </a>
                         </div>
                     </div>

@@ -58,6 +58,15 @@ function Navbar() {
                             >
                                 {t('navbar.download')}
                             </button>
+                            <a
+                                className="nav-merch-cta"
+                                href="https://merch.blinker-app.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                {t('navbar.merch')}
+                            </a>
                         </div>
 
                         {/* Web Login Button - Only visible on tablet and desktop */}
@@ -89,6 +98,15 @@ function Navbar() {
                         >
                             {t('navbar.download')}
                         </button>
+                        <a
+                            className="nav-merch-cta"
+                            href="https://merch.blinker-app.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {t('navbar.merch')}
+                        </a>
                     </div>
 
                     <button

@@ -558,6 +558,24 @@
     box-shadow: var(--shadow-hover);
 }
 
+/* Merch CTA - acid green, both desktop nav and mobile menu */
+.nav-merch-cta {
+    background: #d7ff00 !important;
+    color: #000000 !important;
+    padding: 0.9rem 1.8rem !important;
+    border-radius: 8px;
+    font-weight: 600 !important;
+    line-height: 1;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-merch-cta:hover {
+    background: #b8db00 !important;
+    transform: translateY(-2px);
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     height: 100vh;
@@ -1323,13 +1341,20 @@
         right: 0;
         background: rgba(24, 24, 24, 0.98);
         flex-direction: column;
-        padding: 2rem;
+        align-items: flex-end;
+        gap: 0.4rem;
+        padding: 1.4rem 2rem;
         box-shadow: var(--shadow);
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: var(--transition);
         z-index: 999;
+    }
+
+    .nav-links.mobile .nav-merch-cta {
+        margin-top: 0.4rem;
+        padding: 0.7rem 1.4rem !important;
     }
 
     .nav-links.mobile.open {
@@ -1341,10 +1366,10 @@
 
     .nav-links.mobile button {
         text-align: right;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
         color: var(--text-dark);
         font-size: 1.1rem;
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
     }
 
     .nav-toggle {
