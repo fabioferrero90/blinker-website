@@ -8,6 +8,7 @@ import translationEN from './locales/en/translation.json';
 import translationES from './locales/es/translation.json';
 import translationFR from './locales/fr/translation.json';
 import translationDE from './locales/de/translation.json';
+import translationPL from './locales/pl/translation.json';
 
 const resources = {
     it: {
@@ -24,6 +25,9 @@ const resources = {
     },
     de: {
         translation: translationDE
+    },
+    pl: {
+        translation: translationPL
     }
 };
 
@@ -59,14 +63,14 @@ i18n
             caches: ['localStorage'],
 
             // Lingue supportate
-            supportedLngs: ['it', 'en', 'es', 'fr', 'de'],
+            supportedLngs: ['it', 'en', 'es', 'fr', 'de', 'pl'],
 
             // Converti codici lingua del browser (es: en-US -> en)
             convertDetectedLanguage: (lng) => {
                 // Estrae solo i primi 2 caratteri del codice lingua
                 const detectedLng = lng.split('-')[0].toLowerCase();
                 // Verifica se la lingua è supportata, altrimenti fallback
-                const finalLng = ['it', 'en', 'es', 'fr', 'de'].includes(detectedLng) ? detectedLng : 'it';
+                const finalLng = ['it', 'en', 'es', 'fr', 'de', 'pl'].includes(detectedLng) ? detectedLng : 'it';
                 return finalLng;
             },
 

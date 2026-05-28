@@ -27,7 +27,8 @@ function LanguageSelector() {
         { code: 'en', name: t('languageSelector.english'), flagCode: 'gb' },
         { code: 'es', name: t('languageSelector.spanish'), flagCode: 'es' },
         { code: 'fr', name: t('languageSelector.french'), flagCode: 'fr' },
-        { code: 'de', name: t('languageSelector.german'), flagCode: 'de' }
+        { code: 'de', name: t('languageSelector.german'), flagCode: 'de' },
+        { code: 'pl', name: t('languageSelector.polish'), flagCode: 'pl' }
     ];
 
     const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
