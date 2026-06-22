@@ -100,7 +100,9 @@ export default defineConfig(({ command, mode, isSsrBuild }) => {
     // crawler senza JS (Bing, scraper social, motori AI) vedono il contenuto.
     // È una single-page: prerendero solo '/'.
     ssgOptions: {
-      includedRoutes: (paths) => paths.filter((p) => p === '/'),
+      // Pre-renderizza una pagina per lingua (/ = it, /en, /es, /fr, /de, /pl).
+      includedRoutes: (paths) =>
+        paths.filter((p) => ['/', '/en', '/es', '/fr', '/de', '/pl'].includes(p)),
     },
   }
 })

@@ -14,14 +14,15 @@
     <meta name="description" content="Blinker è l'app per chi vive di motori: scopri car meet, raduni auto e track day vicino a te. Crea la tua crew, mostra il garage e organizza eventi automotive." />
     <meta name="author" content="Blinker Team" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://get.blinker-app.com/" />
+    <!-- canonical + og:url + og:locale sono impostati per-lingua via SeoHead (vite-react-ssg Head) -->
 
-    <!-- Hreflang alternates -->
-    <link rel="alternate" hreflang="it" href="https://get.blinker-app.com/?lng=it" />
-    <link rel="alternate" hreflang="en" href="https://get.blinker-app.com/?lng=en" />
-    <link rel="alternate" hreflang="es" href="https://get.blinker-app.com/?lng=es" />
-    <link rel="alternate" hreflang="fr" href="https://get.blinker-app.com/?lng=fr" />
-    <link rel="alternate" hreflang="de" href="https://get.blinker-app.com/?lng=de" />
+    <!-- Hreflang alternates (URL path-based, una pagina per lingua) -->
+    <link rel="alternate" hreflang="it" href="https://get.blinker-app.com/" />
+    <link rel="alternate" hreflang="en" href="https://get.blinker-app.com/en" />
+    <link rel="alternate" hreflang="es" href="https://get.blinker-app.com/es" />
+    <link rel="alternate" hreflang="fr" href="https://get.blinker-app.com/fr" />
+    <link rel="alternate" hreflang="de" href="https://get.blinker-app.com/de" />
+    <link rel="alternate" hreflang="pl" href="https://get.blinker-app.com/pl" />
     <link rel="alternate" hreflang="x-default" href="https://get.blinker-app.com/" />
 
     <!-- Performance optimizations -->
@@ -37,12 +38,12 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Blinker" />
-    <meta property="og:locale" content="it_IT" />
+    <!-- og:locale e og:url sono per-lingua (SeoHead) -->
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:locale:alternate" content="fr_FR" />
     <meta property="og:locale:alternate" content="de_DE" />
-    <meta property="og:url" content="https://get.blinker-app.com/" />
+    <meta property="og:locale:alternate" content="pl_PL" />
     <meta property="og:title" content="Blinker — Trova Car Meet e Raduni Auto vicino a te" />
     <meta property="og:description" content="L'app per chi vive di motori: scopri car meet, track day e ritrovi automotive nella tua zona. Crea la tua crew, mostra il garage e non perderti più nessun evento." />
     <meta property="og:image" content="https://get.blinker-app.com/og-image.avif" />

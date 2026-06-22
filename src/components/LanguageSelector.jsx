@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
+import { LANG_PATHS } from '../i18n';
 
 function LanguageSelector() {
     const { t, i18n } = useTranslation();
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -34,16 +35,18 @@ function LanguageSelector() {
     const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
     const changeLanguage = (languageCode) => {
-        i18n.changeLanguage(languageCode);
         setIsOpen(false);
 
         // Salva la preferenza nel localStorage
-        localStorage.setItem('blinker-language', languageCode);
+        try {
+            localStorage.setItem('blinker-language', languageCode);
+        } catch {
+            // localStorage non disponibile: ignora.
+        }
 
-        // Aggiorna ?lng= nell'URL senza ricaricare la pagina (utile per condivisione + SEO)
-        const url = new URL(window.location.href);
-        url.searchParams.set('lng', languageCode);
-        window.history.replaceState({}, '', url);
+        // Cambia lingua NAVIGANDO all'URL della lingua (/ , /en, /es...): ogni
+        // lingua è una pagina distinta e indicizzabile.
+        navigate(LANG_PATHS[languageCode] || '/');
     };
 
     return (
