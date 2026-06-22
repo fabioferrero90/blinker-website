@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import fs from 'fs'
 
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(({ command, mode, isSsrBuild }) => {
   // Carica le variabili d'ambiente
   const env = loadEnv(mode, process.cwd(), '')
 
@@ -46,12 +46,16 @@ export default defineConfig(({ command, mode }) => {
       minify: env.VITE_BUILD_MINIFY === 'true' ? 'terser' : false,
       rollupOptions: {
         output: {
-          manualChunks: {
-            vendor: ['react', 'react-dom'],
-            i18n: ['i18next', 'react-i18next'],
-            icons: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons'],
-            flags: ['flag-icons'],
-          },
+          // manualChunks solo nella build client: nella build SSR (vite-react-ssg)
+          // react & co. sono esterni e non possono finire in un manualChunk.
+          manualChunks: isSsrBuild
+            ? undefined
+            : {
+              vendor: ['react', 'react-dom'],
+              i18n: ['i18next', 'react-i18next'],
+              icons: ['@fortawesome/fontawesome-svg-core', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons'],
+              flags: ['flag-icons'],
+            },
           // Ottimizzazione per il caching
           chunkFileNames: 'assets/js/[name]-[hash].js',
           entryFileNames: 'assets/js/[name]-[hash].js',
@@ -91,6 +95,12 @@ export default defineConfig(({ command, mode }) => {
     },
     css: {
       devSourcemap: false,
-    }
+    },
+    // Pre-rendering (vite-react-ssg): genera l'HTML statico della home così i
+    // crawler senza JS (Bing, scraper social, motori AI) vedono il contenuto.
+    // È una single-page: prerendero solo '/'.
+    ssgOptions: {
+      includedRoutes: (paths) => paths.filter((p) => p === '/'),
+    },
   }
 })

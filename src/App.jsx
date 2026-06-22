@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { detectClientLanguage } from './i18n';
 import { AppProvider } from './contexts/AppContext';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
@@ -12,6 +13,15 @@ const LOCALE_TAG = { it: 'it_IT', en: 'en_US', es: 'es_ES', fr: 'fr_FR', de: 'de
 function App() {
   useGoogleAnalytics();
   const { i18n } = useTranslation();
+
+  // Post-mount (client): rileva e applica la lingua reale. Il primo render resta
+  // 'it' (= prerender) per non rompere la hydration; qui si passa alla lingua
+  // dell'utente (?lng=, preferenza salvata o browser).
+  useEffect(() => {
+    const lng = detectClientLanguage();
+    if (lng && lng !== i18n.language) i18n.changeLanguage(lng);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const lng = (i18n.language || 'it').split('-')[0];
