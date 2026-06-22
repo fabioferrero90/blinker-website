@@ -1,6 +1,6 @@
 // Service Worker per gestire il cache e forzare aggiornamenti
-const CACHE_NAME = 'blinker-v1.0.12'; // Incrementa questo numero ad ogni deploy
-const STATIC_CACHE_NAME = 'blinker-static-v1.0.12';
+const CACHE_NAME = 'blinker-v1.0.13'; // Incrementa questo numero ad ogni deploy
+const STATIC_CACHE_NAME = 'blinker-static-v1.0.13';
 
 // File da cachare
 const STATIC_FILES = [
