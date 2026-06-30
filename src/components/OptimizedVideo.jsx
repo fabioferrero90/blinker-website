@@ -60,13 +60,25 @@ const OptimizedVideo = ({
                 }
             };
 
+            // Fallback per garantire il loop continuo anche su browser
+            // (es. Safari/iOS) dove l'attributo `loop` viene ignorato con
+            // video muted/autoplay/playsInline.
+            const handleEnded = () => {
+                if (loop) {
+                    video.currentTime = 0;
+                    video.play().catch(() => {});
+                }
+            };
+
             video.addEventListener('canplay', handleCanPlay);
+            video.addEventListener('ended', handleEnded);
 
             return () => {
                 video.removeEventListener('canplay', handleCanPlay);
+                video.removeEventListener('ended', handleEnded);
             };
         }
-    }, [isInView, autoPlay, isPlaying]);
+    }, [isInView, autoPlay, isPlaying, loop]);
 
     const handlePlay = () => {
         setIsPlaying(true);
